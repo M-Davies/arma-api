@@ -1,0 +1,991 @@
+[
+  {
+    "category" : "Atragmx",
+    "added": "3.0.0",
+    "classes": [
+      {
+        "class": "ACE_ATragMX",
+        "name": "ATragMX",
+        "type": "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "Attachable",
+    "added": "3.0.0",
+    "classes": [
+      {
+        "class": "ACE_IR_Strobe_Item",
+        "name": "IR strobe",
+        "type": "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "Ballistics",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_100Rnd_65x39_caseless_mag_Tracer_Dim",
+        "name": "",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_200Rnd_65x39_cased_Box_Tracer_Dim",
+        "name": "",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_30Rnd_65x39_caseless_mag_Tracer_Dim",
+        "name": "",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_30Rnd_65x39_caseless_green_mag_Tracer_Dim",
+        "name": "",
+        "type": "Magazine"
+      },
+      {
+        "class": "ACE_30Rnd_556x45_Stanag_M995_AP_mag",
+        "name": "5.56mm AP",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+        "name": "5.56mm Mk262",
+        "type": "Magazine"
+      },
+      {
+        "class": "ACE_30Rnd_556x45_Stanag_Mk318_mag",
+        "name": "5.56mm Mk318",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+        "name": "5.56mm IR-DIM",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_20Rnd_762x51_Mag_Tracer",
+        "name": "7.62mm Tracer",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_20Rnd_762x51_Mag_Tracer_Dim",
+        "name": "7.62mm IR-DIM",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_20Rnd_762x51_Mag_SD",
+        "name": "7.62mm SD",
+        "type": "Magazine"
+      },
+      {
+        "class": "ACE_10Rnd_762x51_M118LR_Mag",
+        "name": "7.62mm M118LR",
+        "type": "Magazine"
+      },
+      {
+        "class": "ACE_10Rnd_762x51_Mk316_Mod_0_Mag",
+        "name": "7.62mm Mk316",
+        "type": "Magazine"
+      },
+      {
+        "class": "ACE_10Rnd_762x51_Mk319_Mod_0_Mag",
+        "name": "7.62mm Mk319",
+        "type": "Magazine"
+      },
+      {
+        "class": "ACE_10Rnd_762x51_M993_AP_Mag",
+        "name": "7.62mm AP",
+        "type": "Magazine"
+      },
+      {
+        "class": "ACE_20Rnd_762x51_M118LR_Mag",
+        "name": "7.62mm M118LR",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_20Rnd_762x51_Mk316_Mod_0_Mag",
+        "name": "7.62mm Mk316",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_20Rnd_762x51_Mk319_Mod_0_Mag",
+        "name": "7.62mm Mk319",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_20Rnd_762x51_M993_AP_Mag",
+        "name": "7.62mm AP",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_20Rnd_762x67_Mk248_Mod_0_Mag",
+        "name": "7.62mm Mk248",
+        "type": "Magazine"
+      },
+      {
+        "class": "ACE_20Rnd_762x67_Mk248_Mod_1_Mag",
+        "name": "7.62mm Mk248",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_20Rnd_762x67_Berger_Hybrid_OTM_Mag",
+        "name": "7.62mm OTM",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_30Rnd_65x47_Scenar_mag",
+        "name": "6.5mm Lapua",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_30Rnd_65_Creedmor_mag",
+        "name": "6.5mm CM",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_10Rnd_338_300gr_HPBT_Mag",
+        "name": ".338 HPBT",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_10Rnd_338_API526_Mag",
+        "name": ".338 AP",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_5Rnd_127x99_Mag",
+        "name": "12.7mm",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_5Rnd_127x99_API_Mag",
+        "name": "12.7mm API",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_5Rnd_127x99_AMAX_Mag",
+        "name": "12.7mm",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_30Rnd_9x19_mag",
+        "name": "9x19mm",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_16Rnd_9x19_mag",
+        "name": "9x19mm",
+        "type": "Magazine"
+      },
+      {
+        "class":"ACE_10Rnd_762x54_Tracer_mag",
+        "name": "7.62mm",
+        "type": "Magazine"
+      }
+    ]
+  },
+  {
+    "category": "Captive",
+    "added": "3.0.0",
+    "classes": [
+      {
+        "class":"ACE_CableTie",
+        "name": "Cable Tie",
+        "type": "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category": "Chemlights",
+    "added": "3.7.0",
+    "classes": [
+      {
+        "class": "ACE_Chemlight_HiOrange",
+        "name": "Chemlight (Hi Orange)",
+        "type": "Throwable"
+      },
+      {
+        "class": "ACE_Chemlight_HiRed",
+        "name": "Chemlight (Hi Red)",
+        "type": "Throwable"
+      },
+      {
+        "class": "ACE_Chemlight_HiYellow",
+        "name": "Chemlight (Hi Yellow)",
+        "type": "Throwable"
+      },
+      {
+        "class": "ACE_Chemlight_HiWhite",
+        "name": "Chemlight (Hi White)",
+        "type": "Throwable"
+      },
+      {
+        "class":"ACE_Chemlight_Orange",
+        "name": "Chemlight (Orange)",
+        "type": "Throwable"
+      },
+      {
+        "class":"ACE_Chemlight_White",
+        "name": "Chemlight (White)",
+        "type": "Throwable"
+      },
+      {
+        "class":"ACE_Chemlight_IR",
+        "name": "Chemlight (IR)",
+        "type": "Throwable"
+      }
+    ]
+  },
+  {
+    "category" : "Common",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_Banana",
+        "name": "Banana",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "ConcertinaWire",
+    "added" : "3.1.1",
+    "classes"   : [
+      {
+        "class":"ACE_ConcertinaWireCoil",
+        "name": "Concertina Wire Coil",
+        "type"      : "ThingX"
+      },
+      {
+        "class": "ACE_ConcertinaWire",
+        "name": "Concertina Wire",
+        "type"      : "deployed concertina wire"
+      }
+    ]
+  },
+  {
+    "category" : "DAGR",
+    "added" : "3.1.1",
+    "classes"   : [
+      {
+        "class":"ACE_DAGR",
+        "name": "DAGR",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "Disposable",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class" : "ACE_launch_NLAW_Used_F",
+        "name": "used NLAW",
+        "type"      : "Weapon"
+      }
+    ]
+  },
+  {
+    "category" : "Explosives",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_Cellphone",
+        "name": "Cellphone",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_Clacker",
+        "name": "M57 Firing Device",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class": "ACE_M26_Clacker",
+        "name": "M26 Firing Device",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_DefusalKit",
+        "name": "Defusal Kit",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_DeadManSwitch",
+        "name": "Dead Man’s Switch",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "Flashlights",
+    "added" : "3.3.0",
+    "classes"   : [
+      {
+        "class": "ACE_Flashlight_MX991",
+        "name": "Fulton MX-991",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class": "ACE_Flashlight_KSF1",
+        "name": "KSF-1",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_Flashlight_XL50",
+        "name": "Maglite XL50",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "Grenades",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class": "ACE_HandFlare_White",
+        "name": "M127A1 Hand Held Signal (White)",
+        "type"      : "Grenade"
+      },
+      {
+        "class": "ACE_HandFlare_Red",
+        "name": "M127A1 Hand Held Signal (Red)",
+        "type"      : "Grenade"
+      },
+      {
+        "class": "ACE_HandFlare_Green",
+        "name": "M127A1 Hand Held Signal (Green)",
+        "type"      : "Grenade"
+      },
+      {
+        "class":"ACE_HandFlare_Yellow",
+        "name": "M127A1 Hand Held Signal (Yellow)",
+        "type"      : "Grenade"
+      },
+      {
+        "class": "ACE_M14",
+        "name": "AN-M14 Incendiary Grenade",
+        "type"      : "Grenade"
+      },
+      {
+        "class": "ACE_M84",
+        "name": "M84 Stun Grenade",
+        "type"      : "Grenade"
+      }
+    ]
+  },
+  {
+    "category" : "GunBag",
+    "added" : "3.6.0",
+    "classes"   : [
+      {
+        "class":"ACE_gunbag",
+        "name": "Gunbag",
+        "type"      : "Backpack"
+      },
+      {
+        "class":"ACE_gunbag_Tan",
+        "name": "Gunbag",
+        "type"      : "Backpack"
+      }
+    ]
+  },
+  {
+    "category" : "Hearing",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_EarPlugs",
+        "name": "Earplugs",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "HuntIR",
+    "added" : "3.1.1",
+    "classes"   : [
+      {
+        "class":"ACE_HuntIR_monitor",
+        "name": "HuntIR monitor",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_HuntIR_M203",
+        "name": "HuntIR Round",
+        "type"      : "Grenade shell"
+      },
+      {
+        "class":"ACE_HuntIR_Box",
+        "name": "HuntIR Transport Box",
+        "type"      : "ammo box"
+      }
+    ]
+  },
+  {
+    "category" : "Kestrel",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_Kestrel4500",
+        "name": "Kestrel 4500NV",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "LaserPointers",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"acc_pointer_IR",
+        "name": "Laser Pointer (red)",
+        "type"      : "Weapon accessory"
+      },
+      {
+        "class":"ACE_acc_pointer_red",
+        "name": "Laser Pointer (green)",
+        "type"      : "Weapon accessory"
+      },
+      {
+        "class":"ACE_acc_pointer_green_IR",
+        "name": "Laser Pointer (green)",
+        "type"      : "Weapon accessory"
+      },
+      {
+        "class":"ACE_acc_pointer_green",
+        "name": "Laser Pointer (green)",
+        "type"      : "Weapon accessory"
+      }
+    ]
+  },
+  {
+    "category" : "Logistics",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_UAVBattery",
+        "name": "UAV Battery",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_wirecutter",
+        "name": "Wirecutter",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "MapTools",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_MapTools",
+        "name": "Map Tools",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "Medical",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_atropine",
+        "name": "Atropin auto injector",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_fieldDressing",
+        "name": "Bandage (Basic)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_elasticBandage",
+        "name": "Bandage (Elastic)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_quikclot",
+        "name": "Basic Field Dressing (QuikClot)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_bloodIV",
+        "name": "Blood IV (1000ml)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_bloodIV_500",
+        "name": "Blood IV (500ml)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_bloodIV_250",
+        "name": "Blood IV (250ml)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_bodyBag",
+        "name": "Bodybag",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_bodyBagObject",
+        "name": "Bodybag (packed)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_epinephrine",
+        "name": "Epinephrine auto injector",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_morphine",
+        "name": "Morphine auto injector",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_packingBandage",
+        "name": "Packing Bandage",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_personalAidKit",
+        "name": "Personal Aid Kit",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_plasmaIV",
+        "name": "Plasma IV (1000ml)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_plasmaIV_500",
+        "name": "Plasma IV (500ml)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_plasmaIV_250",
+        "name": "Plasma IV (250ml)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_salineIV",
+        "name": "Saline IV (1000ml)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_salineIV_500",
+        "name": "Saline IV (500ml)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_salineIV_250",
+        "name": "Saline IV (250ml)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_surgicalKit",
+        "name": "Surgical Kit",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_tourniquet",
+        "name": "Tourniquet (CAT)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_medicalSupplyCrate",
+        "name": "Simple ACE Medical Supply Crate",
+        "type"      : "ammo box"
+      },
+      {
+        "class":"ACE_medicalSupplyCrate_advanced",
+        "name": "Advanced ACE Medical Supply Crate",
+        "type"      : "ammo box"
+      }
+    ]
+  },
+  {
+    "category" : "MicroDAGR",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_microDAGR",
+        "name": "MicroDAGR GPS",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "MineDetector",
+    "added" : "3.6.0",
+    "classes"   : [
+      {
+        "class":"ACE_VMH3",
+        "name": "VMH3",
+        "type"      : "Pistol_Base_F"
+      },
+      {
+        "class":"ACE_VMM3",
+        "name": "VMM3",
+        "type"      : "Pistol_Base_F"
+      }
+    ]
+  },
+  {
+    "category" : "MK6Mortar",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_RangeTable_82mm",
+        "name": "82mm Rangetable",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_1Rnd_82mm_Mo_HE",
+        "name": "82mm HE Round",
+        "type"      : "Magazine"
+      },
+      {
+        "class":"ACE_1Rnd_82mm_Mo_Smoke",
+        "name": "82mm Smoke Round",
+        "type"      : "Magazine"
+      },
+      {
+        "class":"ACE_1Rnd_82mm_Mo_Illum",
+        "name": "82mm Illumination Round",
+        "type"      : "Magazine"
+      },
+      {
+        "class":"ACE_1Rnd_82mm_Mo_HE_Guided",
+        "name": "82mm Guided HE Round",
+        "type"      : "Magazine"
+      },
+      {
+        "class":"ACE_1Rnd_82mm_Mo_HE_LaserGuided",
+        "name": "82mm Laser Guided HE Round",
+        "type"      : "Magazine"
+      }
+    ]
+  },
+  {
+    "category" : "MX2A",
+    "added" : "3.1.1",
+    "classes"   : [
+      {
+        "class":"ACE_MX2A",
+        "name": "MX-2A",
+        "type"      : "Binocular"
+      }
+    ]
+  },
+  {
+    "category" : "Nightvision",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_NVG_Gen1",
+        "name": "NV Goggles (Gen1)",
+        "type"      : "NVG"
+      },
+      {
+        "class":"ACE_NVG_Gen2",
+        "name": "NV Goggles (Gen2)",
+        "type"      : "NVG"
+      },
+      {
+        "class":"ACE_NVG_Gen4",
+        "name": "NV Goggles (Gen4)",
+        "type"      : "NVG"
+      },
+      {
+        "class":"ACE_NVG_Wide",
+        "name": "NV Goggles (Wide)",
+        "type"      : "NVG"
+      }
+    ]
+  },
+  {
+    "category" : "Optics",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_optic_Arco_2D",
+        "name": "ARCO (2D)",
+        "type"      : "Weapon accessory"
+      },
+      {
+        "class":"ACE_optic_Arco_PIP",
+        "name": "ARCO (PIP)",
+        "type"      : "Weapon accessory"
+      },
+      {
+        "class":"ACE_optic_LRPS_2D",
+        "name": "LRPS (2D)",
+        "type"      : "Weapon accessory"
+      },
+      {
+        "class":"ACE_optic_LRPS_PIP",
+        "name": "LRPS (PIP)",
+        "type"      : "Weapon accessory"
+      },
+      {
+        "class":"ACE_optic_SOS_2D",
+        "name": "MOS (2D)",
+        "type"      : "Weapon accessory"
+      },
+      {
+        "class":"ACE_optic_SOS_PIP",
+        "name": "MOS (PIP)",
+        "type"      : "Weapon accessory"
+      },
+      {
+        "class":"ACE_optic_MRCO_2D",
+        "name": "MRCO (2D)",
+        "type"      : "Weapon accessory"
+      },
+      {
+        "class":"ACE_optic_MRCO_PIP",
+        "name": "MRCO (PIP)",
+        "type"      : "Weapon accessory"
+      },
+      {
+        "class":"ACE_optic_Hamr_2D",
+        "name": "RCO (2D)",
+        "type"      : "Weapon accessory"
+      },
+      {
+        "class":"ACE_optic_Hamr_PIP",
+        "name": "RCO (PIP)",
+        "type"      : "Weapon accessory"
+      }
+    ]
+  },
+  {
+    "category" : "Overheating",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_SpareBarrel",
+        "name": "Spare barrel",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "Parachute",
+    "added" : "3.2.0",
+    "classes"   : [
+      {
+        "class":"ACE_Altimeter",
+        "name": "Altimeter Watch",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_NonSteerableParachute",
+        "name": "Non-Steerable Parachute",
+        "type"      : "Backpack"
+      },
+      {
+        "class":"ACE_ReserveParachute",
+        "name": "Reserve Parachute",
+        "type"      : "Backpack"
+      }
+    ]
+  },
+  {
+    "category" : "Rangecard",
+    "added" : "3.1.1",
+    "classes"   : [
+      {
+        "class":"ACE_RangeCard",
+        "name": "rangecard",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "Repair",
+    "added" : "3.3.0",
+    "classes"   : [
+      {
+        "class":"ACE_Track",
+        "name": "Spare Track",
+        "type"      : "thingX"
+      },
+      {
+        "class":"ACE_Wheel",
+        "name": "Spare Wheel",
+        "type"      : "thingX"
+      }
+    ]
+  },
+  {
+    "category" : "Sandbag",
+    "added" : "3.1.1",
+    "classes"   : [
+      {
+        "class":"ACE_Sandbag_empty",
+        "name": "Sandbag (empty)",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_SandbagObject",
+        "name": "Sandbag",
+        "type"      : "thingX"
+      }
+    ]
+  },
+  {
+    "category" : "Spotting Scope",
+    "added" : "3.1.1",
+    "classes"   : [
+      {
+        "class":"ACE_SpottingScope",
+        "name": "Spotting Scope",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_SpottingScopeObject",
+        "name": "Spotting Scope (placed)",
+        "type"      : "StaticATWeapon"
+      }
+    ]
+  },
+  {
+    "category" : "Tactical Ladder",
+    "added" : "3.1.1",
+    "classes"   : [
+      {
+        "class":"ACE_TacticalLadder_Pack",
+        "name": "Telescopic Ladder",
+        "type"      : "Backpack"
+      },
+      {
+        "class":"ACE_Tactical_Ladder",
+        "name": "Telescopic Ladder (placed)",
+        "type"      : "house"
+      }
+    ]
+  },
+  {
+    "category" : "Tagging",
+    "added" : "3.5.0",
+    "classes"   : [
+      {
+        "class":"ACE_SpraypaintBlack",
+        "name": "Black spray paint",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_SpraypaintBlue",
+        "name": "Blue spray paint",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_SpraypaintGreen",
+        "name": "Green spray paint",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_SpraypaintRed",
+        "name": "Red spray paint",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "Trenches",
+    "added" : "3.5.0",
+    "classes"   : [
+      {
+        "class":"ACE_EntrenchingTool",
+        "name": "Entrenching Tool",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "Tripod",
+    "added" : "3.1.1",
+    "classes"   : [
+      {
+        "class":"ACE_Tripod",
+        "name": "SSWT Kit",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_TripodObject",
+        "name": "SSWT Kit (placed)",
+        "type"      : "ThingX"
+      }
+    ]
+  },
+  {
+    "category" : "Vehicle Lock",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_key_master",
+        "name": "Vehicle Key: Master",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_key_lockpick",
+        "name": "Lockpick",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_key_west",
+        "name": "Vehicle Key: West",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_key_east",
+        "name": "Vehicle Key: East",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_key_indp",
+        "name": "Vehicle Key: Independent",
+        "type"      : "ACE_ItemCore"
+      },
+      {
+        "class":"ACE_key_civ",
+        "name": "Vehicle Key: Civilian",
+        "type"      : "ACE_ItemCore"
+      }
+    ]
+  },
+  {
+    "category" : "Vector",
+    "added" : "3.0.0",
+    "classes"   : [
+      {
+        "class":"ACE_Vector",
+        "name": "Vector 21",
+        "type"      : "Binoculars"
+      },
+      {
+        "class":"ACE_VectorDay",
+        "name": "Vector 21 (Day)",
+        "type"      : "Binoculars"
+      }
+    ]
+  },
+  {
+    "category" : "Yardage 450",
+    "added" : "3.1.1",
+    "classes"   : [
+      {
+        "class":"ACE_Yardage450",
+        "name": "Yardage 450",
+        "type"      : "Binocular"
+      }
+    ]
+  }
+]
