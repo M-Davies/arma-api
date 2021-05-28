@@ -1,1506 +1,2422 @@
 [
   {
     "class":"srifle_DMR_01_F",
-    "name":"Rahim 7.62 mm"
+    "name":"Rahim 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_01_ACO_F",
-    "name":"Rahim 7.62 mm"
+    "name":"Rahim 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_01_MRCO_F",
-    "name":"Rahim 7.62 mm"
+    "name":"Rahim 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_01_SOS_F",
-    "name":"Rahim 7.62 mm"
+    "name":"Rahim 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_01_DMS_F",
-    "name":"Rahim 7.62 mm"
+    "name":"Rahim 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_01_DMS_snds_F",
-    "name":"Rahim 7.62 mm"
+    "name":"Rahim 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_01_ARCO_F",
-    "name":"Rahim 7.62 mm"
+    "name":"Rahim 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_EBR_F",
-    "name":"Mk18 ABR 7.62Â mm"
+    "name":"Mk18 ABR 7.62Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_EBR_ACO_F",
-    "name":"Mk18 ABR 7.62Â mm"
+    "name":"Mk18 ABR 7.62Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_EBR_MRCO_pointer_F",
-    "name":"Mk18 ABR 7.62Â mm"
+    "name":"Mk18 ABR 7.62Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_EBR_ARCO_pointer_F",
-    "name":"Mk18 ABR 7.62Â mm"
+    "name":"Mk18 ABR 7.62Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_EBR_SOS_F",
-    "name":"Mk18 ABR 7.62Â mm"
+    "name":"Mk18 ABR 7.62Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_EBR_ARCO_pointer_snds_F",
-    "name":"Mk18 ABR 7.62Â mm"
+    "name":"Mk18 ABR 7.62Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_EBR_DMS_F",
-    "name":"Mk18 ABR 7.62Â mm"
+    "name":"Mk18 ABR 7.62Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_EBR_Hamr_pointer_F",
-    "name":"Mk18 ABR 7.62Â mm"
+    "name":"Mk18 ABR 7.62Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_EBR_DMS_pointer_snds_F",
-    "name":"Mk18 ABR 7.62Â mm"
+    "name":"Mk18 ABR 7.62Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_GM6_F",
-    "name":"GM6 Lynx 12.7Â mm"
+    "name":"GM6 Lynx 12.7Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_GM6_SOS_F",
-    "name":"GM6 Lynx 12.7Â mm"
+    "name":"GM6 Lynx 12.7Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_GM6_LRPS_F",
-    "name":"GM6 Lynx 12.7Â mm"
+    "name":"GM6 Lynx 12.7Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_GM6_camo_F",
-    "name":"GM6 Lynx 12.7Â mm (Camo)"
+    "name":"GM6 Lynx 12.7Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_GM6_camo_SOS_F",
-    "name":"GM6 Lynx 12.7Â mm (Camo)"
+    "name":"GM6 Lynx 12.7Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_GM6_camo_LRPS_F",
-    "name":"GM6 Lynx 12.7Â mm (Camo)"
+    "name":"GM6 Lynx 12.7Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_LRR_F",
-    "name":"M320 LRR .408"
+    "name":"M320 LRR .408",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_LRR_SOS_F",
-    "name":"M320 LRR .408"
+    "name":"M320 LRR .408",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_LRR_LRPS_F",
-    "name":"M320 LRR .408"
+    "name":"M320 LRR .408",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_LRR_camo_F",
-    "name":"M320 LRR .408 (Camo)"
+    "name":"M320 LRR .408 (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_LRR_camo_SOS_F",
-    "name":"M320 LRR .408 (Camo)"
+    "name":"M320 LRR .408 (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_LRR_camo_LRPS_F",
-    "name":"M320 LRR .408 (Camo)"
+    "name":"M320 LRR .408 (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"LMG_Mk200_F",
-    "name":"Mk200 6.5Â mm"
+    "name":"Mk200 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"LMG_Mk200_MRCO_F",
-    "name":"Mk200 6.5Â mm"
+    "name":"Mk200 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"LMG_Mk200_pointer_F",
-    "name":"Mk200 6.5Â mm"
+    "name":"Mk200 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"LMG_Zafir_F",
-    "name":"Zafir 7.62 mm"
+    "name":"Zafir 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"LMG_Zafir_pointer_F",
-    "name":"Zafir 7.62 mm"
+    "name":"Zafir 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"LMG_Zafir_ARCO_F",
-    "name":"Zafir 7.62 mm"
+    "name":"Zafir 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_F",
-    "name":"Katiba 6.5 mm"
+    "name":"Katiba 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_C_F",
-    "name":"Katiba Carbine 6.5 mm"
+    "name":"Katiba Carbine 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_GL_F",
-    "name":"Katiba GL 6.5 mm"
+    "name":"Katiba GL 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_C_ACO_pointer_F",
-    "name":"Katiba Carbine 6.5 mm"
+    "name":"Katiba Carbine 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_C_ACO_F",
-    "name":"Katiba Carbine 6.5 mm"
+    "name":"Katiba Carbine 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_ACO_F",
-    "name":"Katiba 6.5 mm"
+    "name":"Katiba 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_pointer_F",
-    "name":"Katiba 6.5 mm"
+    "name":"Katiba 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_ACO_pointer_F",
-    "name":"Katiba 6.5 mm"
+    "name":"Katiba 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_ARCO_F",
-    "name":"Katiba 6.5 mm"
+    "name":"Katiba 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_ARCO_pointer_F",
-    "name":"Katiba 6.5 mm"
+    "name":"Katiba 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_GL_ACO_F",
-    "name":"Katiba GL 6.5 mm"
+    "name":"Katiba GL 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_GL_ARCO_pointer_F",
-    "name":"Katiba GL 6.5 mm"
+    "name":"Katiba GL 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_GL_ACO_pointer_F",
-    "name":"Katiba GL 6.5 mm"
+    "name":"Katiba GL 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_GL_Nstalker_pointer_F",
-    "name":"Katiba GL 6.5 mm"
+    "name":"Katiba GL 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_GL_ACO_pointer_snds_F",
-    "name":"Katiba GL 6.5 mm"
+    "name":"Katiba GL 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_C_ACO_pointer_snds_F",
-    "name":"Katiba Carbine 6.5 mm"
+    "name":"Katiba Carbine 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_ACO_pointer_snds_F",
-    "name":"Katiba 6.5 mm"
+    "name":"Katiba 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Katiba_ARCO_pointer_snds_F",
-    "name":"Katiba 6.5 mm"
+    "name":"Katiba 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20_F",
-    "name":"Mk20 5.56Â mm (Camo)"
+    "name":"Mk20 5.56Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20_plain_F",
-    "name":"Mk20 5.56Â mm"
+    "name":"Mk20 5.56Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20C_F",
-    "name":"Mk20C 5.56Â mm (Camo)"
+    "name":"Mk20C 5.56Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20C_plain_F",
-    "name":"Mk20C 5.56Â mm"
+    "name":"Mk20C 5.56Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20_GL_F",
-    "name":"Mk20 EGLM 5.56Â mm (Camo)"
+    "name":"Mk20 EGLM 5.56Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20_GL_plain_F",
-    "name":"Mk20 EGLM 5.56Â mm"
+    "name":"Mk20 EGLM 5.56Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20C_ACO_F",
-    "name":"Mk20C 5.56Â mm (Camo)"
+    "name":"Mk20C 5.56Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20C_ACO_pointer_F",
-    "name":"Mk20C 5.56Â mm (Camo)"
+    "name":"Mk20C 5.56Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20_pointer_F",
-    "name":"Mk20 5.56Â mm (Camo)"
+    "name":"Mk20 5.56Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20_Holo_F",
-    "name":"Mk20 5.56Â mm (Camo)"
+    "name":"Mk20 5.56Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20_ACO_F",
-    "name":"Mk20 5.56Â mm (Camo)"
+    "name":"Mk20 5.56Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20_ACO_pointer_F",
-    "name":"Mk20 5.56Â mm (Camo)"
+    "name":"Mk20 5.56Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20_MRCO_F",
-    "name":"Mk20 5.56Â mm (Camo)"
+    "name":"Mk20 5.56Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20_MRCO_plain_F",
-    "name":"Mk20 5.56Â mm"
+    "name":"Mk20 5.56Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20_MRCO_pointer_F",
-    "name":"Mk20 5.56Â mm (Camo)"
+    "name":"Mk20 5.56Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20_GL_MRCO_pointer_F",
-    "name":"Mk20 EGLM 5.56Â mm (Camo)"
+    "name":"Mk20 EGLM 5.56Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_Mk20_GL_ACO_F",
-    "name":"Mk20 EGLM 5.56Â mm (Camo)"
+    "name":"Mk20 EGLM 5.56Â mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_F",
-    "name":"MXC 6.5Â mm"
+    "name":"MXC 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_F",
-    "name":"MX 6.5Â mm"
+    "name":"MX 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_GL_F",
-    "name":"MX 3GL 6.5Â mm"
+    "name":"MX 3GL 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_SW_F",
-    "name":"MX SW 6.5Â mm"
+    "name":"MX SW 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXM_F",
-    "name":"MXM 6.5Â mm"
+    "name":"MXM 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_pointer_F",
-    "name":"MX 6.5Â mm"
+    "name":"MX 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_Holo_pointer_F",
-    "name":"MX 6.5Â mm"
+    "name":"MX 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_Hamr_pointer_F",
-    "name":"MX 6.5Â mm"
+    "name":"MX 6.5ÂNBSPmm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_ACO_pointer_F",
-    "name":"MX 6.5Â mm"
+    "name":"MX 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_ACO_F",
-    "name":"MX 6.5Â mm"
+    "name":"MX 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_GL_ACO_F",
-    "name":"MX 3GL 6.5Â mm"
+    "name":"MX 3GL 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_GL_ACO_pointer_F",
-    "name":"MX 3GL 6.5Â mm"
+    "name":"MX 3GL 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_GL_Hamr_pointer_F",
-    "name":"MX 3GL 6.5Â mm"
+    "name":"MX 3GL 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_Holo_F",
-    "name":"MXC 6.5Â mm"
+    "name":"MXC 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_Holo_pointer_F",
-    "name":"MXC 6.5Â mm"
+    "name":"MXC 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_SW_pointer_F",
-    "name":"MX SW 6.5Â mm"
+    "name":"MX SW 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_SW_Hamr_pointer_F",
-    "name":"MX SW 6.5Â mm"
+    "name":"MX SW 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXM_Hamr_pointer_F",
-    "name":"MXM 6.5Â mm"
+    "name":"MXM 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_ACO_F",
-    "name":"MXC 6.5Â mm"
+    "name":"MXC 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_Holo_pointer_snds_F",
-    "name":"MXC 6.5Â mm"
+    "name":"MXC 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_SOS_point_snds_F",
-    "name":"MXC 6.5Â mm"
+    "name":"MXC 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_ACO_pointer_snds_F",
-    "name":"MXC 6.5Â mm"
+    "name":"MXC 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_ACO_pointer_F",
-    "name":"MXC 6.5Â mm"
+    "name":"MXC 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_ACO_pointer_snds_F",
-    "name":"MX 6.5Â mm"
+    "name":"MX 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_RCO_pointer_snds_F",
-    "name":"MX 6.5Â mm"
+    "name":"MX 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_GL_Holo_pointer_snds_F",
-    "name":"MX 3GL 6.5Â mm"
+    "name":"MX 3GL 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXM_SOS_pointer_F",
-    "name":"MXM 6.5Â mm"
+    "name":"MXM 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXM_RCO_pointer_snds_F",
-    "name":"MXM 6.5Â mm"
+    "name":"MXM 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXM_DMS_F",
-    "name":"MXM 6.5Â mm"
+    "name":"MXM 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_Black_F",
-    "name":"MXC 6.5 mm (Black)"
+    "name":"MXC 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_Black_F",
-    "name":"MX 6.5 mm (Black)"
+    "name":"MX 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_GL_Black_F",
-    "name":"MX 3GL 6.5 mm (Black)"
+    "name":"MX 3GL 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_SW_Black_F",
-    "name":"MX SW 6.5 mm (Black)"
+    "name":"MX SW 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXM_Black_F",
-    "name":"MXM 6.5 mm (Black)"
+    "name":"MXM 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_GL_Black_Hamr_pointer_F",
-    "name":"MX 3GL 6.5 mm (Black)"
+    "name":"MX 3GL 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_Black_Hamr_pointer_F",
-    "name":"MX 6.5 mm (Black)"
+    "name":"MX 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_SW_Black_Hamr_pointer_F",
-    "name":"MX SW 6.5 mm (Black)"
+    "name":"MX SW 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_SDAR_F",
-    "name":"SDAR 5.56Â mm"
+    "name":"SDAR 5.56Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_TRG21_F",
-    "name":"TRG-21 5.56 mm"
+    "name":"TRG-21 5.56 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_TRG20_F",
-    "name":"TRG-20 5.56 mm"
+    "name":"TRG-20 5.56 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_TRG21_GL_F",
-    "name":"TRG-21 EGLM 5.56 mm"
+    "name":"TRG-21 EGLM 5.56 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_TRG20_Holo_F",
-    "name":"TRG-20 5.56 mm"
+    "name":"TRG-20 5.56 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_TRG20_ACO_pointer_F",
-    "name":"TRG-20 5.56 mm"
+    "name":"TRG-20 5.56 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_TRG20_ACO_Flash_F",
-    "name":"TRG-20 5.56 mm"
+    "name":"TRG-20 5.56 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_TRG20_ACO_F",
-    "name":"TRG-20 5.56 mm"
+    "name":"TRG-20 5.56 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_TRG21_ACO_pointer_F",
-    "name":"TRG-21 5.56 mm"
+    "name":"TRG-21 5.56 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_TRG21_ARCO_pointer_F",
-    "name":"TRG-21 5.56 mm"
+    "name":"TRG-21 5.56 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_TRG21_MRCO_F",
-    "name":"TRG-21 5.56 mm"
+    "name":"TRG-21 5.56 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_TRG21_GL_MRCO_F",
-    "name":"TRG-21 EGLM 5.56 mm"
+    "name":"TRG-21 EGLM 5.56 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_TRG21_GL_ACO_pointer_F",
-    "name":"TRG-21 EGLM 5.56 mm"
+    "name":"TRG-21 EGLM 5.56 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"hgun_PDW2000_F",
-    "name":"PDW2000 9Â mm"
+    "name":"PDW2000 9Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"hgun_PDW2000_snds_F",
-    "name":"PDW2000 9Â mm"
+    "name":"PDW2000 9Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"hgun_PDW2000_Holo_F",
-    "name":"PDW2000 9Â mm"
+    "name":"PDW2000 9Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"hgun_PDW2000_Holo_snds_F",
-    "name":"PDW2000 9Â mm"
+    "name":"PDW2000 9Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_01_F",
-    "name":"Vermin SMG .45 ACP"
+    "name":"Vermin SMG .45 ACP",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_01_Holo_F",
-    "name":"Vermin SMG .45 ACP"
+    "name":"Vermin SMG .45 ACP",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_01_Holo_pointer_snds_F",
-    "name":"Vermin SMG .45 ACP"
+    "name":"Vermin SMG .45 ACP",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_01_ACO_F",
-    "name":"Vermin SMG .45 ACP"
+    "name":"Vermin SMG .45 ACP",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_02_F",
-    "name":"Sting 9Â mm"
+    "name":"Sting 9Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_02_ACO_F",
-    "name":"Sting 9Â mm"
+    "name":"Sting 9Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_02_ARCO_pointg_F",
-    "name":"Sting 9Â mm"
+    "name":"Sting 9Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_01_DMS_BI_F",
-    "name":"Rahim 7.62 mm"
+    "name":"Rahim 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_01_DMS_snds_BI_F",
-    "name":"Rahim 7.62 mm"
+    "name":"Rahim 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_02_F",
-    "name":"MAR-10 .338 (Black)"
+    "name":"MAR-10 .338 (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_02_camo_F",
-    "name":"MAR-10 .338 (Camo)"
+    "name":"MAR-10 .338 (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_02_sniper_F",
-    "name":"MAR-10 .338 (Sand)"
+    "name":"MAR-10 .338 (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_02_ACO_F",
-    "name":"MAR-10 .338 (Black)"
+    "name":"MAR-10 .338 (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_02_MRCO_F",
-    "name":"MAR-10 .338 (Black)"
+    "name":"MAR-10 .338 (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_02_SOS_F",
-    "name":"MAR-10 .338 (Black)"
+    "name":"MAR-10 .338 (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_02_DMS_F",
-    "name":"MAR-10 .338 (Black)"
+    "name":"MAR-10 .338 (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_02_sniper_AMS_LP_S_F",
-    "name":"MAR-10 .338 (Sand)"
+    "name":"MAR-10 .338 (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_02_camo_AMS_LP_F",
-    "name":"MAR-10 .338 (Camo)"
+    "name":"MAR-10 .338 (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_02_ARCO_F",
-    "name":"MAR-10 .338 (Black)"
+    "name":"MAR-10 .338 (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_03_F",
-    "name":"Mk-I EMR 7.62 mm (Black)"
+    "name":"Mk-I EMR 7.62 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_03_khaki_F",
-    "name":"Mk-I EMR 7.62 mm (Khaki)"
+    "name":"Mk-I EMR 7.62 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_03_tan_F",
-    "name":"Mk-I EMR 7.62 mm (Sand)"
+    "name":"Mk-I EMR 7.62 mm (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_03_multicam_F",
-    "name":"Mk-I EMR 7.62 mm (Camo)"
+    "name":"Mk-I EMR 7.62 mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_03_woodland_F",
-    "name":"Mk-I EMR 7.62 mm (Woodland)"
+    "name":"Mk-I EMR 7.62 mm (Woodland)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_03_ACO_F",
-    "name":"Mk-I EMR 7.62 mm (Black)"
+    "name":"Mk-I EMR 7.62 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_03_MRCO_F",
-    "name":"Mk-I EMR 7.62 mm (Black)"
+    "name":"Mk-I EMR 7.62 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_03_SOS_F",
-    "name":"Mk-I EMR 7.62 mm (Black)"
+    "name":"Mk-I EMR 7.62 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_03_DMS_F",
-    "name":"Mk-I EMR 7.62 mm (Black)"
+    "name":"Mk-I EMR 7.62 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_03_tan_AMS_LP_F",
-    "name":"Mk-I EMR 7.62 mm (Sand)"
+    "name":"Mk-I EMR 7.62 mm (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_03_DMS_snds_F",
-    "name":"Mk-I EMR 7.62 mm (Black)"
+    "name":"Mk-I EMR 7.62 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_03_ARCO_F",
-    "name":"Mk-I EMR 7.62 mm (Black)"
+    "name":"Mk-I EMR 7.62 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_03_AMS_F",
-    "name":"Mk-I EMR 7.62 mm (Black)"
+    "name":"Mk-I EMR 7.62 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_04_F",
-    "name":"ASP-1 Kir 12.7 mm (Black)"
+    "name":"ASP-1 Kir 12.7 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_04_Tan_F",
-    "name":"ASP-1 Kir 12.7 mm (Tan)"
+    "name":"ASP-1 Kir 12.7 mm (Tan)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_04_ACO_F",
-    "name":"ASP-1 Kir 12.7 mm (Black)"
+    "name":"ASP-1 Kir 12.7 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_04_MRCO_F",
-    "name":"ASP-1 Kir 12.7 mm (Black)"
+    "name":"ASP-1 Kir 12.7 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_04_SOS_F",
-    "name":"ASP-1 Kir 12.7 mm (Black)"
+    "name":"ASP-1 Kir 12.7 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_04_DMS_F",
-    "name":"ASP-1 Kir 12.7 mm (Black)"
+    "name":"ASP-1 Kir 12.7 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_04_ARCO_F",
-    "name":"ASP-1 Kir 12.7 mm (Black)"
+    "name":"ASP-1 Kir 12.7 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_04_NS_LP_F",
-    "name":"ASP-1 Kir 12.7 mm (Black)"
+    "name":"ASP-1 Kir 12.7 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_05_blk_F",
-    "name":"Cyrus 9.3 mm (Black)"
+    "name":"Cyrus 9.3 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_05_hex_F",
-    "name":"Cyrus 9.3 mm (Hex)"
+    "name":"Cyrus 9.3 mm (Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_05_tan_f",
-    "name":"Cyrus 9.3 mm (Tan)"
+    "name":"Cyrus 9.3 mm (Tan)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_05_ACO_F",
-    "name":"Cyrus 9.3 mm (Black)"
+    "name":"Cyrus 9.3 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_05_MRCO_F",
-    "name":"Cyrus 9.3 mm (Black)"
+    "name":"Cyrus 9.3 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_05_SOS_F",
-    "name":"Cyrus 9.3 mm (Black)"
+    "name":"Cyrus 9.3 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_05_DMS_F",
-    "name":"Cyrus 9.3 mm (Black)"
+    "name":"Cyrus 9.3 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_05_KHS_LP_F",
-    "name":"Cyrus 9.3 mm (Black)"
+    "name":"Cyrus 9.3 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_05_DMS_snds_F",
-    "name":"Cyrus 9.3 mm (Black)"
+    "name":"Cyrus 9.3 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_05_ARCO_F",
-    "name":"Cyrus 9.3 mm (Black)"
+    "name":"Cyrus 9.3 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_06_camo_F",
-    "name":"Mk14 7.62 mm (Camo)"
+    "name":"Mk14 7.62 mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_06_olive_F",
-    "name":"Mk14 7.62 mm (Olive)"
+    "name":"Mk14 7.62 mm (Olive)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_06_camo_khs_F",
-    "name":"Mk14 7.62 mm (Camo)"
+    "name":"Mk14 7.62 mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_EBR_MRCO_LP_BI_F",
-    "name":"Mk18 ABR 7.62Â mm"
+    "name":"Mk18 ABR 7.62Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"LMG_Mk200_LP_BI_F",
-    "name":"Mk200 6.5Â mm"
+    "name":"Mk200 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"LMG_Mk200_BI_F",
-    "name":"Mk200 6.5Â mm"
+    "name":"Mk200 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"MMG_01_hex_F",
-    "name":"Navid 9.3 mm (Hex)"
+    "name":"Navid 9.3 mm (Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"MMG_01_tan_F",
-    "name":"Navid 9.3 mm (Tan)"
+    "name":"Navid 9.3 mm (Tan)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"MMG_01_hex_ARCO_LP_F",
-    "name":"Navid 9.3 mm (Hex)"
+    "name":"Navid 9.3 mm (Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"MMG_02_camo_F",
-    "name":"SPMG .338 (MTP)"
+    "name":"SPMG .338 (MTP)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"MMG_02_black_F",
-    "name":"SPMG .338 (Black)"
+    "name":"SPMG .338 (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"MMG_02_sand_F",
-    "name":"SPMG .338 (Sand)"
+    "name":"SPMG .338 (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"MMG_02_sand_RCO_LP_F",
-    "name":"SPMG .338 (Sand)"
+    "name":"SPMG .338 (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"MMG_02_black_RCO_BI_F",
-    "name":"SPMG .338 (Black)"
+    "name":"SPMG .338 (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXM_DMS_LP_BI_snds_F",
-    "name":"MXM 6.5Â mm"
+    "name":"MXM 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXM_Hamr_LP_BI_F",
-    "name":"MXM 6.5Â mm"
+    "name":"MXM 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03_TR_black",
-    "name":"ADR-97 TR 5.7 mm (Black)"
+    "name":"ADR-97 TR 5.7 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03_TR_camo",
-    "name":"ADR-97 TR 5.7 mm (Camo)"
+    "name":"ADR-97 TR 5.7 mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03_TR_khaki",
-    "name":"ADR-97 TR 5.7 mm (Khaki)"
+    "name":"ADR-97 TR 5.7 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03_TR_hex",
-    "name":"ADR-97 TR 5.7 mm (Hex)"
+    "name":"ADR-97 TR 5.7 mm (Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03C_TR_black",
-    "name":"ADR-97C TR 5.7 mm (Black)"
+    "name":"ADR-97C TR 5.7 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03C_TR_camo",
-    "name":"ADR-97C TR 5.7 mm (Camo)"
+    "name":"ADR-97C TR 5.7 mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03C_TR_khaki",
-    "name":"ADR-97C TR 5.7 mm (Khaki)"
+    "name":"ADR-97C TR 5.7 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03C_TR_hex",
-    "name":"ADR-97C TR 5.7 mm (Hex)"
+    "name":"ADR-97C TR 5.7 mm (Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03_black",
-    "name":"ADR-97 5.7 mm (Black)"
+    "name":"ADR-97 5.7 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03_camo",
-    "name":"ADR-97 5.7 mm (Camo)"
+    "name":"ADR-97 5.7 mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03_khaki",
-    "name":"ADR-97 5.7 mm (Khaki)"
+    "name":"ADR-97 5.7 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03_hex",
-    "name":"ADR-97 5.7 mm (Hex)"
+    "name":"ADR-97 5.7 mm (Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03C_black",
-    "name":"ADR-97C 5.7 mm (Black)"
+    "name":"ADR-97C 5.7 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03C_camo",
-    "name":"ADR-97C 5.7 mm (Camo)"
+    "name":"ADR-97C 5.7 mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03C_khaki",
-    "name":"ADR-97C 5.7 mm (Khaki)"
+    "name":"ADR-97C 5.7 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_03C_hex",
-    "name":"ADR-97C 5.7 mm (Hex)"
+    "name":"ADR-97C 5.7 mm (Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_khk_F",
-    "name":"MX 6.5 mm (Khaki)"
+    "name":"MX 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_khk_ACO_Pointer_F",
-    "name":"MX 6.5 mm (Khaki)"
+    "name":"MX 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_khk_Holo_Pointer_F",
-    "name":"MX 6.5 mm (Khaki)"
+    "name":"MX 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_khk_Hamr_Pointer_F",
-    "name":"MX 6.5 mm (Khaki)"
+    "name":"MX 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_khk_Hamr_Pointer_Snds_F",
-    "name":"MX 6.5 mm (Khaki)"
+    "name":"MX 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_khk_Pointer_F",
-    "name":"MX 6.5 mm (Khaki)"
+    "name":"MX 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_khk_ACO_Pointer_Snds_F",
-    "name":"MX 6.5 mm (Khaki)"
+    "name":"MX 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_GL_khk_F",
-    "name":"MX 3GL 6.5 mm (Khaki)"
+    "name":"MX 3GL 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_GL_khk_ACO_F",
-    "name":"MX 3GL 6.5 mm (Khaki)"
+    "name":"MX 3GL 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_GL_khk_Hamr_Pointer_F",
-    "name":"MX 3GL 6.5 mm (Khaki)"
+    "name":"MX 3GL 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_GL_khk_Holo_Pointer_Snds_F",
-    "name":"MX 3GL 6.5 mm (Khaki)"
+    "name":"MX 3GL 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_SW_khk_F",
-    "name":"MX SW 6.5 mm (Khaki)"
+    "name":"MX SW 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_SW_khk_Pointer_F",
-    "name":"MX SW 6.5 mm (Khaki)"
+    "name":"MX SW 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_khk_F",
-    "name":"MXC 6.5 mm (Khaki)"
+    "name":"MXC 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_khk_Holo_Pointer_F",
-    "name":"MXC 6.5 mm (Khaki)"
+    "name":"MXC 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_khk_ACO_F",
-    "name":"MXC 6.5 mm (Khaki)"
+    "name":"MXC 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_khk_ACO_Pointer_Snds_F",
-    "name":"MXC 6.5 mm (Khaki)"
+    "name":"MXC 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXM_khk_F",
-    "name":"MXM 6.5 mm (Khaki)"
+    "name":"MXM 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXM_khk_MOS_Pointer_Bipod_F",
-    "name":"MXM 6.5 mm (Khaki)"
+    "name":"MXM 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXM_khk_MOS_Pointer_Bipod_Snds_F",
-    "name":"MXM 6.5 mm (Khaki)"
+    "name":"MXM 6.5 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_LRR_tna_F",
-    "name":"M320 LRR .408 (Tropic)"
+    "name":"M320 LRR .408 (Tropic)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_LRR_tna_LRPS_F",
-    "name":"M320 LRR .408 (Tropic)"
+    "name":"M320 LRR .408 (Tropic)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_GM6_ghex_F",
-    "name":"GM6 Lynx 12.7 mm (Green Hex)"
+    "name":"GM6 Lynx 12.7 mm (Green Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_GM6_ghex_LRPS_F",
-    "name":"GM6 Lynx 12.7 mm (Green Hex)"
+    "name":"GM6 Lynx 12.7 mm (Green Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_07_blk_F",
-    "name":"CMR-76 6.5 mm (Black)"
+    "name":"CMR-76 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_07_hex_F",
-    "name":"CMR-76 6.5 mm (Hex)"
+    "name":"CMR-76 6.5 mm (Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_07_ghex_F",
-    "name":"CMR-76 6.5 mm (Green Hex)"
+    "name":"CMR-76 6.5 mm (Green Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_07_blk_DMS_F",
-    "name":"CMR-76 6.5 mm (Black)"
+    "name":"CMR-76 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_07_blk_DMS_Snds_F",
-    "name":"CMR-76 6.5 mm (Black)"
+    "name":"CMR-76 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"LMG_03_F",
-    "name":"LIM-85 5.56 mm"
-  },
-  {
-    "class":"LMG_03_Vehicle_F",
-    "name":"LIM-85 5.56 mm"
+    "name":"LIM-85 5.56 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_F",
-    "name":"AK-12 7.62 mm"
+    "name":"AK-12 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_GL_F",
-    "name":"AK-12 GL 7.62 mm"
+    "name":"AK-12 GL 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AKM_F",
-    "name":"AKM 7.62 mm"
+    "name":"AKM 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AKS_F",
-    "name":"AKS-74U 5.45 mm"
+    "name":"AKS-74U 5.45 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_ARX_blk_F",
-    "name":"Type 115 6.5 mm (Black)"
+    "name":"Type 115 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_ARX_ghex_F",
-    "name":"Type 115 6.5 mm (Green Hex)"
+    "name":"Type 115 6.5 mm (Green Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_ARX_hex_F",
-    "name":"Type 115 6.5 mm (Hex)"
+    "name":"Type 115 6.5 mm (Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_blk_F",
-    "name":"CAR-95 5.8 mm (Black)"
+    "name":"CAR-95 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_hex_F",
-    "name":"CAR-95 5.8 mm (Hex)"
+    "name":"CAR-95 5.8 mm (Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_ghex_F",
-    "name":"CAR-95 5.8 mm (Green Hex)"
+    "name":"CAR-95 5.8 mm (Green Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_GL_blk_F",
-    "name":"CAR-95 GL 5.8 mm (Black)"
+    "name":"CAR-95 GL 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_GL_hex_F",
-    "name":"CAR-95 GL 5.8 mm (Hex)"
+    "name":"CAR-95 GL 5.8 mm (Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_GL_ghex_F",
-    "name":"CAR-95 GL 5.8 mm (Green Hex)"
+    "name":"CAR-95 GL 5.8 mm (Green Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_blk_ACO_Pointer_F",
-    "name":"CAR-95 5.8 mm (Black)"
+    "name":"CAR-95 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_blk_Pointer_F",
-    "name":"CAR-95 5.8 mm (Black)"
+    "name":"CAR-95 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_blk_ACO_F",
-    "name":"CAR-95 5.8 mm (Black)"
+    "name":"CAR-95 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_GL_blk_ACO_F",
-    "name":"CAR-95 GL 5.8 mm (Black)"
+    "name":"CAR-95 GL 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_GL_blk_ARCO_Pointer_F",
-    "name":"CAR-95 GL 5.8 mm (Black)"
+    "name":"CAR-95 GL 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_blk_ARCO_Pointer_F",
-    "name":"CAR-95 5.8 mm (Black)"
+    "name":"CAR-95 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_blk_ACO_Pointer_Snds_F",
-    "name":"CAR-95 5.8 mm (Black)"
+    "name":"CAR-95 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_GL_blk_ACO_Pointer_Snds_F",
-    "name":"CAR-95 GL 5.8 mm (Black)"
+    "name":"CAR-95 GL 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_blk_ARCO_Pointer_Snds_F",
-    "name":"CAR-95 5.8 mm (Black)"
+    "name":"CAR-95 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_blk_ARCO_F",
-    "name":"CAR-95 5.8 mm (Black)"
+    "name":"CAR-95 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTARS_blk_F",
-    "name":"CAR-95-1 5.8mm (Black)"
+    "name":"CAR-95-1 5.8mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTARS_hex_F",
-    "name":"CAR-95-1 5.8mm (Hex)"
+    "name":"CAR-95-1 5.8mm (Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTARS_ghex_F",
-    "name":"CAR-95-1 5.8mm (Green Hex)"
+    "name":"CAR-95-1 5.8mm (Green Hex)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTARS_blk_Pointer_F",
-    "name":"CAR-95-1 5.8mm (Black)"
+    "name":"CAR-95-1 5.8mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_SPAR_01_blk_F",
-    "name":"SPAR-16 5.56 mm (Black)"
+    "name":"SPAR-16 5.56 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_SPAR_01_khk_F",
-    "name":"SPAR-16 5.56 mm (Khaki)"
+    "name":"SPAR-16 5.56 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_SPAR_01_snd_F",
-    "name":"SPAR-16 5.56 mm (Sand)"
+    "name":"SPAR-16 5.56 mm (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_SPAR_01_GL_blk_F",
-    "name":"SPAR-16 GL 5.56 mm (Black)"
+    "name":"SPAR-16 GL 5.56 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_SPAR_01_GL_khk_F",
-    "name":"SPAR-16 GL 5.56 mm (Khaki)"
+    "name":"SPAR-16 GL 5.56 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_SPAR_01_GL_snd_F",
-    "name":"SPAR-16 GL 5.56 mm (Sand)"
+    "name":"SPAR-16 GL 5.56 mm (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_SPAR_02_blk_F",
-    "name":"SPAR-16S 5.56 mm (Black)"
+    "name":"SPAR-16S 5.56 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_SPAR_02_khk_F",
-    "name":"SPAR-16S 5.56 mm (Khaki)"
+    "name":"SPAR-16S 5.56 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_SPAR_02_snd_F",
-    "name":"SPAR-16S 5.56 mm (Sand)"
+    "name":"SPAR-16S 5.56 mm (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_SPAR_03_blk_F",
-    "name":"SPAR-17 7.62 mm (Black)"
+    "name":"SPAR-17 7.62 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_SPAR_03_khk_F",
-    "name":"SPAR-17 7.62 mm (Khaki)"
+    "name":"SPAR-17 7.62 mm (Khaki)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_SPAR_03_snd_F",
-    "name":"SPAR-17 7.62 mm (Sand)"
+    "name":"SPAR-17 7.62 mm (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_05_F",
-    "name":"Protector 9 mm"
+    "name":"Protector 9 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"B_Patrol_Soldier_Leader_weapon_F",
-    "name":"MX 3GL 6.5Â mm"
+    "name":"MX 3GL 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"B_Patrol_Soldier_Operator_weapon_F",
-    "name":"MXC 6.5Â mm"
+    "name":"MXC 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"B_Patrol_Soldier_Marksman_weapon_F",
-    "name":"Mk18 ABR 7.62Â mm"
+    "name":"Mk18 ABR 7.62Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"B_Patrol_Soldier_Medic_weapon_F",
-    "name":"MX 6.5Â mm"
+    "name":"MX 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"B_Patrol_Soldier_Autorifleman_weapon_F",
-    "name":"MX SW 6.5Â mm"
+    "name":"MX SW 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"B_Patrol_Soldier_MachineGunner_weapon_F",
-    "name":"Mk200 6.5Â mm"
+    "name":"Mk200 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"B_Patrol_Soldier_HeavyGunner_weapon_F",
-    "name":"Zafir 7.62 mm"
+    "name":"Zafir 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"B_Patrol_Soldier_Carrier_weapon_F",
-    "name":"MX 6.5Â mm"
+    "name":"MX 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"B_Patrol_Soldier_Specialist_weapon_F",
-    "name":"MX 6.5Â mm"
+    "name":"MX 6.5Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_blk_flash_F",
-    "name":"CAR-95 5.8 mm (Black)"
+    "name":"CAR-95 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_blk_aco_flash_F",
-    "name":"CAR-95 5.8 mm (Black)"
+    "name":"CAR-95 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_blk_arco_flash_F",
-    "name":"CAR-95 5.8 mm (Black)"
+    "name":"CAR-95 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTARS_blk_flash_F",
-    "name":"CAR-95-1 5.8mm (Black)"
+    "name":"CAR-95-1 5.8mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_GL_blk_aco_flash_F",
-    "name":"CAR-95 GL 5.8 mm (Black)"
+    "name":"CAR-95 GL 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_CTAR_GL_blk_arco_flash_F",
-    "name":"CAR-95 GL 5.8 mm (Black)"
+    "name":"CAR-95 GL 5.8 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_07_blk_F_arco_flash_F",
-    "name":"CMR-76 6.5 mm (Black)"
+    "name":"CMR-76 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"SMG_02_flash_F",
-    "name":"Sting 9Â mm"
+    "name":"Sting 9Â mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_Black_ACO_Pointer_F",
-    "name":"MX 6.5 mm (Black)"
+    "name":"MX 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_Black_ACO_FL_F",
-    "name":"MX 6.5 mm (Black)"
+    "name":"MX 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_Black_Holo_Pointer_F",
-    "name":"MX 6.5 mm (Black)"
+    "name":"MX 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_Black_Hamr_Pointer_Snds_F",
-    "name":"MX 6.5 mm (Black)"
+    "name":"MX 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_Black_Pointer_F",
-    "name":"MX 6.5 mm (Black)"
+    "name":"MX 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_Black_ACO_Pointer_Snds_F",
-    "name":"MX 6.5 mm (Black)"
+    "name":"MX 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_GL_Black_ACO_F",
-    "name":"MX 3GL 6.5 mm (Black)"
+    "name":"MX 3GL 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_GL_Black_Holo_Pointer_Snds_F",
-    "name":"MX 3GL 6.5 mm (Black)"
+    "name":"MX 3GL 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MX_SW_Black_Pointer_F",
-    "name":"MX SW 6.5 mm (Black)"
+    "name":"MX SW 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_Black_Holo_Pointer_F",
-    "name":"MXC 6.5 mm (Black)"
+    "name":"MXC 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_Black_Holo_FL_F",
-    "name":"MXC 6.5 mm (Black)"
+    "name":"MXC 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_Black_ACO_F",
-    "name":"MXC 6.5 mm (Black)"
+    "name":"MXC 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXC_Black_ACO_Pointer_Snds_F",
-    "name":"MXC 6.5 mm (Black)"
+    "name":"MXC 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXM_Black_MOS_Pointer_Bipod_F",
-    "name":"MXM 6.5 mm (Black)"
+    "name":"MXM 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MXM_Black_MOS_Pointer_Bipod_Snds_F",
-    "name":"MXM 6.5 mm (Black)"
+    "name":"MXM 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_04_DMS_weathered_Kir_F_F",
-    "name":"ASP-1 Kir 12.7 mm (Black)"
+    "name":"ASP-1 Kir 12.7 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_06_hunter_F",
-    "name":"Mk14 7.62 mm (Classic)"
+    "name":"Mk14 7.62 mm (Classic)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"srifle_DMR_06_hunter_khs_F",
-    "name":"Mk14 7.62 mm (Classic)"
+    "name":"Mk14 7.62 mm (Classic)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"LMG_Mk200_black_F",
-    "name":"Mk200 6.5Â mm (Black)"
+    "name":"Mk200 6.5Â mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"LMG_Mk200_black_ACO_pointer_F",
-    "name":"Mk200 6.5Â mm (Black)"
+    "name":"Mk200 6.5Â mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"LMG_Mk200_black_LP_BI_F",
-    "name":"Mk200 6.5Â mm (Black)"
+    "name":"Mk200 6.5Â mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"LMG_Mk200_black_BI_F",
-    "name":"Mk200 6.5Â mm (Black)"
+    "name":"Mk200 6.5Â mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_lush_F",
-    "name":"AK-12 7.62 mm (Lush)"
+    "name":"AK-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_arid_F",
-    "name":"AK-12 7.62 mm (Arid)"
+    "name":"AK-12 7.62 mm (Arid)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_GL_lush_F",
-    "name":"AK-12 GL 7.62 mm (Lush)"
+    "name":"AK-12 GL 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_GL_arid_F",
-    "name":"AK-12 GL 7.62 mm (Arid)"
+    "name":"AK-12 GL 7.62 mm (Arid)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_RPK12_F",
-    "name":"RPK-12 7.62 mm"
+    "name":"RPK-12 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_RPK12_lush_F",
-    "name":"RPK-12 7.62 mm (Lush)"
+    "name":"RPK-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_RPK12_arid_F",
-    "name":"RPK-12 7.62 mm (Arid)"
+    "name":"RPK-12 7.62 mm (Arid)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12U_F",
-    "name":"AKU-12 7.62 mm"
+    "name":"AKU-12 7.62 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12U_lush_F",
-    "name":"AKU-12 7.62 mm (Lush)"
+    "name":"AKU-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12U_arid_F",
-    "name":"AKU-12 7.62 mm (Arid)"
+    "name":"AKU-12 7.62 mm (Arid)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_lush_arco_snds_pointer_F",
-    "name":"AK-12 7.62 mm (Lush)"
+    "name":"AK-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_lush_snds_pointer_F",
-    "name":"AK-12 7.62 mm (Lush)"
+    "name":"AK-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_lush_arco_snds_pointer_bipod_F",
-    "name":"AK-12 7.62 mm (Lush)"
+    "name":"AK-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_GL_lush_arco_snds_pointer_F",
-    "name":"AK-12 GL 7.62 mm (Lush)"
+    "name":"AK-12 GL 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_GL_lush_holo_snds_pointer_F",
-    "name":"AK-12 GL 7.62 mm (Lush)"
+    "name":"AK-12 GL 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12U_lush_holo_snds_pointer_F",
-    "name":"AKU-12 7.62 mm (Lush)"
+    "name":"AKU-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12U_lush_snds_pointer_F",
-    "name":"AKU-12 7.62 mm (Lush)"
+    "name":"AKU-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_RPK12_lush_arco_snds_pointer_F",
-    "name":"RPK-12 7.62 mm (Lush)"
+    "name":"RPK-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_RPK12_lush_holo_snds_pointer_F",
-    "name":"RPK-12 7.62 mm (Lush)"
+    "name":"RPK-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_lush_arco_pointer_F",
-    "name":"AK-12 7.62 mm (Lush)"
+    "name":"AK-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_GL_lush_arco_pointer_F",
-    "name":"AK-12 GL 7.62 mm (Lush)"
+    "name":"AK-12 GL 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12_GL_lush_holo_pointer_F",
-    "name":"AK-12 GL 7.62 mm (Lush)"
+    "name":"AK-12 GL 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12U_lush_holo_F",
-    "name":"AKU-12 7.62 mm (Lush)"
+    "name":"AKU-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12U_lush_holo_pointer_F",
-    "name":"AKU-12 7.62 mm (Lush)"
+    "name":"AKU-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_AK12U_lush_holo_fl_F",
-    "name":"AKU-12 7.62 mm (Lush)"
+    "name":"AKU-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_RPK12_lush_arco_pointer_F",
-    "name":"RPK-12 7.62 mm (Lush)"
+    "name":"RPK-12 7.62 mm (Lush)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_F",
-    "name":"Promet 6.5 mm"
+    "name":"Promet 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_Mark_F",
-    "name":"Promet MR 6.5 mm"
+    "name":"Promet MR 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_GL_F",
-    "name":"Promet GL 6.5 mm"
+    "name":"Promet GL 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_UBS_F",
-    "name":"Promet SG 6.5 mm"
+    "name":"Promet SG 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_black_F",
-    "name":"Promet 6.5 mm (Black)"
+    "name":"Promet 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_Mark_black_F",
-    "name":"Promet MR 6.5 mm (Black)"
+    "name":"Promet MR 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_GL_black_F",
-    "name":"Promet GL 6.5 mm (Black)"
+    "name":"Promet GL 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_UBS_black_F",
-    "name":"Promet SG 6.5 mm (Black)"
+    "name":"Promet SG 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_sand_F",
-    "name":"Promet 6.5 mm (Sand)"
+    "name":"Promet 6.5 mm (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_Mark_sand_F",
-    "name":"Promet MR 6.5 mm (Sand)"
+    "name":"Promet MR 6.5 mm (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_GL_sand_F",
-    "name":"Promet GL 6.5 mm (Sand)"
+    "name":"Promet GL 6.5 mm (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_UBS_sand_F",
-    "name":"Promet SG 6.5 mm (Sand)"
+    "name":"Promet SG 6.5 mm (Sand)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_camo_F",
-    "name":"Promet 6.5 mm (Camo)"
+    "name":"Promet 6.5 mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_Mark_camo_F",
-    "name":"Promet MR 6.5 mm (Camo)"
+    "name":"Promet MR 6.5 mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_GL_camo_F",
-    "name":"Promet GL 6.5 mm (Camo)"
+    "name":"Promet GL 6.5 mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_UBS_camo_F",
-    "name":"Promet SG 6.5 mm (Camo)"
+    "name":"Promet SG 6.5 mm (Camo)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_ico_F",
-    "name":"Promet 6.5 mm"
+    "name":"Promet 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_aco_F",
-    "name":"Promet 6.5 mm"
+    "name":"Promet 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_GL_ico_F",
-    "name":"Promet GL 6.5 mm"
+    "name":"Promet GL 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_UBS_ico_F",
-    "name":"Promet SG 6.5 mm"
+    "name":"Promet SG 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_black_ico_F",
-    "name":"Promet 6.5 mm (Black)"
+    "name":"Promet 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_GL_black_ico_F",
-    "name":"Promet GL 6.5 mm (Black)"
+    "name":"Promet GL 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_UBS_black_ico_F",
-    "name":"Promet SG 6.5 mm (Black)"
+    "name":"Promet SG 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_black_aco_F",
-    "name":"Promet 6.5 mm (Black)"
+    "name":"Promet 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_black_aco_FL_F",
-    "name":"Promet 6.5 mm (Black)"
+    "name":"Promet 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_ico_pointer_f",
-    "name":"Promet 6.5 mm"
+    "name":"Promet 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_GL_ico_pointer_f",
-    "name":"Promet GL 6.5 mm"
+    "name":"Promet GL 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_UBS_ico_pointer_f",
-    "name":"Promet SG 6.5 mm"
+    "name":"Promet SG 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_UBS_snds_ico_pointer_F",
-    "name":"Promet SG 6.5 mm"
+    "name":"Promet SG 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_black_ico_pointer_f",
-    "name":"Promet 6.5 mm (Black)"
+    "name":"Promet 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_GL_black_ico_pointer_f",
-    "name":"Promet GL 6.5 mm (Black)"
+    "name":"Promet GL 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_UBS_black_ico_pointer_f",
-    "name":"Promet SG 6.5 mm (Black)"
+    "name":"Promet SG 6.5 mm (Black)",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"arifle_MSBS65_Mark_SOS_LP_BI_F",
-    "name":"Promet MR 6.5 mm"
+    "name":"Promet MR 6.5 mm",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"sgun_HunterShotgun_01_F",
-    "name":"Kozlice 12G"
+    "name":"Kozlice 12G",
+    "type": "Weapon",
+    "subtype": "Primary"
   },
   {
     "class":"sgun_HunterShotgun_01_sawedoff_F",
-    "name":"Kozlice 12G (Sawed-Off)"
+    "name":"Kozlice 12G (Sawed-Off)",
+    "type": "Weapon",
+    "subtype": "Primary"
+  },
+  {
+    "class":"HandGrenade_Stone",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"HandGrenade",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"MiniGrenade",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"SmokeShell",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"SmokeShellYellow",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"SmokeShellGreen",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"SmokeShellRed",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"SmokeShellOrange",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"SmokeShellPurple",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"Chemlight_red",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"Chemlight_green",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"Chemlight_yellow",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"Chemlight_blue",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"B_IR_Grenade",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"O_IR_Grenade",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"I_IR_Grenade",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"O_R_IR_Grenade",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"I_E_IR_Grenade",
+    "name":"",
+    "type":"Throwable"
+  },
+  {
+    "class":"DemoCharge_Remote_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"IEDUrbanSmall_Remote_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"IEDLandSmall_Remote_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"SatchelCharge_Remote_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"IEDUrbanBig_Remote_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"IEDLandBig_Remote_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"ATMine_Range_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"ClaymoreDirectionalMine_Remote_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"APERSMine_Range_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"APERSBoundingMine_Range_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"SLAMDirectionalMine_Wire_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"APERSTripMine_Wire_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"APERSMineDispenser_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"TrainingMine_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"Drone_Range_Mag",
+    "name":"",
+    "type":"Explosive"
+  },
+  {
+    "class":"Drone_Range_Mag_dummy",
+    "name":"",
+    "type":"Explosive"
   }
 ]

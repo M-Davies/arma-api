@@ -2,13 +2,12 @@
   {
     "class": "ACE_ATragMX",
     "name": "ATragMX",
-    "type": "ACE_ItemCore"
-    
+    "type": "Item"
   },
   {
     "class": "ACE_IR_Strobe_Item",
     "name": "IR strobe",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_100Rnd_65x39_caseless_mag_Tracer_Dim",
@@ -173,8 +172,7 @@
   {
     "class":"ACE_CableTie",
     "name": "Cable Tie",
-    "type": "ACE_ItemCore"
-    
+    "type": "Item"
   },
   {
     "class": "ACE_Chemlight_HiOrange",
@@ -214,97 +212,82 @@
   {
     "class":"ACE_Banana",
     "name": "Banana",
-    "type": "ACE_ItemCore"
-  },
-  {
-    "class":"ACE_ConcertinaWireCoil",
-    "name": "Concertina Wire Coil",
-    "type": "ThingX"
-  },
-  {
-    "class": "ACE_ConcertinaWire",
-    "name": "Concertina Wire",
-    "type": "deployed concertina wire"
+    "type": "Item"
   },
   {
     "class":"ACE_DAGR",
     "name": "DAGR",
-    "type": "ACE_ItemCore"
-  },
-  {
-    "class": "ACE_launch_NLAW_Used_F",
-    "name": "used NLAW",
-    "type": "Weapon"
+    "type": "Item"
   },
   {
     "class":"ACE_Cellphone",
     "name": "Cellphone",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_Clacker",
     "name": "M57 Firing Device",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class": "ACE_M26_Clacker",
     "name": "M26 Firing Device",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_DefusalKit",
     "name": "Defusal Kit",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class": "ACE_DeadManSwitch",
     "name": "Dead Man’s Switch",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class": "ACE_Flashlight_MX991",
     "name": "Fulton MX-991",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class": "ACE_Flashlight_KSF1",
     "name": "KSF-1",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_Flashlight_XL50",
     "name": "Maglite XL50",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class": "ACE_HandFlare_White",
     "name": "M127A1 Hand Held Signal (White)",
-    "type": "Grenade"
+    "type": "Throwable"
   },
   {
     "class": "ACE_HandFlare_Red",
     "name": "M127A1 Hand Held Signal (Red)",
-    "type": "Grenade"
+    "type": "Throwable"
   },
   {
     "class": "ACE_HandFlare_Green",
     "name": "M127A1 Hand Held Signal (Green)",
-    "type": "Grenade"
+    "type": "Throwable"
   },
   {
     "class":"ACE_HandFlare_Yellow",
     "name": "M127A1 Hand Held Signal (Yellow)",
-    "type": "Grenade"
+    "type": "Throwable"
   },
   {
     "class": "ACE_M14",
     "name": "AN-M14 Incendiary Grenade",
-    "type": "Grenade"
+    "type": "Throwable"
   },
   {
     "class": "ACE_M84",
     "name": "M84 Stun Grenade",
-    "type": "Grenade"
+    "type": "Throwable"
   },
   {
     "class":"ACE_gunbag",
@@ -319,197 +302,188 @@
   {
     "class":"ACE_EarPlugs",
     "name": "Earplugs",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_HuntIR_monitor",
     "name": "HuntIR monitor",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_HuntIR_M203",
     "name": "HuntIR Round",
-    "type": "Grenade shell"
-  },
-  {
-    "class":"ACE_HuntIR_Box",
-    "name": "HuntIR Transport Box",
-    "type": "ammo box"
+    "type": "Grenade"
   },
   {
     "class":"ACE_Kestrel4500",
     "name": "Kestrel 4500NV",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"acc_pointer_IR",
     "name": "Laser Pointer (red)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Laser"
   },
   {
     "class":"ACE_acc_pointer_red",
     "name": "Laser Pointer (green)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Laser"
   },
   {
     "class":"ACE_acc_pointer_green_IR",
     "name": "Laser Pointer (green)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Laser"
   },
   {
     "class":"ACE_acc_pointer_green",
     "name": "Laser Pointer (green)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Laser"
   },
   {
     "class":"ACE_UAVBattery",
     "name": "UAV Battery",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_wirecutter",
     "name": "Wirecutter",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_MapTools",
     "name": "Map Tools",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_atropine",
     "name": "Atropin auto injector",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_fieldDressing",
     "name": "Bandage (Basic)",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_elasticBandage",
     "name": "Bandage (Elastic)",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_quikclot",
     "name": "Basic Field Dressing (QuikClot)",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_bloodIV",
     "name": "Blood IV (1000ml)",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_bloodIV_500",
     "name": "Blood IV (500ml)",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_bloodIV_250",
     "name": "Blood IV (250ml)",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_bodyBag",
     "name": "Bodybag",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_bodyBagObject",
     "name": "Bodybag (packed)",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_epinephrine",
     "name": "Epinephrine auto injector",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_morphine",
     "name": "Morphine auto injector",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_packingBandage",
     "name": "Packing Bandage",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_personalAidKit",
     "name": "Personal Aid Kit",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_plasmaIV",
     "name": "Plasma IV (1000ml)",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_plasmaIV_500",
     "name": "Plasma IV (500ml)",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_plasmaIV_250",
     "name": "Plasma IV (250ml)",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_salineIV",
     "name": "Saline IV (1000ml)",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_salineIV_500",
     "name": "Saline IV (500ml)",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_salineIV_250",
     "name": "Saline IV (250ml)",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_surgicalKit",
     "name": "Surgical Kit",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_tourniquet",
     "name": "Tourniquet (CAT)",
-    "type": "ACE_ItemCore"
-  },
-  {
-    "class":"ACE_medicalSupplyCrate",
-    "name": "Simple ACE Medical Supply Crate",
-    "type": "ammo box"
-  },
-  {
-    "class":"ACE_medicalSupplyCrate_advanced",
-    "name": "Advanced ACE Medical Supply Crate",
-    "type": "ammo box"
+    "type": "Item"
   },
   {
     "class":"ACE_microDAGR",
     "name": "MicroDAGR GPS",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_VMH3",
     "name": "VMH3",
-    "type": "Pistol_Base_F"
+    "type": "Weapon",
+    "subtype": "Secondary"
   },
   {
     "class":"ACE_VMM3",
     "name": "VMM3",
-    "type": "Pistol_Base_F"
+    "type": "Weapon",
+    "subtype": "Secondary"
   },
   {
     "class":"ACE_RangeTable_82mm",
     "name": "82mm Rangetable",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_1Rnd_82mm_Mo_HE",
@@ -564,62 +538,73 @@
   {
     "class":"ACE_optic_Arco_2D",
     "name": "ARCO (2D)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Optic"
   },
   {
     "class":"ACE_optic_Arco_PIP",
     "name": "ARCO (PIP)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Optic"
   },
   {
     "class":"ACE_optic_LRPS_2D",
     "name": "LRPS (2D)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Optic"
   },
   {
     "class":"ACE_optic_LRPS_PIP",
     "name": "LRPS (PIP)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Optic"
   },
   {
     "class":"ACE_optic_SOS_2D",
     "name": "MOS (2D)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Optic"
   },
   {
     "class":"ACE_optic_SOS_PIP",
     "name": "MOS (PIP)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Optic"
   },
   {
     "class":"ACE_optic_MRCO_2D",
     "name": "MRCO (2D)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Optic"
   },
   {
     "class":"ACE_optic_MRCO_PIP",
     "name": "MRCO (PIP)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Optic"
   },
   {
     "class":"ACE_optic_Hamr_2D",
     "name": "RCO (2D)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Optic"
   },
   {
     "class":"ACE_optic_Hamr_PIP",
     "name": "RCO (PIP)",
-    "type": "Weapon accessory"
+    "type": "Attachment",
+    "subtype": "Optic"
   },
   {
     "class":"ACE_SpareBarrel",
     "name": "Spare barrel",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_Altimeter",
     "name": "Altimeter Watch",
-    "type": "ACE_ItemCore"
+    "type": "Item",
+    "subtype": "Watch"
   },
   {
     "class":"ACE_NonSteerableParachute",
@@ -634,37 +619,17 @@
   {
     "class":"ACE_RangeCard",
     "name": "rangecard",
-    "type": "ACE_ItemCore"
-  },
-  {
-    "class":"ACE_Track",
-    "name": "Spare Track",
-    "type": "thingX"
-  },
-  {
-    "class":"ACE_Wheel",
-    "name": "Spare Wheel",
-    "type": "thingX"
+    "type": "Item"
   },
   {
     "class":"ACE_Sandbag_empty",
     "name": "Sandbag (empty)",
-    "type": "ACE_ItemCore"
-  },
-  {
-    "class":"ACE_SandbagObject",
-    "name": "Sandbag",
-    "type": "thingX"
+    "type": "Item"
   },
   {
     "class":"ACE_SpottingScope",
     "name": "Spotting Scope",
-    "type": "ACE_ItemCore"
-  },
-  {
-    "class":"ACE_SpottingScopeObject",
-    "name": "Spotting Scope (placed)",
-    "type": "StaticATWeapon"
+    "type": "Item"
   },
   {
     "class":"ACE_TacticalLadder_Pack",
@@ -672,74 +637,64 @@
     "type": "Backpack"
   },
   {
-    "class":"ACE_Tactical_Ladder",
-    "name": "Telescopic Ladder (placed)",
-    "type": "house"
-  },
-  {
     "class":"ACE_SpraypaintBlack",
     "name": "Black spray paint",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_SpraypaintBlue",
     "name": "Blue spray paint",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_SpraypaintGreen",
     "name": "Green spray paint",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_SpraypaintRed",
     "name": "Red spray paint",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_EntrenchingTool",
     "name": "Entrenching Tool",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_Tripod",
     "name": "SSWT Kit",
-    "type": "ACE_ItemCore"
-  },
-  {
-    "class":"ACE_TripodObject",
-    "name": "SSWT Kit (placed)",
-    "type": "ThingX"
+    "type": "Item"
   },
   {
     "class":"ACE_key_master",
     "name": "Vehicle Key: Master",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_key_lockpick",
     "name": "Lockpick",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_key_west",
     "name": "Vehicle Key: West",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_key_east",
     "name": "Vehicle Key: East",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_key_indp",
     "name": "Vehicle Key: Independent",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_key_civ",
     "name": "Vehicle Key: Civilian",
-    "type": "ACE_ItemCore"
+    "type": "Item"
   },
   {
     "class":"ACE_Vector",
