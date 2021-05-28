@@ -22,7 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e942a7d5-b9a4-4293-b138-d96488b2d9f3" name="Default Changelist" comment="" />
+    <list default="true" id="e942a7d5-b9a4-4293-b138-d96488b2d9f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ace.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/ace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vanilla.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/vanilla.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,14 +69,15 @@
   <component name="PropertiesComponent">
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.Run">
+  <component name="RunManager" selected="Maven.Install">
     <configuration name="Install" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -172,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621692650130</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Standardise data layout as below&#10;&#10;```&#10;[&#10;{&#10;  &quot;class&quot; : &quot;classname&quot;,&#10;  &quot;name&quot; : &quot;display name in game&quot;,&#10;  &quot;type&quot; : &quot;type of object (e.g. bino, weapon, magazine, etc)&quot;&#10;}&#10;]&#10;```">
+      <created>1621949038338</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621949038338</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,45 +200,55 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added initial springboot framework" />
     <MESSAGE value="Add ace data to mongo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ace data to mongo" />
+    <MESSAGE value="Standardise data layout as below&#10;&#10;```&#10;[&#10;{&#10;  &quot;class&quot; : &quot;classname&quot;,&#10;  &quot;name&quot; : &quot;display name in game&quot;,&#10;  &quot;type&quot; : &quot;type of object (e.g. bino, weapon, magazine, etc)&quot;&#10;}&#10;]&#10;```" />
+    <option name="LAST_COMMIT_MESSAGE" value="Standardise data layout as below&#10;&#10;```&#10;[&#10;{&#10;  &quot;class&quot; : &quot;classname&quot;,&#10;  &quot;name&quot; : &quot;display name in game&quot;,&#10;  &quot;type&quot; : &quot;type of object (e.g. bino, weapon, magazine, etc)&quot;&#10;}&#10;]&#10;```" />
   </component>
   <component name="WindowStateProjectService">
     <state x="89" y="98" width="1351" height="754" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621693297107">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="89" y="98" width="1351" height="754" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1621693297107" />
-    <state width="1388" height="223" key="GridCell.Tab.0.bottom" timestamp="1621693230719">
+    <state x="373" y="239" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1622156716494">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="223" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1621693230719" />
-    <state width="1388" height="223" key="GridCell.Tab.0.center" timestamp="1621693230716">
+    <state x="373" y="239" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1440.900@0.0.1440.900" timestamp="1622156716494" />
+    <state x="419" y="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1621954263362">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="223" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1621693230716" />
-    <state width="1388" height="223" key="GridCell.Tab.0.left" timestamp="1621693230715">
+    <state x="419" y="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1621954263362" />
+    <state width="1388" height="223" key="GridCell.Tab.0.bottom" timestamp="1621811928627">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="223" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1621693230715" />
-    <state width="1388" height="223" key="GridCell.Tab.0.right" timestamp="1621693230717">
+    <state width="1388" height="223" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1621811928627" />
+    <state width="1388" height="223" key="GridCell.Tab.0.center" timestamp="1621811928626">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="223" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1621693230717" />
-    <state x="115" y="0" width="1125" height="900" key="SettingsEditor" timestamp="1621620322191">
+    <state width="1388" height="223" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1621811928626" />
+    <state width="1388" height="223" key="GridCell.Tab.0.left" timestamp="1621811928625">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="115" y="0" width="1125" height="900" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1621620322191" />
-    <state x="220" y="138" key="Vcs.Push.Dialog.v2" timestamp="1621692651477">
+    <state width="1388" height="223" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1621811928625" />
+    <state width="1388" height="223" key="GridCell.Tab.0.right" timestamp="1621811928626">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1621692651477" />
-    <state x="347" y="163" width="746" height="574" key="find.popup" timestamp="1621692133914">
+    <state width="1388" height="223" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1621811928626" />
+    <state x="110" y="0" width="1125" height="900" key="SettingsEditor" timestamp="1622156182693">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="347" y="163" width="746" height="574" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1621692133914" />
+    <state x="110" y="0" width="1125" height="900" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1622156182693" />
+    <state x="220" y="138" key="Vcs.Push.Dialog.v2" timestamp="1621949040898">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1621949040898" />
+    <state x="347" y="163" width="746" height="574" key="find.popup" timestamp="1621811971449">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="347" y="163" width="746" height="574" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1621811971449" />
     <state x="315" y="25" width="1035" height="786" key="new project wizard" timestamp="1621692751201">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
