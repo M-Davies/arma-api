@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.main;
 
 import java.util.*;
 import org.springframework.boot.SpringApplication;
@@ -15,14 +15,14 @@ import java.net.UnknownHostException;
 
 @SpringBootApplication
 @RestController
-public class DemoApplication {
+public class Executer {
 	private static MongoDatabase DATABASE;
 
 
 	public static void main(String[] args) throws UnknownHostException {
 		MongoClient MONGO_CLIENT = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
 		DATABASE = MONGO_CLIENT.getDatabase("arma-api");
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(Executer.class, args);
 	}
 
 	@GetMapping("/hello")
@@ -33,20 +33,20 @@ public class DemoApplication {
 		return String.format("Hello %s!", name);
 	}
 
-	@GetMapping("/classes")
-	public String classes() {
-		ArrayList<Document> collectionContents = new ArrayList<Document>();
-		DATABASE.listCollectionNames().forEach(collectionName -> {
-			MongoCollection<Document> currentCollection = DATABASE.getCollection(collectionName);
-			collectionContents.add(currentCollection.find());
-		});
-
-		return String.valueOf(collection.count());
-	}
+//	@GetMapping("/classes")
+//	public String classes() {
+//		ArrayList<Document> collectionContents = new ArrayList<Document>();
+//		DATABASE.listCollectionNames().forEach((Consumer<String>) collectionName -> {
+//			MongoCollection<Document> currentCollection = DATABASE.getCollection(collectionName);
+//			collectionContents.add(currentCollection.find());
+//		});
+//
+//		return String.valueOf(collection.count());
+//	}
 
 	@GetMapping("/classes/ace")
 	public String ace() {
-		private DBCollection collection = database.getCollection("data.ace");
+		MongoCollection<Document> collection = DATABASE.getCollection("data.ace");
 		return String.valueOf(collection.count());
 	}
 
