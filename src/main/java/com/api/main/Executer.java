@@ -1,4 +1,4 @@
-package com.example.main;
+package com.api.main;
 
 import java.util.*;
 import org.springframework.boot.SpringApplication;

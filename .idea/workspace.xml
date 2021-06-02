@@ -24,11 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e942a7d5-b9a4-4293-b138-d96488b2d9f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/vanilla.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/vanilla.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/main/Executer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Updater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/main/Updater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/ExecuterTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/main/Executer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/main/Executer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/main/Updater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/main/Updater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/ExecuterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/ExecuterTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +187,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621949038338</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update structure of vanilla JSON file">
+      <created>1622583099275</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622583099275</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update package names and mongo driver syntax">
+      <created>1622583140634</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622583140634</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,7 +220,9 @@
     <MESSAGE value="Added initial springboot framework" />
     <MESSAGE value="Add ace data to mongo" />
     <MESSAGE value="Standardise data layout as below&#10;&#10;```&#10;[&#10;{&#10;  &quot;class&quot; : &quot;classname&quot;,&#10;  &quot;name&quot; : &quot;display name in game&quot;,&#10;  &quot;type&quot; : &quot;type of object (e.g. bino, weapon, magazine, etc)&quot;&#10;}&#10;]&#10;```" />
-    <option name="LAST_COMMIT_MESSAGE" value="Standardise data layout as below&#10;&#10;```&#10;[&#10;{&#10;  &quot;class&quot; : &quot;classname&quot;,&#10;  &quot;name&quot; : &quot;display name in game&quot;,&#10;  &quot;type&quot; : &quot;type of object (e.g. bino, weapon, magazine, etc)&quot;&#10;}&#10;]&#10;```" />
+    <MESSAGE value="Update structure of vanilla JSON file" />
+    <MESSAGE value="Update package names and mongo driver syntax" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update package names and mongo driver syntax" />
   </component>
   <component name="WindowStateProjectService">
     <state x="89" y="98" width="1351" height="754" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621693297107">
@@ -243,10 +257,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="110" y="0" width="1125" height="900" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1622156182693" />
-    <state x="220" y="138" key="Vcs.Push.Dialog.v2" timestamp="1621949040898">
+    <state x="220" y="138" key="Vcs.Push.Dialog.v2" timestamp="1622583141927">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1621949040898" />
+    <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1622583141927" />
     <state x="347" y="163" width="746" height="574" key="find.popup" timestamp="1622580105773">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
