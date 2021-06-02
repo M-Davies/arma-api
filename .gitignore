@@ -28,3 +28,4 @@ target/
 .mvn/
 **/.DS_Store
 .settings/
+.vscode/

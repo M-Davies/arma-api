@@ -40,8 +40,8 @@ public class Updater {
                 FileReader reader = new FileReader(path.toString());
                 Object obj = PARSER.parse(reader);
 
-                // Add to mongo
-                collection.insertOne(Document.parse(obj.toString()));
+                // Replace old collection with the updated one
+                collection.replaceOne(new Document(), Document.parse(obj.toString()));
             } catch (FileNotFoundException | ParseException e) {
                 System.out.println("[WARNING] Could not find or read " + path);
                 e.printStackTrace();
