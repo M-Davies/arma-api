@@ -7,9 +7,10 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.expression.EvaluationException;
 
 public class Parser {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws EvaluationException {
         final String[] PAGES = {
             "https://community.bistudio.com/wiki/Arma_3:_CfgWeapons_Weapons",
             "https://community.bistudio.com/wiki/Arma_3:_CfgWeapons_Items",
@@ -17,7 +18,21 @@ public class Parser {
             "https://community.bistudio.com/wiki/Arma_3:_CfgMagazines"
         };
 
-        final ArrayList<String> IGNORED_HEADERS = new ArrayList<String>(Arrays.asList("Used by", "Objects"));
+        HashMap<String, ArrayList<HashMap<String, ?>>> vanillaData = new HashMap<String, ArrayList<HashMap<String, ?>>> ();
+        vanillaData.put("Weapons", new ArrayList<HashMap<String, ?>> ());
+        vanillaData.put("Throwables", new ArrayList<HashMap<String, ?>> ());
+        vanillaData.put("Explosives", new ArrayList<HashMap<String, ?>> ());
+        vanillaData.put("Magazines", new ArrayList<HashMap<String, ?>> ());
+        vanillaData.put("Items", new ArrayList<HashMap<String, ?>> ());
+        vanillaData.put("Facewear", new ArrayList<HashMap<String, ?>> ());
+        vanillaData.put("Headgear", new ArrayList<HashMap<String, ?>> ());
+        vanillaData.put("NVG", new ArrayList<HashMap<String, ?>> ());
+        vanillaData.put("Binoculars", new ArrayList<HashMap<String, ?>> ());
+        vanillaData.put("Uniforms", new ArrayList<HashMap<String, ?>> ());
+        vanillaData.put("Rigs", new ArrayList<HashMap<String, ?>> ());
+        vanillaData.put("Backpacks", new ArrayList<HashMap<String, ?>> ());
+
+        final ArrayList<String> IGNORED_HEADERS = new ArrayList<String>(Arrays.asList("Used by", "Objects", "Ammo"));
 
         for (String wikiLink : PAGES) {
             try {
@@ -38,16 +53,59 @@ public class Parser {
                 System.out.println("[SUCCESS] Obtained headers!");
                 tableHeaders.forEach(ele -> System.out.println(ele.text()));
 
-                // Iterate over table rows that are not a header
+                // Iterate through each row of the table
                 Elements tableRowElements = tableElements.select(":not(thead) tr");
                 for (int i = 0; i < tableRowElements.size(); i++) {
-                    Element row = tableRowElements.get(i);
-                    System.out.println("ROW");
-                    Elements rowItems = row.select("td");
-                    for (int j = 0; j < rowItems.size(); j++) {
-                        System.out.println(rowItems.get(j).text());
+                    // Ensure we are only getting rows for columns that are not ignored
+                    if (i <= tableHeaders.size()) {
+                        Element row = tableRowElements.get(i);
+
+                        // Iterate over the contents of a row
+                        Elements rowItems = row.select("td");
+                        for (int j = 0; j < rowItems.size(); j++) {
+                            // Ensure we are only getting row items for columns that are not ignored
+                            if (j <= tableHeaders.size()) {
+                                // Get co-responding header
+                                String headerName = tableHeaders.get(j).text();
+                                HashMap<String, Object> newData = new HashMap<String, Object>();
+
+                                // Add to data depending on type of content
+                                String itemContent = rowItems.get(j).text();
+                                switch (headerName) {
+                                    case "Preview":
+                                        // If we have a image src link, add it
+                                        if (rowItems.get(j).attributes().get("src") == null || rowItems.get(j).attributes().get("src").isEmpty()) {
+                                            newData.put("image", "");
+                                        } else {
+                                            newData.put("image", rowItems.get(j).attributes().get("src"));
+                                        }
+                                        break;
+                                    case "Class":
+                                        newData.put("class", itemContent);
+                                        break;
+                                    case "Name":
+                                        newData.put("name", itemContent);
+                                        break;
+                                    case "Inventory Description":
+                                        newData.put("description", itemContent);
+                                        break;
+                                    case "Magazines":
+                                        // Split the compatible ammo magazines into array
+                                        newData.put("magazines", itemContent.split(" "));
+                                        break;
+                                    case "Accessories":
+                                        // Split the compatible weapon attachments into array
+                                        newData.put("accessories", itemContent.split(" "));
+                                        break;
+                                    default:
+                                        throw new EvaluationException("[ERROR] Unrecognised header name: " + headerName);
+                                }
+
+                                // Finally, add to JSON array according to it's type
+                                
+                            }
+                        }
                     }
-                    System.out.println();
                 }
 
             } catch (IOException e) {
