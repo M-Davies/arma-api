@@ -1,8 +1,11 @@
 package com.api.main;
 
-import java.util.*;
-import java.util.stream.Collectors;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.stream.Collectors;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -19,18 +22,9 @@ public class Parser {
         };
 
         HashMap<String, ArrayList<HashMap<String, ?>>> vanillaData = new HashMap<String, ArrayList<HashMap<String, ?>>> ();
-        vanillaData.put("Weapons", new ArrayList<HashMap<String, ?>> ());
-        vanillaData.put("Throwables", new ArrayList<HashMap<String, ?>> ());
-        vanillaData.put("Explosives", new ArrayList<HashMap<String, ?>> ());
-        vanillaData.put("Magazines", new ArrayList<HashMap<String, ?>> ());
-        vanillaData.put("Items", new ArrayList<HashMap<String, ?>> ());
-        vanillaData.put("Facewear", new ArrayList<HashMap<String, ?>> ());
-        vanillaData.put("Headgear", new ArrayList<HashMap<String, ?>> ());
-        vanillaData.put("NVG", new ArrayList<HashMap<String, ?>> ());
-        vanillaData.put("Binoculars", new ArrayList<HashMap<String, ?>> ());
-        vanillaData.put("Uniforms", new ArrayList<HashMap<String, ?>> ());
-        vanillaData.put("Rigs", new ArrayList<HashMap<String, ?>> ());
-        vanillaData.put("Backpacks", new ArrayList<HashMap<String, ?>> ());
+        Config.getTypes().forEach(type -> {
+            vanillaData.put(type, new ArrayList<HashMap<String, ?>> ());
+        });
 
         final ArrayList<String> IGNORED_HEADERS = new ArrayList<String>(Arrays.asList("Used by", "Objects", "Ammo"));
 
@@ -42,7 +36,7 @@ public class Parser {
                 Elements tableElements = doc.select("[class*=\"wikitable\"]");
 
                 // Grab header elements & filter out unneeded ones
-                System.out.println("[INFO] Constructing header schema...");
+                System.out.println("[INFO] Constructing table header schema...");
                 Elements tableHeaderEles = tableElements.select("tbody tr th");
                 ArrayList<Element> tableHeaders = new ArrayList<Element> (
                     tableHeaderEles
@@ -50,10 +44,11 @@ public class Parser {
                     .filter(ele -> !IGNORED_HEADERS.contains(ele.text()))
                     .collect(Collectors.toList())
                 );
-                System.out.println("[SUCCESS] Obtained headers!");
+                System.out.println("[SUCCESS] Obtained table headers!");
                 tableHeaders.forEach(ele -> System.out.println(ele.text()));
 
                 // Iterate through each row of the table
+                System.out.println("[INFO] Parsing table contents...");
                 Elements tableRowElements = tableElements.select(":not(thead) tr");
                 for (int i = 0; i < tableRowElements.size(); i++) {
                     // Ensure we are only getting rows for columns that are not ignored
@@ -68,6 +63,7 @@ public class Parser {
                                 // Get co-responding header
                                 String headerName = tableHeaders.get(j).text();
                                 HashMap<String, Object> newData = new HashMap<String, Object>();
+                                System.out.println("[INFO] Parsing row item for header " + headerName + "\n" + row);
 
                                 // Add to data depending on type of content
                                 String itemContent = rowItems.get(j).text();
@@ -100,13 +96,16 @@ public class Parser {
                                     default:
                                         throw new EvaluationException("[ERROR] Unrecognised header name: " + headerName);
                                 }
-
-                                // Finally, add to JSON array according to it's type
-                                
                             }
                         }
+
+                        // Finally, add the created object to JSON array according to it's type
+                        
                     }
                 }
+
+                // Update JSON file with scraped data
+                System.out.println("[SUCCESS] Finished parsing! Updating JSON file...");
 
             } catch (IOException e) {
                 e.printStackTrace();
