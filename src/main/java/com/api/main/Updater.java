@@ -13,6 +13,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
 import org.bson.Document;
+import org.json.simple.*;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
@@ -38,10 +39,15 @@ public class Updater {
             try {
                 // Read mod JSON file
                 FileReader reader = new FileReader(path.toString());
-                Object obj = PARSER.parse(reader);
+                JSONObject jsonData = (JSONObject) PARSER.parse(reader);
 
-                // Replace old collection with the updated one
-                collection.replaceOne(new Document(), Document.parse(obj.toString()));
+                // Clear & update collection with new values
+                Document types = new Document();
+                jsonData.keySet().forEach(typeName -> {
+                    types.append(typeName.toString(), jsonData.get(typeName));
+                });
+                collection.deleteMany(new Document());
+                collection.insertOne(types);
             } catch (FileNotFoundException | ParseException e) {
                 System.out.println("[WARNING] Could not find or read " + path);
                 e.printStackTrace();
@@ -50,7 +56,7 @@ public class Updater {
                 e.printStackTrace();
             }
 
-            System.out.println("[SUCCESS] " + collectionName + "has been successfully parsed and added to mongo db");
+            System.out.println("[SUCCESS] " + collectionName + " has been successfully parsed and added to mongo db");
         });
 
         // Close connection
