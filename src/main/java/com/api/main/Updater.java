@@ -42,12 +42,11 @@ public class Updater {
                 JSONObject jsonData = (JSONObject) PARSER.parse(reader);
 
                 // Clear & update collection with new values
-                Document types = new Document();
-                jsonData.keySet().forEach(typeName -> {
-                    types.append(typeName.toString(), jsonData.get(typeName));
-                });
                 collection.deleteMany(new Document());
-                collection.insertOne(types);
+                jsonData.keySet().forEach(typeName -> {
+                    Document typeDocument = new Document(typeName.toString(), jsonData.get(typeName));
+                    collection.insertOne(typeDocument);
+                });
             } catch (FileNotFoundException | ParseException e) {
                 System.out.println("[WARNING] Could not find or read " + path);
                 e.printStackTrace();
