@@ -1,7 +1,8 @@
 package com.api.main;
 
 import java.net.UnknownHostException;
-import java.util.ArrayList;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
@@ -10,8 +11,6 @@ import com.mongodb.client.MongoDatabase;
 
 import org.bson.Document;
 import org.json.simple.JSONObject;
-
-import com.mongodb.client.model.Filters;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -58,29 +57,29 @@ public class Executer {
             return "Unidentified object type. Available values are " + Config.getTypes().toString();
         }
 
-        // Filter db response by keywords or return all
+        // Filter db by keywords or return all
         ArrayList<Document> dbContents = new ArrayList<Document>();
         if (mod == "" || mod == null) {
             for (String collectionName : DATABASE.listCollectionNames()) {
-                MongoCollection<Document> currentCollection = getCollection(collectionName);
-                if (type == "" || type == null) {
-                    dbContents.add(currentCollection.find().first());
-                } else {
-                    currentCollection
-                        .find(Filters.eq("type", type))
-                        .into(dbContents);
-                }
+                getCollection(collectionName).find().into(dbContents);
             }
         } else {
-            MongoCollection<Document> collection = getCollection("data." + mod);
-            collection.find().into(dbContents);
+            getCollection("data." + mod).find().into(dbContents);
+        }
+
+        if (type != "" && type != null) {
+            // Remove if the current document type is not equal to the specified one
+            dbContents.removeIf(documentObj -> documentObj.get(type) == null);
         }
 
         // Prettify and respond
-        ArrayList<JSONObject> dbObjects = new ArrayList<JSONObject>();
-        dbContents.forEach(docObject -> dbObjects.add(JSONObject.docObject.toJson()));
-
-        return String.valueOf(dbContents.toString());
+        return String.valueOf(dbContents
+            .stream()
+            .distinct()
+            .map(typeDoc -> typeDoc.toJson())
+            .sorted()
+            .collect(Collectors.toList())
+        );
     }
 
 }
