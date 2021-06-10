@@ -44,7 +44,8 @@ public class Updater {
                 // Clear & update collection with new values
                 collection.deleteMany(new Document());
                 jsonData.keySet().forEach(typeName -> {
-                    Document typeDocument = new Document(typeName.toString(), jsonData.get(typeName));
+                    Document typeDocument = new Document("type", typeName.toString())
+                        .append("classes", jsonData.get(typeName));
                     collection.insertOne(typeDocument);
                 });
             } catch (FileNotFoundException | ParseException e) {
