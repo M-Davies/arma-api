@@ -9,6 +9,9 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
 import org.bson.Document;
+import org.json.simple.JSONObject;
+
+import com.mongodb.client.model.Filters;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -43,30 +46,41 @@ public class Executer {
     }
 
     @GetMapping(value = {"/classes", "/classes/{mod}"})
-    public String classes(
+    public String classes (
         @PathVariable(required = false, value = "mod") String mod,
         @RequestParam(required = false, value = "type") String type
     ) throws Exception {
         // Verify params
-        if (!Config.getMods().contains(mod)) {
+        if (!Config.getMods().contains(mod) && mod != null) {
             return "Unidentified mod. Available values are " + Config.getTypes().toString();
         }
-        if (!Config.getTypes().contains(type)) {
+        if (!Config.getTypes().contains(type) && type != null) {
             return "Unidentified object type. Available values are " + Config.getTypes().toString();
         }
 
-        if (mod.isEmpty()) {
-            ArrayList<Document> dbContents = new ArrayList<Document>();
+        // Filter db response by keywords or return all
+        ArrayList<Document> dbContents = new ArrayList<Document>();
+        if (mod == "" || mod == null) {
             for (String collectionName : DATABASE.listCollectionNames()) {
                 MongoCollection<Document> currentCollection = getCollection(collectionName);
-                dbContents.add(currentCollection.find().first());
+                if (type == "" || type == null) {
+                    dbContents.add(currentCollection.find().first());
+                } else {
+                    currentCollection
+                        .find(Filters.eq("type", type))
+                        .into(dbContents);
+                }
             }
-
-            return String.valueOf(dbContents);
         } else {
             MongoCollection<Document> collection = getCollection("data." + mod);
-            return String.valueOf(collection.find());
+            collection.find().into(dbContents);
         }
+
+        // Prettify and respond
+        ArrayList<JSONObject> dbObjects = new ArrayList<JSONObject>();
+        dbContents.forEach(docObject -> dbObjects.add(JSONObject.docObject.toJson()));
+
+        return String.valueOf(dbContents.toString());
     }
 
 }
