@@ -8,9 +8,9 @@ import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.model.Filters;
 
 import org.bson.Document;
-import org.json.simple.JSONObject;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -50,26 +50,38 @@ public class Executer {
         @RequestParam(required = false, value = "type") String type
     ) throws Exception {
         // Verify params
-        if (!Config.getMods().contains(mod) && mod != null) {
-            return "Unidentified mod. Available values are " + Config.getTypes().toString();
+        if (!Config.getMods().contains(mod) && (mod != null && mod != "")) {
+            return "Unidentified mod. Available values are " + Config.getMods().toString();
         }
-        if (!Config.getTypes().contains(type) && type != null) {
+        if (!Config.getTypes().contains(type) && (type != null && type != "")) {
             return "Unidentified object type. Available values are " + Config.getTypes().toString();
         }
 
         // Filter db by keywords or return all
         ArrayList<Document> dbContents = new ArrayList<Document>();
-        if (mod == "" || mod == null) {
-            for (String collectionName : DATABASE.listCollectionNames()) {
-                getCollection(collectionName).find().into(dbContents);
-            }
-        } else {
-            getCollection("data." + mod).find().into(dbContents);
-        }
+        for (String modName : DATABASE.listCollectionNames()) {
+            String parsedModName = "data." + mod;
 
-        if (type != "" && type != null) {
-            // Remove if the current document type is not equal to the specified one
-            dbContents.removeIf(documentObj -> documentObj.get(type) == null);
+            // Filter by mod
+            if (modName.equals(parsedModName)) {
+                MongoCollection<Document> modContents = getCollection(parsedModName);
+                if (type == "" || type == null) {
+                    modContents.find().into(dbContents);
+                } else {
+                    modContents.find(Filters.eq("type", type)).into(dbContents);
+                }
+
+                // Break so we only return a singular mod spec
+                break;
+            } else if (mod == "" || mod == null) {
+                // Get all mods
+                MongoCollection<Document> modContents = getCollection(modName);
+                if (type == "" || type == null) {
+                    modContents.find().into(dbContents);
+                } else {
+                    modContents.find(Filters.eq("type", type)).into(dbContents);
+                }
+            }
         }
 
         // Prettify and respond
