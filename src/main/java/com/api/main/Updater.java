@@ -45,6 +45,7 @@ public class Updater {
                 collection.deleteMany(new Document());
                 jsonData.keySet().forEach(typeName -> {
                     Document typeDocument = new Document("type", typeName.toString())
+                        .append("mod", filename)
                         .append("classes", jsonData.get(typeName));
                     collection.insertOne(typeDocument);
                 });
