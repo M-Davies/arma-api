@@ -51,10 +51,10 @@ public class Executer {
     ) throws Exception {
         // Verify params
         if (!Config.getMods().contains(mod) && (mod != null && mod != "")) {
-            return "Unidentified mod. Available values are " + Config.getMods().toString();
+            throw new Exception("Unidentified mod. Available values are " + Config.getMods().toString());
         }
         if (!Config.getTypes().contains(type) && (type != null && type != "")) {
-            return "Unidentified object type. Available values are " + Config.getTypes().toString();
+            throw new Exception("Unidentified object type. Available values are " + Config.getTypes().toString());
         }
 
         // Filter db by keywords or return all
