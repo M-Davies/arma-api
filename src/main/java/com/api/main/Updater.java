@@ -11,6 +11,8 @@ import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.model.Filters;
+import com.mongodb.client.model.Updates;
 
 import org.bson.Document;
 import org.json.simple.*;
@@ -44,10 +46,20 @@ public class Updater {
                 // Clear & update collection with new values
                 collection.deleteMany(new Document());
                 jsonData.keySet().forEach(typeName -> {
-                    Document typeDocument = new Document("type", typeName.toString())
-                        .append("mod", filename)
-                        .append("classes", jsonData.get(typeName));
+                    // Init new type doc
+                    Document typeDocument = new Document("type", typeName.toString()).append("mod", filename);
+
+                    // Add to db
                     collection.insertOne(typeDocument);
+
+                    // Parse class list array for the type and add docs individually
+                    JSONArray classArray = (JSONArray) jsonData.get(typeName);
+                    classArray.forEach(classString -> {
+                        collection.updateOne(
+                            Filters.eq("_id", typeDocument.getObjectId("_id")),
+                            Updates.addToSet("classes", Document.parse(classString.toString()))
+                        );
+                    });
                 });
             } catch (FileNotFoundException | ParseException e) {
                 System.out.println("[WARNING] Could not find or read " + path);
