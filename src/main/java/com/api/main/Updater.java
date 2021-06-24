@@ -6,13 +6,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.UnknownHostException;
 import java.nio.file.Files;
+import java.util.ArrayList;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.model.Filters;
-import com.mongodb.client.model.Updates;
+import com.mongodb.client.model.Indexes;
 
 import org.bson.Document;
 import org.json.simple.*;
@@ -23,9 +23,9 @@ public class Updater {
 
     public static void main(String[] args) throws UnknownHostException, IOException, FileNotFoundException, ParseException {
         // Setup Json parser and Mongodb
-        JSONParser PARSER = new JSONParser();
-        MongoClient MONGO_CLIENT = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
-        MongoDatabase DATABASE = MONGO_CLIENT.getDatabase("arma-api");
+        final JSONParser PARSER = new JSONParser();
+        final MongoClient MONGO_CLIENT = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
+        final MongoDatabase DATABASE = MONGO_CLIENT.getDatabase("arma-api");
 
         // Iterate over mod Json data files
         Files.list(new File(System.getProperty("user.dir") + "/data").toPath()).forEach(path -> {
@@ -38,6 +38,7 @@ public class Updater {
             System.out.println("[INFO] Collection name will be " + collectionName);
             MongoCollection<Document> collection = DATABASE.getCollection(collectionName);
 
+            ArrayList<String> indexCandidates = new ArrayList<String>();
             try {
                 // Read mod JSON file
                 FileReader reader = new FileReader(path.toString());
@@ -45,20 +46,31 @@ public class Updater {
 
                 // Clear & update collection with new values
                 collection.deleteMany(new Document());
+                collection.dropIndexes();
                 jsonData.keySet().forEach(typeName -> {
-                    // Init new type doc
-                    Document typeDocument = new Document("type", typeName.toString()).append("mod", filename);
-
-                    // Add to db
-                    collection.insertOne(typeDocument);
-
                     // Parse class list array for the type and add docs individually
                     JSONArray classArray = (JSONArray) jsonData.get(typeName);
+
                     classArray.forEach(classString -> {
-                        collection.updateOne(
-                            Filters.eq("_id", typeDocument.getObjectId("_id")),
-                            Updates.addToSet("classes", Document.parse(classString.toString()))
-                        );
+                        // Init mongo doc
+                        Document typeDocument = new Document("type", typeName.toString()).append("mod", filename);
+
+                        // Convert class entry string to json and add each key/value pair to document
+                        try {
+                            JSONObject classObject = (JSONObject) PARSER.parse(classString.toString());
+                            classObject.keySet().forEach(entryKey -> {
+                                // Add index to allow for full text searching
+                                indexCandidates.add(entryKey.toString());
+
+                                typeDocument.append(entryKey.toString(), classObject.get(entryKey));
+                            });
+
+                            // Add to db
+                            collection.insertOne(typeDocument);
+                        } catch (ParseException e) {
+                            System.out.println("[WARNING] Failed to parse following string to JSON object\n" + classString);
+                            e.printStackTrace();
+                        }
                     });
                 });
             } catch (FileNotFoundException | ParseException e) {
@@ -68,6 +80,9 @@ public class Updater {
                 System.out.println("[WARNING] Could not parse " + path + " to a Object datatype");
                 e.printStackTrace();
             }
+
+            // Add all collected indexes
+            collection.createIndex(Indexes.text());
 
             System.out.println("[SUCCESS] " + collectionName + " has been successfully parsed and added to mongo db");
         });

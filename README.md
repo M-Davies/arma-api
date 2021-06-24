@@ -1,2 +1,3 @@
 # arma-api
-An API for modded Arma 3 classname and data
+
+An unoffical API for Arma 3 classnames and data from vanilla, DLC and common mod sources.
