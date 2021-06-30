@@ -38,7 +38,6 @@ public class Updater {
             System.out.println("[INFO] Collection name will be " + collectionName);
             MongoCollection<Document> collection = DATABASE.getCollection(collectionName);
 
-            ArrayList<String> indexCandidates = new ArrayList<String>();
             try {
                 // Read mod JSON file
                 FileReader reader = new FileReader(path.toString());
@@ -58,12 +57,7 @@ public class Updater {
                         // Convert class entry string to json and add each key/value pair to document
                         try {
                             JSONObject classObject = (JSONObject) PARSER.parse(classString.toString());
-                            classObject.keySet().forEach(entryKey -> {
-                                // Add index to allow for full text searching
-                                indexCandidates.add(entryKey.toString());
-
-                                typeDocument.append(entryKey.toString(), classObject.get(entryKey));
-                            });
+                            classObject.keySet().forEach(entryKey -> typeDocument.append(entryKey.toString(), classObject.get(entryKey)));
 
                             // Add to db
                             collection.insertOne(typeDocument);
