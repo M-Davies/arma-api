@@ -6,7 +6,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.UnknownHostException;
 import java.nio.file.Files;
-import java.util.ArrayList;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;

@@ -1,8 +1,10 @@
 package com.api.main;
 
+import java.io.IOException;
 import java.net.UnknownHostException;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.logging.*;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
@@ -21,10 +23,22 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class Executer {
+    private final static ArrayList<Character> SPECIAL_MONGO_CHARS = new ArrayList<Character>(Arrays.asList('\'', '\"', '\\', ';', '{', '}', '$'));
     private static MongoDatabase DATABASE;
-    private static ArrayList<Character> SPECIAL_MONGO_CHARS = new ArrayList<Character>(Arrays.asList('\'', '\"', '\\', ';', '{', '}', '$'));
+    private static Logger LOGGER = Logger.getLogger(Executer.class.getName());
+    private static FileHandler HANDLER;
 
     public static void main(String[] args) throws UnknownHostException {
+        try {
+            LOGGER.setLevel(Level.INFO);
+            HANDLER = new FileHandler("/tmp/arma-api.log");
+            LOGGER.addHandler(HANDLER);
+            SimpleFormatter formatter = new SimpleFormatter();
+            HANDLER.setFormatter(formatter);
+        } catch (IOException e) {
+            System.err.println("[ERROR] Failed to initialise filehandler for logging");
+            e.printStackTrace();
+        }
         MongoClient MONGO_CLIENT = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
         DATABASE = MONGO_CLIENT.getDatabase("arma-api");
         SpringApplication.run(Executer.class, args);
@@ -41,6 +55,7 @@ public class Executer {
     }
 
     private String escapeUserInput(String unfilteredInput) {
+        LOGGER.info("Escaping user input string: " + unfilteredInput);
         String filteredInput = "";
         for (int i = 0; i < unfilteredInput.length(); i++) {
             char currentCharecter = unfilteredInput.charAt(i);
@@ -56,6 +71,8 @@ public class Executer {
         @PathVariable(required = false, value = "mod") String mod,
         @RequestParam(required = false, value = "type") String type
     ) throws Exception {
+        LOGGER.info(String.format("Executing /classes endpoint with parameters %s (mod) and %s (type)", mod, type));
+
         // Check user input
         final String filteredMod = mod == "" || mod == null ? "" : escapeUserInput(mod);
         final String filteredType = type == "" || type == null ? "" : escapeUserInput(type);
@@ -109,6 +126,8 @@ public class Executer {
     public String className (
         @PathVariable(required = true, value = "term") String term
     ) throws Exception {
+        LOGGER.info(String.format("Executing /classes/search endpoint with parameters %s (term)", term));
+
         // Escape user input
         final String filteredTerm = escapeUserInput(term);
 
