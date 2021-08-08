@@ -32,12 +32,13 @@ private _configs = createHashMapFromArray [
       } else if (getNumber (_x >> "type") >= 801) then {
         _type = "Uniform";
       } else {
-        throw "ERROR: Unknown Type id = " + getNumber (_x >> "type");
+        // Likely hood this is a not a solider equipable weapon, skip this
+        continue;
       }
 
       // Format each hit to a JSON object and strip out chars that interfere with JSON parsing
       format [
-        '  {%1    "class":"%2",%3    "displayName":"%4",%5    "description":"%6",%7    "image":"%8",%9    "magazines":%10,%11    "type":"%12",%13    "subtype":"%14",%15    "magwell":%16%17  }',
+        '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "magazines":%10,%11    "type":"%12",%13    "subtype":"%14",%15    "magwell":%16%17  }',
         endl
         configName _x,
         endl,
@@ -55,16 +56,58 @@ private _configs = createHashMapFromArray [
         endl,
         getArray (_x >> "magazineWell") apply {_x},
         endl
-      ]};
+      ]
+    };
+
+    // Concatenate all objects and add closing/opening remarks
+    private _joined = _configText joinString "," + endl;
+    _jsonClasses = _jsonClasses + format ['  "Weapons" : [%1  %2%3  ],', endl, _joined, endl];
   } else if (_x == "magazines") then {
+    _configText = _y apply {
+      format [
+        '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "ammo":%10,%11    "count":%12,%13    "type":"Magazine"%14  }',
+        endl
+        configName _x,
+        endl,
+        [[getText (_x >> "displayName"), "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
+        endl,
+        [[getText (_x >> "descriptionShort"),  "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
+        endl,
+        [getText (_x >> "picture"), "\", "\\"] call CBA_fnc_replace,
+        endl,
+        [[getText (_x >> "ammo"), "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
+        endl,
+        getNumber (_x >> "count"),
+        endl,
+        endl
+      ]
+    };
 
+    // Concatenate all objects and add closing/opening remarks
+    private _joined = _configText joinString "," + endl;
+    _jsonClasses = _jsonClasses + format ['  "Magazines" : [%1  %2%3  ],', endl, _joined, endl];
   } else {
+    _configText = _y apply {
+      format [
+        '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "type":"Facewear"%10  }',
+        endl
+        configName _x,
+        endl,
+        [[getText (_x >> "displayName"), "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
+        endl,
+        [[getText (_x >> "descriptionShort"),  "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
+        endl,
+        [getText (_x >> "picture"), "\", "\\"] call CBA_fnc_replace,
+        endl,
+        endl
+      ]
+    };
 
+    // Concatenate all objects and add closing/opening remarks
+    private _joined = _configText joinString "," + endl;
+    _jsonClasses = _jsonClasses + format ['  "Facewear" : [%1  %2%3  ],', endl, _joined, endl];
   }
 
-  // Concatenate all objects and add closing/opening remarks
-  private _joined = _configText joinString "," + endl;
-  _jsonClasses = _jsonClasses + format ['"Weapons" : [%1  %2%3],', endl, _joined, endl];
 } forEach _configs;
 
 // Copy and return
