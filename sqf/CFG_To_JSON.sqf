@@ -75,8 +75,6 @@ getModName = { params["_author"];
         };
       };
 
-      private _mod = [getText (_x >> "author")] call getModName;
-
       // Format each hit to a JSON object and strip out chars that interfere with JSON parsing
       format [
         '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "magazines":%10,%11    "type":"%12",%13    "subtype":"%14",%15    "mod":"%16",%17,    "weight":"%18",%19    "magwell":%20%21  }',
@@ -95,21 +93,16 @@ getModName = { params["_author"];
         endl,
         _subtype,
         endl,
-        _mod,
+        [getText (_x >> "author")] call getModName,
         endl,
         getNumber (_x >> "mass"),
         endl,
         getArray (_x >> "magazineWell") apply {_x},
         endl
-      ]
+      ];
     };
-
-    // Concatenate all objects and add closing/opening remarks
-    private _joined = _configText joinString "," + endl;
-    _jsonClasses = _jsonClasses + format ['  "Weapons" : [%1  %2%3  ],', endl, _joined, endl];
   } else if (_x == "magazines") then {
     _configText = _y apply {
-      private _mod = [getText (_x >> "author")] call getModName;
       format [
         '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "ammo":%10,%11    "count":%12,%13    "mod":"%14",%15    "weight":"%16",%17    "type":"Magazine"%18  }',
         endl
@@ -125,20 +118,15 @@ getModName = { params["_author"];
         endl,
         getNumber (_x >> "count"),
         endl,
-        _mod,
+        [getText (_x >> "author")] call getModName,
         endl,
         getNumber (_x >> "mass"),
         endl,
         endl
-      ]
+      ];
     };
-
-    // Concatenate all objects and add closing/opening remarks
-    private _joined = _configText joinString "," + endl;
-    _jsonClasses = _jsonClasses + format ['  "Magazines" : [%1  %2%3  ],', endl, _joined, endl];
   } else {
     _configText = _y apply {
-      private _mod = [getText (_x >> "author")] call getModName;
       format [
         '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "mod":"%10",%11    "weight":"%12",%13    "type":"Facewear"%14  }',
         endl
@@ -150,22 +138,21 @@ getModName = { params["_author"];
         endl,
         [getText (_x >> "picture"), "\", "\\"] call CBA_fnc_replace,
         endl,
-        _mod,
+        [getText (_x >> "author")] call getModName,
         endl,
         getNumber (_x >> "mass"),
         endl,
         endl
-      ]
+      ];
     };
-
-    // Concatenate all objects and add closing/opening remarks
-    private _joined = _configText joinString "," + endl;
-    _jsonClasses = _jsonClasses + format ['  "Facewear" : [%1  %2%3  ],', endl, _joined, endl];
   }
+
+  // Concatenate all collected objects and add to json array
+  _jsonClasses = _jsonClasses + _configText joinString "," + endl;
 
 } forEach _configs;
 
 // Copy and return
-_jsonClasses = format ["{%1  %2%3}", endl, _jsonClasses, endl];
+_jsonClasses = format ["[%1  %2%3]", endl, _jsonClasses, endl];
 copyToClipboard _jsonClasses;
 _jsonClasses
