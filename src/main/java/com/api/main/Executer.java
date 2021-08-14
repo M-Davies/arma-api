@@ -44,16 +44,28 @@ public class Executer {
         SpringApplication.run(Executer.class, args);
     }
 
+
+    /**
+     * Retrieves a MongoDB collection based off the collection string
+     * @param collectionName The name of a collection to retrieve
+     * @return A MongoDB collection
+     * @throws Exception If the collection doesn't exist or is malformed
+     */
     private MongoCollection<Document> getCollection(String collectionName) throws Exception {
         ArrayList<String> collections = new ArrayList<String>();
         DATABASE.listCollectionNames().into(collections);
-        if (collections.contains(collectionName) == true) {
+        if (collections.contains(collectionName)) {
             return DATABASE.getCollection(collectionName);
         } else {
-            throw new Exception(collectionName + " is an unknown class type");
+            throw new Exception(collectionName + " does not exist or is an unknown class type");
         }
     }
 
+    /**
+     * Escapes a user input from the url path or request parameters to remove all special mongo charecters
+     * @param unfilteredInput The unfiltered user input straight from the url
+     * @return A filtered input without any special charecters added
+     */
     private String escapeUserInput(String unfilteredInput) {
         LOGGER.info("Escaping user input string: " + unfilteredInput);
         String filteredInput = "";
@@ -66,6 +78,31 @@ public class Executer {
         return filteredInput;
     }
 
+    /**
+     * Filters a given collection by a user requested type or retrieves all the types if user input is not given.
+     * @param collection The collection to search in
+     * @param type The config type to filter the collection by
+     * @return A list of all the documents in the collection that matches the type (or all if no type was given)
+     */
+    private ArrayList<Document> filterByType(MongoCollection<Document> collection, String type) {
+        ArrayList<Document> filteredContents = new ArrayList<Document>();
+        if (type.isEmpty()) {
+            // Get all types
+            collection.find().into(filteredContents);
+        } else {
+            // Filter by type
+            collection.find(Filters.eq("type", type)).into(filteredContents);
+        }
+        return filteredContents;
+    }
+
+    /**
+     * The base API route for the class list, this will return all the classes in the database by default. Optionally, {@code mod} can be added to the path to filter the classes by a specific mod. In addition or in lieu, {@code type} can be added as a request parameter ({@code ?type=<the-type>}) to filter the classes by the type of each config (e.g. weapon, backpack, etc).
+     * @param mod A mod to filter for (e.g. ace, vanilla, 3cb)
+     * @param type A type to filter for (e.g. weapon, vest, headgear)
+     * @return A string representation of JSON list containing the filtered configs
+     * @throws Exception The user has provided a mod or type that isn't valid
+     */
     @GetMapping(value = {"/classes", "/classes/{mod}"})
     public String classes (
         @PathVariable(required = false, value = "mod") String mod,
@@ -87,28 +124,19 @@ public class Executer {
 
         // Filter db by keywords or return all
         ArrayList<Document> dbContents = new ArrayList<Document>();
-        for (String modName : DATABASE.listCollectionNames()) {
-            final String parsedModName = "data." + filteredMod;
+        for (String collectionName : DATABASE.listCollectionNames()) {
+            MongoCollection<Document> modContents = getCollection(collectionName);
 
-            // Filter by mod
-            if (modName.equals(parsedModName)) {
-                MongoCollection<Document> modContents = getCollection(modName);
-                if (filteredType.isEmpty()) {
-                    modContents.find().into(dbContents);
-                } else {
-                    modContents.find(Filters.eq("type", filteredType)).into(dbContents);
-                }
+            if (collectionName.equals("data." + filteredMod)) {
+                dbContents.addAll(filterByType(modContents, filteredType));
 
                 // Break so we only return a singular mod spec
                 break;
             } else if (filteredMod.isEmpty()) {
-                // Get all mods
-                MongoCollection<Document> modContents = getCollection(modName);
-                if (filteredType.isEmpty()) {
-                    modContents.find().into(dbContents);
-                } else {
-                    modContents.find(Filters.eq("type", filteredType)).into(dbContents);
-                }
+                dbContents.addAll(filterByType(modContents, filteredType));
+            } else {
+                // We haven't reached the requested mod yet
+                continue;
             }
         }
 
@@ -122,6 +150,12 @@ public class Executer {
         );
     }
 
+    /**
+     * A search route for the class list, this will return all the classes in the database that match a user provided search term (after escaping mongo chars).
+     * @param term The search term. It can be a classname, a config key or a config value
+     * @return A string representation of JSON list containing the filtered configs
+     * @throws Exception If a collection cannot be found or is malformed
+     */
     @GetMapping(value = {"/classes/search/{term}"})
     public String className (
         @PathVariable(required = true, value = "term") String term
@@ -136,6 +170,7 @@ public class Executer {
         for (String modName : DATABASE.listCollectionNames()) {
             ArrayList<Document> filteredContents = new ArrayList<Document>();
             try {
+                // TODO: This will need updating as we add more numeric fields
                 getCollection(modName).find(
                     Filters.eq("count", Long.parseLong(filteredTerm))
                 ).into(filteredContents);
