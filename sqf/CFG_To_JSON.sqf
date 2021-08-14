@@ -1,4 +1,4 @@
-//  This file converts the contents of the CfgWeapons, CfgMagazines and CfgGlasses config file to a JSON string
+//  This file converts the contents of the CfgWeapons, CfgMagazines and CfgGlasses config files to a JSON string
 
 private _jsonClasses = "";
 
@@ -9,30 +9,32 @@ private _configs = createHashMapFromArray [
   ["glasses", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgGlasses")]
 ];
 
-// Calculates the mod of the config item based off the author
+/*
+  Calculates the mod of the config item based off the author
+*/
 getModName = { params["_author"];
   private _modName;
 
   if (_author == "Bohemia Interactive") {
-    _modName = "vanilla";
+    _modName = "Vanilla";
   } else if (["ace", _author] call BIS_fnc_inString) {
-    _modName = "ace";
+    _modName = "Ace";
   } else if (["3cb", _author] call BIS_fnc_inString) {
     _modName = "3CB";
   } else if (["rhs", _author] call BIS_fnc_inString) {
-    _modName = "Red Hammer Studios";
+    _modName = "RedHammerStudios";
   } else if (["niarms", _author] call BIS_fnc_inString) {
     _modName = "NIArms";
   } else if (["tac", _author] call BIS_fnc_inString) {
-    _modName = "Tac Vests";
+    _modName = "TacVests";
   } else if (["vsm", _author] call BIS_fnc_inString) {
     _modName = "VSM";
   } else if (["rksl", _author] call BIS_fnc_inString) {
-    _modName = "RKSL Studios";
+    _modName = "RKSLStudios";
   } else if (["acre", _author] call BIS_fnc_inString) {
     _modName = "ACRE2";
   } else if (["cigs", _author] call BIS_fnc_inString) {
-    _modName = "Immersion Cigs";
+    _modName = "ImmersionCigs";
   } else {
     throw "[ERROR] Unrecognised author name: " + _author;
   }
@@ -40,6 +42,7 @@ getModName = { params["_author"];
   _modName;
 }
 
+// Iterate over config files
 {
   private _configText;
   if (_x == "weapons") then {
