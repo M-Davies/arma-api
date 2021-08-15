@@ -157,7 +157,7 @@ public class Executer {
      * @throws Exception If a collection cannot be found or is malformed
      */
     @GetMapping(value = {"/classes/search/{term}"})
-    public String className (
+    public String search (
         @PathVariable(required = true, value = "term") String term
     ) throws Exception {
         LOGGER.info(String.format("Executing /classes/search endpoint with parameters %s (term)", term));
@@ -171,9 +171,10 @@ public class Executer {
             ArrayList<Document> filteredContents = new ArrayList<Document>();
             try {
                 // TODO: This will need updating as we add more numeric fields
-                getCollection(modName).find(
-                    Filters.eq("count", Long.parseLong(filteredTerm))
-                ).into(filteredContents);
+                getCollection(modName).find(Filters.or(
+                    Filters.eq("count", Long.parseLong(filteredTerm)),
+                    Filters.eq("mass", Long.parseLong(filteredTerm))
+                )).into(filteredContents);
             } catch (NumberFormatException e) {
                 getCollection(modName).find(Filters.text(filteredTerm)).into(filteredContents);
             }

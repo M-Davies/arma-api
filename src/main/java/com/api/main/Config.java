@@ -2,6 +2,9 @@ package com.api.main;
 
 import java.util.*;
 
+/**
+ * Configuration class that holds general static and connection information such as the permitted mods and types
+ */
 public abstract class Config {
     private static ArrayList<String> MODS = new ArrayList<String>(Arrays.asList(
         "vanilla", "ace"
