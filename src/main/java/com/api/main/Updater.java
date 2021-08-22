@@ -42,7 +42,7 @@ public class Updater {
             ArrayList<BasicDBObject> pipelineOps = new ArrayList<BasicDBObject>(
                 Arrays.asList(new BasicDBObject("$out", backupCollectionName))
             );
-            
+
             // Copy contents of collection to backup
             MongoCollection<Document> collection = DATABASE.getCollection(collectionName);
             collection.aggregate(pipelineOps);
@@ -68,7 +68,7 @@ public class Updater {
                         );
 
                         // Calculate target collection based off mod and append
-                        DATABASE.getCollection(configObj.get("mod").toString())
+                        DATABASE.getCollection("data." + configObj.get("mod").toString())
                             .insertOne(configDoc);
                     } catch (JsonProcessingException e) {
                         System.out.println("[WARNING] Could not create mongo document from config object:\n" + configStr);
@@ -82,7 +82,7 @@ public class Updater {
                 System.out.println("[WARNING] Could not parse " + path + " to a JSON Array");
                 e.printStackTrace();
             }
-            System.out.println("[SUCCESS] " + path + " successfully parsed and added to mongo db!"); 
+            System.out.println("[SUCCESS] " + path + " successfully parsed and added to mongo db!");
         });
 
         // Update indices
