@@ -15,26 +15,27 @@ private _configs = createHashMapFromArray [
 getModName = { params["_author"];
   private _modName;
 
+  // TODO: Will need to verify if these author values are correct
   if (_author == "Bohemia Interactive") {
-    _modName = "Vanilla";
+    _modName = "vanilla";
   } else if (["ace", _author] call BIS_fnc_inString) {
-    _modName = "Ace";
+    _modName = "ace";
   } else if (["3cb", _author] call BIS_fnc_inString) {
-    _modName = "3CB";
+    _modName = "3cb";
   } else if (["rhs", _author] call BIS_fnc_inString) {
-    _modName = "RedHammerStudios";
+    _modName = "rhs";
   } else if (["niarms", _author] call BIS_fnc_inString) {
-    _modName = "NIArms";
+    _modName = "niArms";
   } else if (["tac", _author] call BIS_fnc_inString) {
-    _modName = "TacVests";
+    _modName = "tacvests";
   } else if (["vsm", _author] call BIS_fnc_inString) {
-    _modName = "VSM";
+    _modName = "vsm";
   } else if (["rksl", _author] call BIS_fnc_inString) {
-    _modName = "RKSLStudios";
+    _modName = "rksl";
   } else if (["acre", _author] call BIS_fnc_inString) {
-    _modName = "ACRE2";
+    _modName = "acre";
   } else if (["cigs", _author] call BIS_fnc_inString) {
-    _modName = "ImmersionCigs";
+    _modName = "immersioncigs";
   } else {
     throw "[ERROR] Unrecognised author name: " + _author;
   }
@@ -57,7 +58,7 @@ getModName = { params["_author"];
         };
         case == 2: {
           _type = "Weapon";
-          _subtype = "Secondary"; 
+          _subtype = "Secondary";
         };
         case == 4: {
           _type = "Weapon";
