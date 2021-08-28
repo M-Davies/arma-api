@@ -13,31 +13,34 @@ private _configs = createHashMapFromArray [
   Calculates the mod of the config item based off the author
 */
 getModName = { params["_author"];
-  private _modName;
+  private _modName = "";
 
-  // TODO: Will need to verify if these author values are correct
-  if (_author == "Bohemia Interactive") {
+  if (["Bohemia Interactive", _author] call BIS_fnc_inString) {
     _modName = "vanilla";
-  } else if (["ace", _author] call BIS_fnc_inString) {
+  } else if (["ACE", _author] call BIS_fnc_inString) {
     _modName = "ace";
-  } else if (["3cb", _author] call BIS_fnc_inString) {
+  } else if (["3commandobrigade", _author] call BIS_fnc_inString) {
     _modName = "3cb";
-  } else if (["rhs", _author] call BIS_fnc_inString) {
+  } else if (["Red Hammer Studios", _author] call BIS_fnc_inString) {
     _modName = "rhs";
-  } else if (["niarms", _author] call BIS_fnc_inString) {
-    _modName = "niArms";
-  } else if (["tac", _author] call BIS_fnc_inString) {
+  } else if (["Toadie", _author] call BIS_fnc_inString) {
+    _modName = "niarms";
+  } else if (["zabb", _author] call BIS_fnc_inString) {
     _modName = "tacvests";
-  } else if (["vsm", _author] call BIS_fnc_inString) {
+  } else if (["VanSchmoozin", _author] call BIS_fnc_inString) {
     _modName = "vsm";
-  } else if (["rksl", _author] call BIS_fnc_inString) {
+  } else if (["da12thMonkey", _author] call BIS_fnc_inString) {
     _modName = "rksl";
-  } else if (["acre", _author] call BIS_fnc_inString) {
+  } else if (["ACRE2Team", _author] call BIS_fnc_inString) {
     _modName = "acre";
-  } else if (["cigs", _author] call BIS_fnc_inString) {
+  } else if (["Project OPFOR", _author] call BIS_fnc_inString) {
+    _modName = "projectopfor";
+  } else if (["Rebel", _author] call BIS_fnc_inString) {
     _modName = "immersioncigs";
   } else {
-    throw "[ERROR] Unrecognised author name: " + _author;
+    if (_author != "") {
+      throw "[ERROR] Unrecognised author name: " + _author;
+    }
   }
 
   _modName;
