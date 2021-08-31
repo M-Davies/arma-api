@@ -48,40 +48,36 @@ getModName = { params["_author"];
   private _configText;
   if (_x == "weapons") then {
     _configText = _y apply {
-      // Calculate weapon type
+      // Calculate type
       private _type = "";
-      private _subtype = "";
       switch (getNumber (_x >> "type")) do {
         case == 1: {
-          _type = "Weapon";
-          _subtype = "Primary";
+          _type = "Primaries";
         };
         case == 2: {
-          _type = "Weapon";
-          _subtype = "Secondary";
+          _type = "Secondaries";
         };
         case == 4: {
-          _type = "Weapon";
-          _subtype = "Launcher";
+          _type = "Launchers";
         };
         case == 605: {
           _type = "Headgear";
         };
         case == 701: {
-          _type = "Vest";
+          _type = "Vests";
         };
         case == 801: {
-          _type = "Uniform";
+          _type = "Uniforms";
         };
         default {
-          // Likely hood this is a not a solider equipable weapon, skip this
+          // This is likely not a solider equipable weapon, skip this
           continue;
         };
       };
 
       // Format each hit to a JSON object and strip out chars that interfere with JSON parsing
       format [
-        '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "magazines":%10,%11    "type":"%12",%13    "subtype":"%14",%15    "mod":"%16",%17,    "weight":"%18",%19    "magwell":%20%21  }',
+        '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "magazines":%10,%11    "type":"%12",%13    "mod":"%14",%15,    "weight":"%16",%17    "magwell":%18%19  }',
         endl
         configName _x,
         endl,
@@ -95,8 +91,6 @@ getModName = { params["_author"];
         endl,
         _type,
         endl,
-        _subtype,
-        endl,
         [getText (_x >> "author")] call getModName,
         endl,
         getNumber (_x >> "mass"),
@@ -108,7 +102,7 @@ getModName = { params["_author"];
   } else if (_x == "magazines") then {
     _configText = _y apply {
       format [
-        '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "ammo":%10,%11    "count":%12,%13    "mod":"%14",%15    "weight":"%16",%17    "type":"Magazine"%18  }',
+        '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "ammo":%10,%11    "count":%12,%13    "mod":"%14",%15    "weight":"%16",%17    "type":"Magazines"%18  }',
         endl
         configName _x,
         endl,

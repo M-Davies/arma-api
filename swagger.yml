@@ -9,13 +9,13 @@ info:
   license:
     name: GNU General Public License v3.0
     url: 'https://github.com/M-Davies/arma-api/blob/master/LICENSE'
-    
+
 servers:
   # Added by API Auto Mocking Plugin
   - description: SwaggerHub API Auto Mocking
     url: https://virtserver.swaggerhub.com/M_Davies/arma-api/1.0.0
   - url: 'https://arma-api.swagger.io/vZ'
-  
+
 tags:
   - name: classes
     externalDocs:
@@ -85,7 +85,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorApiResponse'
-        
+
   /classes/search/{term}:
     get:
       tags:
@@ -142,22 +142,18 @@ components:
           type: array
           description: Accepted magazine classes
           example: ["3CB_AK47_30rnd_ammo", "3CB_AK74_30rnd_ammo"]
-          items: 
+          items:
             type: string
         magwell:
           type: array
           description: Accepted magazines in well
           example: ["AK", "VOG25"]
-          items: 
+          items:
             type: string
         type:
           type: string
           description: Config type
-          example: "weapon"
-        subtype:
-          type: string
-          description: Config subtype
-          example: "primary"
+          example: "Primaries"
         mod:
           type: string
           description: Config mod owner

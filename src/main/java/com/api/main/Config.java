@@ -11,9 +11,9 @@ public abstract class Config {
     ));
 
     private static ArrayList<String> TYPES = new ArrayList<String>(Arrays.asList(
-        "Weapons", "Throwables", "Explosives", "Magazines",
-        "Items", "Facewear", "Headgear", "NVG", "Binoculars",
-        "Uniforms", "Rigs", "Backpacks"
+        "Primaries", "Secondaries", "Launchers", "Throwables", "Explosives",
+        "Items", "Facewear", "Headgear", "NVG", "Binoculars", "Magazines",
+        "Uniforms", "Vests", "Backpacks"
     ));
 
     public static ArrayList<String> getMods() {
