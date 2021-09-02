@@ -11,139 +11,150 @@ private _CONFIGS = createHashMapFromArray [
 ];
 
 // Calculates the type and subtype of the config item based off it's rough item return. This can be inaccurate.
-getType = { params["_ROUGHTYPE"];
+getType = { params["_NAME", "_ROUGHTYPE"];
   private _SUBTYPE = _ROUGHTYPE select 1;
   private _TYPEARRAY = ["", _SUBTYPE];
+  private _found = false;
 
   switch (_ROUGHTYPE select 0) do {
     case "Weapon": {
-      switch (_SUBTYPE) do {
-        case "AssaultRifle" || "MachineGun" || "Shotgun" || "Rifle" || "SubmachineGun" || "SniperRifle": {
-          _TYPEARRAY set [0, "Primaries"];
-        };
-        case "Handgun": {
-          _TYPEARRAY set [0, "Secondaries"];
-        };
-        case "Launcher" || "MissileLauncher" || "RocketLauncher": {
-          _TYPEARRAY set [0, "Launchers"];
-        };
-        case "Throw": {
-          _TYPEARRAY set [0, "Throwables"];
-        };
-        default {
-          _TYPEARRAY = false;
-        };
+      // Hacky way around making a super long OR conditional
+      if (_found == false && ["AssaultRifle", "MachineGun", "Shotgun", "Rifle", "SubmachineGun", "SniperRifle"] find _SUBTYPE != -1) then {
+        _TYPEARRAY set [0, "Primaries"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "Handgun") then {
+        _TYPEARRAY set [0, "Secondaries"];
+        _found = true;
+      };
+      if (_found == false && ["Launcher", "MissileLauncher", "RocketLauncher"] find _SUBTYPE != -1) then {
+        _TYPEARRAY set [0, "Launchers"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "Throw") then {
+        _TYPEARRAY set [0, "Throwables"];
+        _found = true;
+      };
+      if (_found == false) then {
+        _TYPEARRAY = false;
       };
     };
 
     case "Item": {
-      switch (_SUBTYPE) do {
-        case "AccessoryMuzzle": {
-          _TYPEARRAY set [0, "Muzzles"];
-        };
-        case "AccessoryPointer": {
-          _TYPEARRAY set [0, "Pointers"];
-        };
-        case "AccessorySights": {
-          _TYPEARRAY set [0, "Optics"];
-        };
-        case "AccessoryBipod": {
-          _TYPEARRAY set [0, "Bipods"];
-        };
-        case "Binocular" || "LaserDesignator": {
-          _TYPEARRAY set [0, "Binoculars"];
-        };
-        case "Compass": {
-          _TYPEARRAY set [0, "Compasses"];
-        };
-        case "FirstAidKit" || "Medikit" || "MineDetector" || "Toolkit": {
-          _TYPEARRAY set [0, "Tools"];
-        };
-        case "GPS": {
-          _TYPEARRAY set [0, "GPSs"];
-        };
-        case "NVGoggles": {
-          _TYPEARRAY set [0, "Goggles"];
-        };
-        case "Radio": {
-          _TYPEARRAY set [0, "Radios"];
-        };
-        case "UAVTerminal": {
-          _TYPEARRAY set [0, "Terminals"];
-        };
-        case "Watch": {
-          _TYPEARRAY set [0, "Watches"];
-        };
-        default {
-          _TYPEARRAY = false;
-        };
+      if (_found == false && _SUBTYPE == "AccessoryMuzzle") then {
+        _TYPEARRAY set [0, "Muzzles"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "AccessoryPointer") then {
+        _TYPEARRAY set [0, "Pointers"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "AccessorySights") then {
+        _TYPEARRAY set [0, "Optics"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "AccessoryBipod") then {
+        _TYPEARRAY set [0, "Bipods"];
+        _found = true;
+      };
+      if (_found == false && ["Binocular", "LaserDesignator"] find _SUBTYPE != -1) then {
+        _TYPEARRAY set [0, "Binoculars"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "Compass") then {
+        _TYPEARRAY set [0, "Compasses"];
+        _found = true;
+      };
+      if (_found == false && ["FirstAidKit", "Medikit", "MineDetector", "Toolkit"] find _SUBTYPE != -1) then {
+        _TYPEARRAY set [0, "Tools"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "GPS") then {
+        _TYPEARRAY set [0, "GPSs"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "NVGoggles") then {
+        _TYPEARRAY set [0, "Goggles"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "Radio") then {
+        _TYPEARRAY set [0, "Radios"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "UAVTerminal") then {
+        _TYPEARRAY set [0, "Terminals"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "Watch") then {
+        _TYPEARRAY set [0, "Watches"];
+        _found = true;
+      };
+      if (_found == false) then {
+        _TYPEARRAY = false;
       };
     };
 
     case "Equipment": {
-      switch (_SUBTYPE) do {
-        case "Glasses": {
-          _TYPEARRAY set [0, "Facewear"];
-        };
-        case "Headgear": {
-          _TYPEARRAY set [0, "Headgear"];
-        };
-        case "Vest": {
-          _TYPEARRAY set [0, "Vests"];
-        };
-        case "Uniform": {
-          _TYPEARRAY set [0, "Uniforms"];
-        };
-        case "Backpack": {
-          _TYPEARRAY set [0, "Backpacks"];
-        };
-        default {
-          // The above SHOULD be the only valid types
-          throw "[ERROR] Unknown equipment subtype: " + _SUBTYPE;
-        };
+      if (_found == false && _SUBTYPE == "Glasses") then {
+        _TYPEARRAY set [0, "Facewear"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "Headgear") then {
+        _TYPEARRAY set [0, "Headgear"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "Vest") then {
+        _TYPEARRAY set [0, "Vests"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "Uniform") then {
+        _TYPEARRAY set [0, "Uniforms"];
+        _found = true;
+      };
+      if (_found == false && _SUBTYPE == "Backpack") then {
+        _TYPEARRAY set [0, "Backpacks"];
+        _found = true;
+      };
+      if (_found == false) then {
+        // The above SHOULD be the only valid types
+        throw format ["[ERROR] Unknown equipment subtype: %1 for config: %2", _SUBTYPE, _NAME];
       };
     };
 
     case "Magazine": {
-      switch (_SUBTYPE) do {
-        case "Artillery" || "CounterMeasures" || "UnknownMagazine": {
-          _TYPEARRAY = false;
-        };
-        default {
-          // The above SHOULD be the only non-arsenal types
-          _TYPEARRAY set [0, "Magazines"];
-        };
+      if (["Artillery", "CounterMeasures", "UnknownMagazine"] find _SUBTYPE != -1) then {
+        _TYPEARRAY = false;
+      } else {
+        // The above SHOULD be the only non-arsenal types
+        _TYPEARRAY set [0, "Magazines"];
       };
     };
 
     case "Mine": {
-      switch (_SUBTYPE) do {
-        case "Mine" || "MineBounding" || "MineDirectional": {
-          _TYPEARRAY set [0, "Explosives"];
-        };
-        default {
-          // The above SHOULD be the only valid types
-          throw "[ERROR] Unknown mine subtype: " + _SUBTYPE;
-        };
+      if (["Mine", "MineBounding", "MineDirectional"] find _SUBTYPE != -1) then {
+        _TYPEARRAY set [0, "Explosives"];
+      } else {
+        // The above SHOULD be the only valid types
+        throw format ["[ERROR] Unknown mine subtype: %1 for config: %2", _SUBTYPE, _NAME];
       };
     };
 
     default {
-      if (_ROUGHTYPE select 0 == "VehicleWeapon") {
+      if (_ROUGHTYPE select 0 == "VehicleWeapon" || [_ROUGHTYPE select 0, "/^ +$/"] call regexMatch == true) then {
         // Pass up stack to continue the loop
         _TYPEARRAY = false;
       } else {
         // No matching type was found and it isn't an excluded one
-        throw "[ERROR] Unknown type: " + _ROUGHTYPE select 0;
+        throw format ["[ERROR] Unknown type: %1 for config: %2", _ROUGHTYPE select 0, _NAME];
       };
     };
   };
 
-  _TYPEARRAY;
+  _TYPEARRAY
 };
 
 // Calculates the mod of the config item based off the author
-getModName = { params["_AUTHOR"];
+getModName = { params["_NAME", "_AUTHOR"];
   private _modName = "";
 
   // I would prefer to use an else if here but it doesn't exist in sqf seemingly
@@ -156,7 +167,7 @@ getModName = { params["_AUTHOR"];
     _modName = "ace";
     _found = true;
   };
-  if (["3commandobrigade", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+  if ((["3 Commando Brigade", _AUTHOR] call BIS_fnc_inString || ["3commandobrigade", _AUTHOR] call BIS_fnc_inString) && _found == false) then {
     _modName = "3cb";
     _found = true;
   };
@@ -168,11 +179,11 @@ getModName = { params["_AUTHOR"];
     _modName = "niarms";
     _found = true;
   };
-  if (["zabb", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+  if ((["zabb", _AUTHOR] call BIS_fnc_inString || ["Xmosmos", _AUTHOR] call BIS_fnc_inString) && _found == false) then {
     _modName = "tacvests";
     _found = true;
   };
-  if (["VanSchmoozin", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+  if ((["VanSchmoozin", _AUTHOR] call BIS_fnc_inString || ["Bacon", _AUTHOR] call BIS_fnc_inString) && _found == false) then {
     _modName = "vsm";
     _found = true;
   };
@@ -192,13 +203,21 @@ getModName = { params["_AUTHOR"];
     _modName = "immersioncigs";
     _found = true;
   };
-
-  // Not found, either author is unknown or is not supported yet
-  if (_AUTHOR != "" && _found == false); {
-    throw "[ERROR] Unrecognised author name: " + _AUTHOR;
+  if (["teriyaki", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "tryk";
+    _found = true;
+  };
+  if (["Dragonkeeper", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "tryk";
+    _found = true;
   };
 
-  _modName;
+  // Not found, either author is unknown or is not supported yet
+  if ([_AUTHOR, "/^ +$/"] call regexMatch == true && _found == false) then {
+    throw format["[ERROR] Unrecognised author name: %1 for config: %2", _AUTHOR, _NAME];
+  };
+
+  _modName
 };
 
 // START: Iterate over config files
@@ -209,8 +228,9 @@ getModName = { params["_AUTHOR"];
     case "weapons": {
       _CONFIGARRAY = _y apply {
         private _CONFIGNAME = configName _x;
-        private _TYPE = [_CONFIGNAME call BIS_fnc_itemType] call getType;
-        if (_TYPE == false) {
+        private _TYPE = [_CONFIGNAME, _CONFIGNAME call BIS_fnc_itemType] call getType;
+        // Hacky way around checking if a variable is false
+        if (typeName _TYPE != "ARRAY") then {
           continue;
         };
 
@@ -232,22 +252,22 @@ getModName = { params["_AUTHOR"];
           endl,
           _TYPE select 1,
           endl,
-          [getText (_x >> "author")] call getModName,
+          [_CONFIGNAME, getText (_x >> "author")] call getModName,
           endl,
           getNumber (_x >> "mass"),
           endl,
           getArray (_x >> "magazineWell") apply {_x},
           endl,
           endl
-        ];
+        ]
       };
     };
 
     case "magazines": {
       _CONFIGARRAY = _y apply {
         private _CONFIGNAME = configName _x;
-        private _TYPE = [_CONFIGNAME call BIS_fnc_itemType] call getType;
-        if (_TYPE == false) {
+        private _TYPE = [_CONFIGNAME, _CONFIGNAME call BIS_fnc_itemType] call getType;
+        if (typeName _TYPE != "ARRAY") then {
           continue;
         };
 
@@ -266,7 +286,7 @@ getModName = { params["_AUTHOR"];
           endl,
           getNumber (_x >> "count"),
           endl,
-          [getText (_x >> "author")] call getModName,
+          [_CONFIGNAME, getText (_x >> "author")] call getModName,
           endl,
           getNumber (_x >> "mass"),
           endl,
@@ -275,15 +295,15 @@ getModName = { params["_AUTHOR"];
           _TYPE select 1,
           endl,
           endl
-        ];
+        ]
       };
     };
 
     case "vehicles": {
       _CONFIGARRAY = _y apply {
         private _CONFIGNAME = configName _x;
-        private _TYPE = [_CONFIGNAME call BIS_fnc_itemType] call getType;
-        if (_TYPE == false) {
+        private _TYPE = [_CONFIGNAME, _CONFIGNAME call BIS_fnc_itemType] call getType;
+        if (typeName _TYPE != "ARRAY") then {
           continue;
         };
 
@@ -298,7 +318,7 @@ getModName = { params["_AUTHOR"];
           endl,
           [getText (_x >> "picture"), "\", "\\"] call CBA_fnc_replace,
           endl,
-          [getText (_x >> "author")] call getModName,
+          [_CONFIGNAME, getText (_x >> "author")] call getModName,
           endl,
           getNumber (_x >> "mass"),
           endl,
@@ -307,15 +327,15 @@ getModName = { params["_AUTHOR"];
           _TYPE select 1,
           endl,
           endl
-        ];
+        ]
       };
     };
 
     default {
       _CONFIGARRAY = _y apply {
         private _CONFIGNAME = configName _x;
-        private _TYPE = [_CONFIGNAME call BIS_fnc_itemType] call getType;
-        if (_TYPE == false) {
+        private _TYPE = [_CONFIGNAME, _CONFIGNAME call BIS_fnc_itemType] call getType;
+        if (typeName _TYPE != "ARRAY") then {
           continue;
         };
 
@@ -330,7 +350,7 @@ getModName = { params["_AUTHOR"];
           endl,
           [getText (_x >> "picture"), "\", "\\"] call CBA_fnc_replace,
           endl,
-          [getText (_x >> "author")] call getModName,
+          [_CONFIGNAME, getText (_x >> "author")] call getModName,
           endl,
           getNumber (_x >> "mass"),
           endl,
@@ -339,7 +359,7 @@ getModName = { params["_AUTHOR"];
           _TYPE select 1,
           endl,
           endl
-        ];
+        ]
       };
     };
   };
