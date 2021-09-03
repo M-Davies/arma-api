@@ -331,7 +331,7 @@ getModName = { params["_NAME", "_AUTHOR"];
       };
     };
 
-    default {
+    case "glasses": {
       _CONFIGARRAY = _y apply {
         private _CONFIGNAME = configName _x;
         private _TYPE = [_CONFIGNAME, _CONFIGNAME call BIS_fnc_itemType] call getType;
@@ -361,6 +361,10 @@ getModName = { params["_NAME", "_AUTHOR"];
           endl
         ]
       };
+    };
+
+    default {
+      throw format ["[ERROR] Unsupported config title: %1 please specify a supported title", _x];
     };
   };
 
