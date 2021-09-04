@@ -173,7 +173,7 @@ public class Executer {
                 // TODO: This will need updating as we add more numeric fields
                 getCollection(modName).find(Filters.or(
                     Filters.eq("count", Long.parseLong(filteredTerm)),
-                    Filters.eq("mass", Long.parseLong(filteredTerm))
+                    Filters.eq("weight", Long.parseLong(filteredTerm))
                 )).into(filteredContents);
             } catch (NumberFormatException e) {
                 getCollection(modName).find(Filters.text(filteredTerm)).into(filteredContents);
