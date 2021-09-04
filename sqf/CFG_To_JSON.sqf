@@ -1,19 +1,32 @@
-//  This file converts the contents of the key cfg config files to a JSON string
+// *********************************************
+// TITLE: CFG_TO_JSON.sqf
+// LICENSE : GNU General Public License v3.0
+// DESCRIPTION: This script converts the contents of a key cfg config to a JSON array, which can then be copied from the clipboard and used to populate JSON files, databases or anything else that is required.
+// AUTHOR: Morgan Davies
+// USAGE:
+//   1) Alter the _CONFIGS hashmap variable to include the config classes you want to add to the json array. Beware of the 10,000,000 limit on array sizes however. You might need to run the config extraction one at a time. See _exampleCONFIGS below for the currently supported configs.
+//   2) Run the script in a debug console on arma 3. It may take a few seconds to complete depending on your system specs.
+//   3) You should now have a json array on your clipboard. Don't copy it from the debug console output as it will include extra double quotes to escape the existing ones.
+//   4) It is worth mentioning that the last JSON element in the array will include a trailing comma, which may make the array invalid (depending on the parser type). Due to the difficulty in extracting said comma out, I haven't bothered fixing it.
+// *********************************************
 
-private _jsonClasses = [];
-
-// Extract weapon values by scope param
+// ** SUPPORTED CONFIGS HASHMAP, CHANGE _CONFIGS TO TARGET SPECIFIC CONFIGS **
+// private _exampleCONFIGS = createHashMapFromArray [
+//   ["weapons", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgWeapons")],
+//   ["magazines", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgMagazines")],
+//   ["vehicles", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgVehicles")],
+//   ["glasses", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgGlasses")]
+// ];
 private _CONFIGS = createHashMapFromArray [
-  ["weapons", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgWeapons")],
-  ["magazines", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgMagazines")],
-  ["vehicles", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgVehicles")],
   ["glasses", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgGlasses")]
 ];
+forceunicode 0;
+private _jsonClasses = [];
 
 // Calculates the type and subtype of the config item based off it's rough item return. This can be inaccurate.
 getType = { params["_NAME", "_ROUGHTYPE"];
   private _SUBTYPE = _ROUGHTYPE select 1;
-  private _TYPEARRAY = ["", _SUBTYPE];
+  private _TYPEARRAY = [false, _SUBTYPE];
   private _found = false;
 
   switch (_ROUGHTYPE select 0) do {
@@ -34,9 +47,6 @@ getType = { params["_NAME", "_ROUGHTYPE"];
       if (_found == false && _SUBTYPE == "Throw") then {
         _TYPEARRAY set [0, "Throwables"];
         _found = true;
-      };
-      if (_found == false) then {
-        _TYPEARRAY = false;
       };
     };
 
@@ -89,9 +99,6 @@ getType = { params["_NAME", "_ROUGHTYPE"];
         _TYPEARRAY set [0, "Watches"];
         _found = true;
       };
-      if (_found == false) then {
-        _TYPEARRAY = false;
-      };
     };
 
     case "Equipment": {
@@ -122,10 +129,8 @@ getType = { params["_NAME", "_ROUGHTYPE"];
     };
 
     case "Magazine": {
-      if (["Artillery", "CounterMeasures", "UnknownMagazine"] find _SUBTYPE != -1) then {
-        _TYPEARRAY = false;
-      } else {
-        // The above SHOULD be the only non-arsenal types
+      // These SHOULD be the only non-arsenal types
+      if (["Artillery", "CounterMeasures", "UnknownMagazine"] find _SUBTYPE == -1) then {
         _TYPEARRAY set [0, "Magazines"];
       };
     };
@@ -140,10 +145,7 @@ getType = { params["_NAME", "_ROUGHTYPE"];
     };
 
     default {
-      if (_ROUGHTYPE select 0 == "VehicleWeapon" || [_ROUGHTYPE select 0, "/^ +$/"] call regexMatch == true) then {
-        // Pass up stack to continue the loop
-        _TYPEARRAY = false;
-      } else {
+      if (_ROUGHTYPE select 0 != "VehicleWeapon" || [_ROUGHTYPE select 0, "/^ +$/"] call regexMatch != true) then {
         // No matching type was found and it isn't an excluded one
         throw format ["[ERROR] Unknown type: %1 for config: %2", _ROUGHTYPE select 0, _NAME];
       };
@@ -213,7 +215,7 @@ getModName = { params["_NAME", "_AUTHOR"];
   };
 
   // Not found, either author is unknown or is not supported yet
-  if ([_AUTHOR, "/^ +$/"] call regexMatch == true && _found == false) then {
+  if ([_AUTHOR, "/^ +$/"] call regexMatch == true || _found == false) then {
     throw format["[ERROR] Unrecognised author name: %1 for config: %2", _AUTHOR, _NAME];
   };
 
@@ -222,21 +224,20 @@ getModName = { params["_NAME", "_AUTHOR"];
 
 // START: Iterate over config files
 {
-  private _CONFIGARRAY = [];
-  switch (_x) do {
+  private _CONFIGTYPE = _x;
+  private _CONFIGARRAY = _y apply {
+    private _CONFIGNAME = configName _x;
+    private _TYPE = [_CONFIGNAME, _CONFIGNAME call BIS_fnc_itemType] call getType;
+    // Hacky way around checking if a variable is false
+    if (typeName (_TYPE select 0) == "BOOL") then {
+      continue;
+    };
 
-    case "weapons": {
-      _CONFIGARRAY = _y apply {
-        private _CONFIGNAME = configName _x;
-        private _TYPE = [_CONFIGNAME, _CONFIGNAME call BIS_fnc_itemType] call getType;
-        // Hacky way around checking if a variable is false
-        if (typeName _TYPE != "ARRAY") then {
-          continue;
-        };
-
-        // Format each hit to a JSON object and strip out chars that interfere with JSON parsing
+    // Format each hit to a JSON object and strip out chars that interfere with JSON parsing
+    switch (_CONFIGTYPE) do {
+      case "weapons": {
         format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "magazines":%10,%11    "type":"%12",%13    "subtype":"%14",%15    "mod":"%16",%17,    "weight":"%18",%19    "magwell":%20%21  },%22',
+          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "magazines":%10,%11    "type":"%12",%13    "subtype":"%14",%15    "mod":"%16",%17    "weight":%18,%19    "magwell":%20%21  },%22',
           endl,
           _CONFIGNAME,
           endl,
@@ -261,18 +262,10 @@ getModName = { params["_NAME", "_AUTHOR"];
           endl
         ]
       };
-    };
 
-    case "magazines": {
-      _CONFIGARRAY = _y apply {
-        private _CONFIGNAME = configName _x;
-        private _TYPE = [_CONFIGNAME, _CONFIGNAME call BIS_fnc_itemType] call getType;
-        if (typeName _TYPE != "ARRAY") then {
-          continue;
-        };
-
+      case "magazines": {
         format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "ammo":%10,%11    "count":%12,%13    "mod":"%14",%15    "weight":"%16",%17    "type":"%18",%19    "subtype":"%20"%21  },%22',
+          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "ammo":"%10",%11    "count":%12,%13    "mod":"%14",%15    "weight":%16,%17    "type":"%18",%19    "subtype":"%20"%21  },%22',
           endl,
           _CONFIGNAME,
           endl,
@@ -297,18 +290,10 @@ getModName = { params["_NAME", "_AUTHOR"];
           endl
         ]
       };
-    };
 
-    case "vehicles": {
-      _CONFIGARRAY = _y apply {
-        private _CONFIGNAME = configName _x;
-        private _TYPE = [_CONFIGNAME, _CONFIGNAME call BIS_fnc_itemType] call getType;
-        if (typeName _TYPE != "ARRAY") then {
-          continue;
-        };
-
+      case "vehicles": {
         format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9        "mod":"%10",%11    "weight":"%12",%13    "type":"%14",%15    "subtype":"%16"%17  },%18',
+          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "mod":"%10",%11    "weight":%12,%13    "type":"%14",%15    "subtype":"%16"%17  },%18',
           endl,
           _CONFIGNAME,
           endl,
@@ -329,18 +314,10 @@ getModName = { params["_NAME", "_AUTHOR"];
           endl
         ]
       };
-    };
 
-    case "glasses": {
-      _CONFIGARRAY = _y apply {
-        private _CONFIGNAME = configName _x;
-        private _TYPE = [_CONFIGNAME, _CONFIGNAME call BIS_fnc_itemType] call getType;
-        if (typeName _TYPE != "ARRAY") then {
-          continue;
-        };
-
+      case "glasses": {
         format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "mod":"%10",%11    "weight":"%12",%13    "type":"%14",%15    "type":"%16"%17  },%18',
+          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "mod":"%10",%11    "weight":%12,%13    "type":"%14",%15    "subtype":"%16"%17  },%18',
           endl,
           _CONFIGNAME,
           endl,
@@ -361,10 +338,10 @@ getModName = { params["_NAME", "_AUTHOR"];
           endl
         ]
       };
-    };
 
-    default {
-      throw format ["[ERROR] Unsupported config title: %1 please specify a supported title", _x];
+      default {
+        throw format ["[ERROR] Unsupported config title: %1 please specify a supported title", _CONFIGTYPE];
+      };
     };
   };
 
@@ -373,8 +350,8 @@ getModName = { params["_NAME", "_AUTHOR"];
 
 } forEach _CONFIGS;
 
-// Copy and return
-private _joinedClasses = (_jsonClasses joinString ",") + endl;
-_JSON = format ["[%1  %2%3]", endl, _joinedClasses, endl];
+// Remove random null classes, convert to json array and finish
+private _joinedClasses = [_jsonClasses joinString endl, "<null>", ""] call CBA_fnc_replace;
+_JSON = "[" + endl + "  " + _joinedClasses + endl + "]" + endl;
 copyToClipboard _JSON;
 _JSON
