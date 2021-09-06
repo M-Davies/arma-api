@@ -70,15 +70,6 @@
                 <version>3.0.0</version>
                 <executions>
                     <execution>
-                        <id>Wiki-Parser</id>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                        <configuration>
-                            <mainClass>com.api.main.Parser</mainClass>
-                        </configuration>
-                    </execution>
-                    <execution>
                         <id>Mongo-Updater</id>
                         <goals>
                             <goal>java</goal>
