@@ -10,7 +10,7 @@
 //   4) It is worth mentioning that the last JSON element in the array will include a trailing comma, which may make the array invalid (depending on the parser type). Due to the difficulty in extracting said comma out, I haven't bothered fixing it.
 // *********************************************
 
-// ** SUPPORTED CONFIGS HASHMAP, CHANGE _CONFIGS TO TARGET SPECIFIC CONFIGS **
+// ** SUPPORTED CONFIGS HASHMAP, CHANGE _CONFIGS TO TARGET SPECIFIC CONFIGS FROM THIS LIST **
 // private _exampleCONFIGS = createHashMapFromArray [
 //   ["weapons", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgWeapons")],
 //   ["magazines", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgMagazines")],
@@ -215,8 +215,8 @@ getModName = { params["_NAME", "_AUTHOR"];
   };
 
   // Not found, either author is unknown or is not supported yet
-  if ([_AUTHOR, "/^ +$/"] call regexMatch == true || _found == false) then {
-    throw format["[ERROR] Unrecognised author name: %1 for config: %2", _AUTHOR, _NAME];
+  if (_found == false) then {
+    _modName = "";
   };
 
   _modName
