@@ -23,7 +23,6 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class Executer {
-    private final static ArrayList<Character> SPECIAL_MONGO_CHARS = new ArrayList<Character>(Arrays.asList('\'', '\"', '\\', ';', '{', '}', '$'));
     private static MongoDatabase DATABASE;
     private static Logger LOGGER = Logger.getLogger(Executer.class.getName());
     private static FileHandler HANDLER;
@@ -42,58 +41,6 @@ public class Executer {
         MongoClient MONGO_CLIENT = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
         DATABASE = MONGO_CLIENT.getDatabase("arma-api");
         SpringApplication.run(Executer.class, args);
-    }
-
-
-    /**
-     * Retrieves a MongoDB collection based off the collection string
-     * @param collectionName The name of a collection to retrieve
-     * @return A MongoDB collection
-     * @throws Exception If the collection doesn't exist or is malformed
-     */
-    private MongoCollection<Document> getCollection(String collectionName) throws Exception {
-        ArrayList<String> collections = new ArrayList<String>();
-        DATABASE.listCollectionNames().into(collections);
-        if (collections.contains(collectionName)) {
-            return DATABASE.getCollection(collectionName);
-        } else {
-            throw new Exception(collectionName + " does not exist or is an unknown class type");
-        }
-    }
-
-    /**
-     * Escapes a user input from the url path or request parameters to remove all special mongo charecters
-     * @param unfilteredInput The unfiltered user input straight from the url
-     * @return A filtered input without any special charecters added
-     */
-    private String escapeUserInput(String unfilteredInput) {
-        LOGGER.info("Escaping user input string: " + unfilteredInput);
-        String filteredInput = "";
-        for (int i = 0; i < unfilteredInput.length(); i++) {
-            char currentCharecter = unfilteredInput.charAt(i);
-            if (!SPECIAL_MONGO_CHARS.contains(currentCharecter)) {
-                filteredInput += currentCharecter;
-            }
-        }
-        return filteredInput;
-    }
-
-    /**
-     * Filters a given collection by a user requested type or retrieves all the types if user input is not given.
-     * @param collection The collection to search in
-     * @param type The config type to filter the collection by
-     * @return A list of all the documents in the collection that matches the type (or all if no type was given)
-     */
-    private ArrayList<Document> filterByType(MongoCollection<Document> collection, String type) {
-        ArrayList<Document> filteredContents = new ArrayList<Document>();
-        if (type.isEmpty()) {
-            // Get all types
-            collection.find().into(filteredContents);
-        } else {
-            // Filter by type
-            collection.find(Filters.eq("type", type)).into(filteredContents);
-        }
-        return filteredContents;
     }
 
     /**
@@ -125,7 +72,7 @@ public class Executer {
         // Filter db by keywords or return all
         ArrayList<Document> dbContents = new ArrayList<Document>();
         for (String collectionName : DATABASE.listCollectionNames()) {
-            MongoCollection<Document> modContents = getCollection(collectionName);
+            MongoCollection<Document> modContents = retrieveCollection(collectionName);
 
             if (collectionName.equals("data." + filteredMod)) {
                 dbContents.addAll(filterByType(modContents, filteredType));
@@ -171,12 +118,12 @@ public class Executer {
             ArrayList<Document> filteredContents = new ArrayList<Document>();
             try {
                 // TODO: This will need updating as we add more numeric fields
-                getCollection(modName).find(Filters.or(
+                retrieveCollection(modName).find(Filters.or(
                     Filters.eq("count", Long.parseLong(filteredTerm)),
                     Filters.eq("weight", Long.parseLong(filteredTerm))
                 )).into(filteredContents);
             } catch (NumberFormatException e) {
-                getCollection(modName).find(Filters.text(filteredTerm)).into(filteredContents);
+                retrieveCollection(modName).find(Filters.text(filteredTerm)).into(filteredContents);
             }
 
             // Add to final doc if match is found
@@ -193,6 +140,57 @@ public class Executer {
             .collect(Collectors.toList())
         );
 
+    }
+
+    /**
+     * Retrieves a MongoDB collection based off the collection string
+     * @param collectionName The name of a collection to retrieve
+     * @return A MongoDB collection
+     * @throws Exception If the collection doesn't exist or is malformed
+     */
+    private MongoCollection<Document> retrieveCollection(String collectionName) throws Exception {
+        ArrayList<String> collections = new ArrayList<String>();
+        DATABASE.listCollectionNames().into(collections);
+        if (collections.contains(collectionName)) {
+            return DATABASE.getCollection(collectionName);
+        } else {
+            throw new Exception(collectionName + " does not exist or is an unknown class type");
+        }
+    }
+
+    /**
+     * Escapes a user input from the url path or request parameters to remove all special mongo charecters
+     * @param unfilteredInput The unfiltered user input straight from the url
+     * @return A filtered input without any special charecters added
+     */
+    private String escapeUserInput(String unfilteredInput) {
+        LOGGER.info("Escaping user input string: " + unfilteredInput);
+        String filteredInput = "";
+        for (int i = 0; i < unfilteredInput.length(); i++) {
+            char currentCharecter = unfilteredInput.charAt(i);
+            if (!Config.getSpecialChars().contains(currentCharecter)) {
+                filteredInput += currentCharecter;
+            }
+        }
+        return filteredInput;
+    }
+
+    /**
+     * Filters a given collection by a user requested type or retrieves all the types if user input is not given.
+     * @param collection The collection to search in
+     * @param type The config type to filter the collection by
+     * @return A list of all the documents in the collection that matches the type (or all if no type was given)
+     */
+    private ArrayList<Document> filterByType(MongoCollection<Document> collection, String type) {
+        ArrayList<Document> filteredContents = new ArrayList<Document>();
+        if (type.isEmpty()) {
+            // Get all types
+            collection.find().into(filteredContents);
+        } else {
+            // Filter by type
+            collection.find(Filters.eq("type", type)).into(filteredContents);
+        }
+        return filteredContents;
     }
 
 }

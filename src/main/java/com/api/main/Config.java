@@ -18,11 +18,17 @@ public abstract class Config {
         "Magazines", "Uniforms", "Vests", "Backpacks"
     ));
 
+    private final static ArrayList<Character> SPECIAL_MONGO_CHARS = new ArrayList<Character>(Arrays.asList('\'', '\"', '\\', ';', '{', '}', '$'));
+
     public static ArrayList<String> getMods() {
         return MODS;
     }
 
     public static ArrayList<String> getTypes() {
         return TYPES;
+    }
+
+    public static ArrayList<Character> getSpecialChars() {
+        return SPECIAL_MONGO_CHARS;
     }
 }
