@@ -11,7 +11,6 @@ import java.util.*;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mongodb.MongoClient;
-import com.mongodb.MongoClientURI;
 import com.mongodb.client.*;
 import com.mongodb.client.model.Indexes;
 
@@ -25,9 +24,9 @@ public class Updater {
 
         // Setup Json parser and Mongodb
         final JSONParser PARSER = new JSONParser();
-        final MongoClient MONGO_CLIENT = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
-        final MongoDatabase DATABASE = MONGO_CLIENT.getDatabase("arma-api");
-        final MongoDatabase BACKUP_DATABASE = MONGO_CLIENT.getDatabase("arma-api-backup");
+        final MongoClient MONGO_CLIENT = new MongoClient(Config.getMongoUri());
+        final MongoDatabase DATABASE = MONGO_CLIENT.getDatabase(Config.getMongoDatabaseName());
+        final MongoDatabase BACKUP_DATABASE = MONGO_CLIENT.getDatabase(Config.getMongoDatabaseName() + "-backup");
 
         try {
             // Backup and reset db

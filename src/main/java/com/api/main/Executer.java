@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 import java.util.logging.*;
 
 import com.mongodb.MongoClient;
-import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
@@ -30,7 +29,7 @@ public class Executer {
     public static void main(String[] args) throws UnknownHostException {
         try {
             LOGGER.setLevel(Level.INFO);
-            HANDLER = new FileHandler("/tmp/arma-api.log");
+            HANDLER = new FileHandler(Config.getLogfilePath());
             LOGGER.addHandler(HANDLER);
             SimpleFormatter formatter = new SimpleFormatter();
             HANDLER.setFormatter(formatter);
@@ -38,8 +37,8 @@ public class Executer {
             System.err.println("[ERROR] Failed to initialise filehandler for logging");
             e.printStackTrace();
         }
-        MongoClient MONGO_CLIENT = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
-        DATABASE = MONGO_CLIENT.getDatabase("arma-api");
+        MongoClient MONGO_CLIENT = new MongoClient(Config.getMongoUri());
+        DATABASE = MONGO_CLIENT.getDatabase(Config.getMongoDatabaseName());
         SpringApplication.run(Executer.class, args);
     }
 

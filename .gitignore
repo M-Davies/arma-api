@@ -26,6 +26,9 @@ hs_err_pid*
 # User JSON files
 data/*.json
 
+# User configs
+**/.env
+
 # Other ignores
 target/
 .mvn/
