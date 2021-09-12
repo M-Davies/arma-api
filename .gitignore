@@ -24,10 +24,11 @@
 hs_err_pid*
 
 # User JSON files
-data/*.json
+**/data/*.json
 
 # User configs
 **/.env
+**/application.properties
 
 # Other ignores
 target/

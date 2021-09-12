@@ -1,10 +1,14 @@
 package com.api.main;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.UnknownHostException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 import java.util.stream.Collectors;
-import java.util.logging.*;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
@@ -12,8 +16,11 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 
 import org.bson.Document;
+import org.json.simple.parser.ParseException;
+import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -25,21 +32,51 @@ public class Executer {
     private static MongoDatabase DATABASE;
     private static Logger LOGGER = Logger.getLogger(Executer.class.getName());
     private static FileHandler HANDLER;
+    private static Config config;
 
-    public static void main(String[] args) throws UnknownHostException {
+    public static void main(String[] args) throws FileNotFoundException, IOException, ParseException, Exception {
+        ApplicationContext context = SpringApplication.run(Executer.class, args);
+        config = context.getBean(Config.class);
+
+        // Setup logging
         try {
             LOGGER.setLevel(Level.INFO);
-            HANDLER = new FileHandler(Config.getLogfilePath());
+            HANDLER = new FileHandler(config.getLogfilePath());
             LOGGER.addHandler(HANDLER);
             SimpleFormatter formatter = new SimpleFormatter();
             HANDLER.setFormatter(formatter);
         } catch (IOException e) {
-            System.err.println("[ERROR] Failed to initialise filehandler for logging");
+            System.err.println("[ERROR] Failed to initialise File Handler for logging");
             e.printStackTrace();
         }
-        MongoClient MONGO_CLIENT = new MongoClient(Config.getMongoUri());
-        DATABASE = MONGO_CLIENT.getDatabase(Config.getMongoDatabaseName());
-        SpringApplication.run(Executer.class, args);
+
+        // Connect to target mongo instance and database
+        final MongoClient MONGO_CLIENT = new MongoClient(config.getMongoUri());
+        DATABASE = MONGO_CLIENT.getDatabase(config.getMongoDatabaseName());
+
+        // Run the updater if requested
+        if (Arrays.asList(args).contains("--updater")) {
+            try {
+                if (new Updater().update(MONGO_CLIENT, DATABASE) == true) {
+                    LOGGER.log(Level.INFO, "[SUCCESS] Updater has successfully backed up and updated all collections in the database!");
+                } else {
+                    throw new Exception("[ERROR] Updater failed to backup and/or update all collections in the database. See log for more details...");
+                }
+            } catch (Exception e) {
+                LOGGER.log(Level.SEVERE, "[ERROR] Updater threw an exception, see log for details");
+                throw e;
+            } finally {
+                // Close after update completes
+                MONGO_CLIENT.close();
+                SpringApplication.exit(context, new ExitCodeGenerator() {
+                    @Override
+                    public int getExitCode() {
+                        // Return the error code
+                        return 0;
+                    }
+                });
+            }
+        }
     }
 
     /**
@@ -54,15 +91,15 @@ public class Executer {
         @PathVariable(required = false, value = "mod") String mod,
         @RequestParam(required = false, value = "type") String type
     ) throws Exception {
-        LOGGER.info(String.format("Executing /classes endpoint with parameters %s (mod) and %s (type)", mod, type));
+        LOGGER.log(Level.INFO, String.format("Executing /classes endpoint with parameters %s (mod) and %s (type)", mod, type));
 
         // Check user input
         final String filteredMod = mod == "" || mod == null ? "" : escapeUserInput(mod);
         final String filteredType = type == "" || type == null ? "" : escapeUserInput(type);
 
         // Verify params
-        if (!Config.getMods().contains(filteredMod) && filteredMod != "") {
-            throw new Exception("Unidentified mod. Available values are " + Config.getMods().toString());
+        if (!config.getMods().contains(filteredMod) && filteredMod != "") {
+            throw new Exception("Unidentified mod. Available values are " + config.getMods().toString());
         }
         if (!Config.getTypes().contains(filteredType) && filteredType != "") {
             throw new Exception("Unidentified object type. Available values are " + Config.getTypes().toString());
@@ -106,7 +143,7 @@ public class Executer {
     public String search (
         @PathVariable(required = true, value = "term") String term
     ) throws Exception {
-        LOGGER.info(String.format("Executing /classes/search endpoint with parameters %s (term)", term));
+        LOGGER.log(Level.INFO, String.format("Executing /classes/search endpoint with parameters %s (term)", term));
 
         // Escape user input
         final String filteredTerm = escapeUserInput(term);
@@ -163,7 +200,7 @@ public class Executer {
      * @return A filtered input without any special charecters added
      */
     private String escapeUserInput(String unfilteredInput) {
-        LOGGER.info("Escaping user input string: " + unfilteredInput);
+        LOGGER.log(Level.INFO, "Escaping user input string: " + unfilteredInput);
         String filteredInput = "";
         for (int i = 0; i < unfilteredInput.length(); i++) {
             char currentCharecter = unfilteredInput.charAt(i);
