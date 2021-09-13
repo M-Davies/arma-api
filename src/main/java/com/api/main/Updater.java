@@ -39,7 +39,7 @@ public class Updater {
     public Boolean update(MongoClient client, MongoDatabase database) throws IOException {
 
         // Setup Json parser and Mongodb
-        success = false;
+        success = true;
         final JSONParser PARSER = new JSONParser();
         final MongoDatabase BACKUP_DATABASE = client.getDatabase(database.getName() + "-backup");
 
