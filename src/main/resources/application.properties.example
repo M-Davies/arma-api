@@ -15,7 +15,7 @@ config.LOGFILE_PATH="/tmp/arma-api.log"
 config.SUPPORTED_MODS="vanilla,ace,3cb,rhs,niarms,tacvests,tryk,vsm,rksl,acre,projectopfor,immersioncigs"
 
 # Ignore these values, these are in case you wish to use environment variables as opposed to entering the values directly into this file (useful for CI/CD scenarios).
-# If you wish to use environment variables instead of putting your details directly into this file, append "--spring.profiles.active=env" to your java execution string.
+# If you wish to use environment variables instead of putting your details directly into this file, append "--spring.profiles.active=env" to your java execution string. Ensure all the environment variables are populated or the execution will fail.
 #---
 spring.config.activate.on-profile=env
 config.MONGO_URI = ${MONGO_URI}
