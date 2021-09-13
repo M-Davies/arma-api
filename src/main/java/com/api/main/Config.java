@@ -48,7 +48,7 @@ public class Config {
     }
 
     public ArrayList<String> getMods() {
-        return new ArrayList<String>(Arrays.asList(supportedMods));
+        return new ArrayList<String>(Arrays.asList(supportedMods.split(",")));
     }
 
     public static ArrayList<String> getTypes() {

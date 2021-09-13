@@ -102,10 +102,10 @@ public class Executer {
 
         // Verify params
         if (!config.getMods().contains(filteredMod) && filteredMod != "") {
-            throw new Exception("Unidentified mod. Available values are " + config.getMods().toString());
+            throw new Exception(String.format("Unidentified mod (%s). Available values are %s", filteredMod, config.getMods().toString()));
         }
         if (!Config.getTypes().contains(filteredType) && filteredType != "") {
-            throw new Exception("Unidentified object type. Available values are " + Config.getTypes().toString());
+            throw new Exception(String.format("Unidentified object type (%s). Available values are %s", filteredType, Config.getTypes().toString()));
         }
 
         // Filter db by keywords or return all
