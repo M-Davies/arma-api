@@ -14,10 +14,11 @@ config.LOGFILE_PATH="/tmp/arma-api.log"
 # E.g. "vanilla,ace,rhs"
 config.SUPPORTED_MODS="vanilla,ace,3cb,rhs,niarms,tacvests,tryk,vsm,rksl,acre,projectopfor,immersioncigs"
 
-# Ignore these values, these are in case you wish to use environment variables as opposed to entering the values directly into this file (useful for CI/CD scenarios).
+# Ignore these values, these are in case you wish to use environment variables as opposed to entering the values directly into this file (useful for CI/CD scenarios). The server.port property is so CI/CD services can bind spring boot to their web runner.
 # If you wish to use environment variables instead of putting your details directly into this file, append "--spring.profiles.active=env" to your java execution string. Ensure all the environment variables are populated or the execution will fail.
 #---
 spring.config.activate.on-profile=env
+server.port = ${PORT}
 config.MONGO_URI = ${MONGO_URI}
 config.MONGO_DATABASE = ${MONGO_DATABASE}
 config.LOGFILE_PATH = ${LOGFILE_PATH}
