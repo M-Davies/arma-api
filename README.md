@@ -16,11 +16,11 @@ However, as per the [license](./LICENSE), the code and assets for this api belon
 
 View usage on my [Swagger Instance](https://app.swaggerhub.com/apis-docs/M_Davies/arma-api/1.0.0).
 
-- Fetch all classes: http://localhost:8080/classes
-- Filter classes by mod: http://localhost:8080/classes/rhs
-- Filter classes by type: http://localhost:8080/classes/?type=Bipods
-- Filter by mod & class: http://localhost:8080/classes/rhs?type=Bipods
-- Filter by search term: http://localhost:8080/classes/search/M16%20Rifle
+- Fetch all classes: https://unofficial-arma-api.herokuapp.com//classes
+- Filter classes by mod: https://unofficial-arma-api.herokuapp.com//classes/rhs
+- Filter classes by type: https://unofficial-arma-api.herokuapp.com//classes/?type=Bipods
+- Filter by mod & class: https://unofficial-arma-api.herokuapp.com//classes/rhs?type=Bipods
+- Filter by search term: https://unofficial-arma-api.herokuapp.com//classes/search/M16
 
 ## Contributing
 
