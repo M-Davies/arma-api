@@ -10,17 +10,17 @@ However, as per the [license](./LICENSE), the code and assets for this api belon
 
 ## Features
 
-**- Classes endpoint that contains all of the classes that are able to be retrieved from an infantry arsenal (based on the [Nutters modset](https://steamcommunity.com/workshop/filedetails/?id=1355620316)**
+**- Classes endpoint that contains all of the classes that are able to be retrieved from an infantry arsenal (based on the [Nutters modset](https://steamcommunity.com/workshop/filedetails/?id=1355620316))**
 
 ## Usage and Examples
 
 View usage on my [Swagger Instance](https://app.swaggerhub.com/apis-docs/M_Davies/arma-api/1.0.0).
 
-- Fetch all classes: http://localhost:8080/classes
-- Filter classes by mod: http://localhost:8080/classes/rhs
-- Filter classes by type: http://localhost:8080/classes/?type=Bipods
-- Filter by mod & class: http://localhost:8080/classes/rhs?type=Bipods
-- Filter by search term: http://localhost:8080/classes/search/M16%20Rifle
+- Fetch all classes: https://unofficial-arma-api.herokuapp.com//classes
+- Filter classes by mod: https://unofficial-arma-api.herokuapp.com//classes/rhs
+- Filter classes by type: https://unofficial-arma-api.herokuapp.com//classes/?type=Bipods
+- Filter by mod & class: https://unofficial-arma-api.herokuapp.com//classes/rhs?type=Bipods
+- Filter by search term: https://unofficial-arma-api.herokuapp.com//classes/search/M16
 
 ## Contributing
 
@@ -38,8 +38,8 @@ All contributions or feature requests are more than appreciated. To get started,
 2. Populate your [application-properties](src/main/resources/application.properties) file. This file contains user configuration properties used for connecting your database to the api service and the like. If you don't know what some of the values are, check out the provided [example file](src/main/resources/application.properties.example) file. **Never commit your application.properties file to source control, keep it safe!**
 3. Retrieve content from Arma 3. This will involve some fiddling but is easy when you get the hang of it:
     - Open a [Debug Console](https://community.bistudio.com/wiki/Arma_3:_Debug_Console) in Arma 3
-    - In a text editor, open the [SQF Extraction Script](sqf/CFG_To_JSON.sqf) and edit the `_CONFIGS` hashmap to include the Cfg Classes you wish to extract to a JSON array. **NOTE:** Since Arma no longer supports arrays over 9,999,999 elements, you may encouter errors complaining of that face. In such cases, you may have to do the extraction in chunks (e.g. do `weapons` and `glasses` and then do `vehicles` and `magazines` separately).
-    - Execute the script. If you encounter an error and you are using a different modset to the one I mentioned in step 1, please either [let the owner of arma-api know](https://github.com/M-Davies/arma-api/issues/new/choose) or make a pull request to add it to the script.
+    - In a text editor, open the [SQF Extraction Script](sqf/CFG_To_JSON.sqf) and edit the `_CONFIGS` hashmap to include the Cfg Classes you wish to extract to a JSON array. **NOTE:** Since Arma no longer supports arrays over 9,999,999 elements, you may encouter errors complaining of that fact. In such cases, you may have to do the extraction in chunks (e.g. do `weapons` and `glasses` and then do `vehicles` and `magazines` separately).
+    - Copy over the script to the debug console and execute it. If you encounter an error and you are using a different modset to the one I mentioned in step 1, please either [let the owner of arma-api know](https://github.com/M-Davies/arma-api/issues/new/choose) or make a pull request to add it to the script.
     - You should now have the JSON array on your clipboard!
 4. Clear the contents of the [data](src/main/resources/data) directory of any JSON files to ensure that only your data is copied across. Copy the contents of your clipboard to an empty JSON file in this directory, creating it if necessary. The filename doesn't matter.
 5. Then open a terminal at the root of this project and run `mvn clean install` to download the necessary libraries.
