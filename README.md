@@ -10,7 +10,7 @@ However, as per the [license](./LICENSE), the code and assets for this api belon
 
 ## Features
 
-**- Classes endpoint that contains all of the classes that are able to be retrieved from an infantry arsenal (based on the [Nutters modset](https://steamcommunity.com/workshop/filedetails/?id=1355620316)**
+**- Classes endpoint that contains all of the classes that are able to be retrieved from an infantry arsenal (based on the [Nutters modset](https://steamcommunity.com/workshop/filedetails/?id=1355620316))**
 
 ## Usage and Examples
 
