@@ -75,6 +75,12 @@ public class Updater {
         }
 
         Files.list(new File(System.getProperty("user.dir") + "/src/main/resources/data").toPath()).forEach(path -> {
+            // Skip non json files
+            if (!path.toString().contains(".json")) {
+                LOGGER.log(Level.INFO, "[INFO] Skipping non json file in data directory : " + path);
+                return;
+            }
+
             fileParsed = true;
             LOGGER.log(Level.INFO, "[INFO] Parsing " + path);
             try {
