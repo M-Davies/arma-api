@@ -24,7 +24,7 @@
 hs_err_pid*
 
 # User JSON files
-**/data/*.json
+
 
 # User configs
 **/.env
