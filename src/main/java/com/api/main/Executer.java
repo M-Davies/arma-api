@@ -86,15 +86,19 @@ public class Executer {
      * The base API route for the class list, this will return all the classes in the database by default. Optionally, {@code mod} can be added to the path to filter the classes by a specific mod. In addition or in lieu, {@code type} can be added as a request parameter ({@code ?type=<the-type>}) to filter the classes by the type of each config (e.g. weapon, backpack, etc).
      * @param mod A mod to filter for (e.g. ace, vanilla, 3cb)
      * @param type A type to filter for (e.g. weapon, vest, headgear)
+     * @param page Pagination page number
+     * @param size Pagination page size (max number of items in the json array on each page)
      * @return A string representation of JSON list containing the filtered configs
      * @throws Exception The user has provided a mod or type that isn't valid
      */
     @GetMapping(value = {"/classes", "/classes/{mod}"})
     public String classes (
         @PathVariable(required = false, value = "mod") String mod,
-        @RequestParam(required = false, value = "type") String type
+        @RequestParam(required = false, value = "type") String type,
+        @RequestParam(required = false, value = "page", defaultValue = "0") Integer page,
+        @RequestParam(required = false, value = "size", defaultValue = "-1") Integer size
     ) throws Exception {
-        LOGGER.log(Level.INFO, String.format("Executing /classes endpoint with parameters %s (mod) and %s (type)", mod, type));
+        LOGGER.log(Level.INFO, String.format("Executing /classes endpoint with parameters %s (mod) and %s (type) and %s (page) and %s (size)", mod, type, page, size));
 
         // Check user input
         final String filteredMod = mod == "" || mod == null ? "" : escapeUserInput(mod);
@@ -127,26 +131,46 @@ public class Executer {
         }
 
         // Prettify and respond
-        return String.valueOf(dbContents
-            .stream()
-            .distinct()
-            .map(typeDoc -> typeDoc.toJson())
-            .sorted()
-            .collect(Collectors.toList())
-        );
+        if (size == -1) {
+            return String.valueOf(dbContents
+                .stream()
+                .distinct()
+                .map(typeDoc -> typeDoc.toJson())
+                .sorted()
+                .collect(Collectors.toList())
+            );
+        } else {
+            Integer pageLimter = size * page;
+            if (page == 0) {
+                pageLimter = 0;
+            }
+            return String.valueOf(dbContents
+                .stream()
+                .skip(pageLimter)
+                .limit(size)
+                .distinct()
+                .map(typeDoc -> typeDoc.toJson())
+                .sorted()
+                .collect(Collectors.toList())
+            );
+        }
     }
 
     /**
      * A search route for the class list, this will return all the classes in the database that match a user provided search term (after escaping mongo chars).
      * @param term The search term. It can be a classname, a config key or a config value
+     * @param page Pagination page number
+     * @param size Pagination page size (max number of items in the json array on each page)
      * @return A string representation of JSON list containing the filtered configs
      * @throws Exception If a collection cannot be found or is malformed
      */
     @GetMapping(value = {"/classes/search/{term}"})
     public String search (
-        @PathVariable(required = true, value = "term") String term
+        @PathVariable(required = true, value = "term") String term,
+        @RequestParam(required = false, value = "page", defaultValue = "0") Integer page,
+        @RequestParam(required = false, value = "size", defaultValue = "-1") Integer size
     ) throws Exception {
-        LOGGER.log(Level.INFO, String.format("Executing /classes/search endpoint with parameters %s (term)", term));
+        LOGGER.log(Level.INFO, String.format("Executing /classes/search endpoint with parameters %s (term) and %s (page) and %s (size)", term, page, size));
 
         // Escape user input
         final String filteredTerm = escapeUserInput(term);
@@ -171,14 +195,30 @@ public class Executer {
             }
         }
 
-        return String.valueOf(matchedClasses
-            .stream()
-            .distinct()
-            .map(typeDoc -> typeDoc.toJson())
-            .sorted()
-            .collect(Collectors.toList())
-        );
-
+        // Prettify and respond
+        if (size == -1) {
+            return String.valueOf(matchedClasses
+                .stream()
+                .distinct()
+                .map(typeDoc -> typeDoc.toJson())
+                .sorted()
+                .collect(Collectors.toList())
+            );
+        } else {
+            Integer pageLimter = size * page;
+            if (page == 0) {
+                pageLimter = 0;
+            }
+            return String.valueOf(matchedClasses
+                .stream()
+                .skip(pageLimter)
+                .limit(size)
+                .distinct()
+                .map(typeDoc -> typeDoc.toJson())
+                .sorted()
+                .collect(Collectors.toList())
+            );
+        }
     }
 
     /**

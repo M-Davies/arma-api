@@ -91,14 +91,16 @@ public class Updater {
                         // Parse json string
                         final JSONObject configObj = (JSONObject) configStr;
 
-                        // Create mongo document
-                        final Document configDoc = new Document(
-                            new ObjectMapper().readValue(configObj.toJSONString(), HashMap.class)
-                        );
+                        // Create mongo document if there is a verified type, need a long conditional as empty types are misleading
+                        if (String.valueOf(configObj.get("type")) != "" && String.valueOf(configObj.get("type")) != "\"\"" && String.valueOf(configObj.get("type")).isEmpty() == false) {
+                            final Document configDoc = new Document(
+                                new ObjectMapper().readValue(configObj.toJSONString(), HashMap.class)
+                            );
 
-                        // Calculate target collection based off mod and append
-                        LOGGER.log(Level.INFO, "[INFO] Adding new object to database from " + path + "\n" + configObj);
-                        database.getCollection("data." + configObj.get("mod").toString()).insertOne(configDoc);
+                            // Calculate target collection based off mod and append
+                            LOGGER.log(Level.INFO, "[INFO] Adding new object to database from " + path + "\n" + configObj);
+                            database.getCollection("data." + configObj.get("mod").toString()).insertOne(configDoc);
+                        }
                     } catch (JsonProcessingException e) {
                         LOGGER.log(Level.WARNING, "[ERROR] Could not create mongo document from config object:\n" + configStr);
                         fileParsed = false;
