@@ -75,13 +75,7 @@ paths:
       summary: Retrieves all config class objects filtered by the mod
       operationId: allClassesByMod
       parameters:
-        - name: mod
-          in: path
-          description: Mod to filter by
-          required: true
-          schema:
-            type: string
-            example: "RedHammerStudios"
+        - $ref: '#/components/parameters/mod'
         - name: type
           in: query
           description: Type to filter by
@@ -242,3 +236,14 @@ components:
         error:
           type: string
           example: "Unidentified mod. Available values are [ace, vanilla]"
+  
+  parameters:
+    mod:
+      name: mod
+      in: path
+      description: Mod to filter the results by
+      required: true
+      schema:
+        type: string
+        enum: ["vanilla","ace","3cb","rhs","niarms","tacvests","tryk","vsm","rksl","acre","projectopfor","immersioncigs"]
+    type:
