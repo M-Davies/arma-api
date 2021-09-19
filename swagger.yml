@@ -31,13 +31,7 @@ paths:
       summary: Retrieves all config class objects
       operationId: allClasses
       parameters:
-        - name: type
-          in: query
-          description: Type to filter by
-          required: false
-          schema:
-            type: string
-            example: "Primaries"
+        - $ref: '#/components/parameters/type'
         - name: page
           in: query
           description: Pagination page number
@@ -76,13 +70,7 @@ paths:
       operationId: allClassesByMod
       parameters:
         - $ref: '#/components/parameters/mod'
-        - name: type
-          in: query
-          description: Type to filter by
-          required: false
-          schema:
-            type: string
-            example: "Primaries"
+        - $ref: '#/components/parameters/type'
         - name: page
           in: query
           description: Pagination page number
@@ -247,3 +235,14 @@ components:
         type: string
         enum: ["vanilla","ace","3cb","rhs","niarms","tacvests","tryk","vsm","rksl","acre","projectopfor","immersioncigs"]
     type:
+      name: type
+      in: query
+      description: Type to filter the results by
+      required: false
+      schema:
+        type: string
+        enum: ["Primaries", "Secondaries", "Launchers", "Throwables", "Explosives", "Muzzles",
+        "Pointers", "Optics", "Bipods", "Tools", "Terminals", "Maps", "GPSs", "Radios",
+        "Compasses", "Watches", "Facewear", "Headgear", "Goggles", "Binoculars",
+        "Magazines", "Uniforms", "Vests", "Backpacks"
+        ]
