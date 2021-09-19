@@ -37,13 +37,13 @@ paths:
           required: false
           schema:
             type: string
-            example: "weapon"
+            example: "Primaries"
         - name: page
           in: query
           description: Pagination page number
           required: false
           schema:
-            type: number
+            type: integer
             default: 0
             example: 0
         - name: size
@@ -51,7 +51,7 @@ paths:
           description: Pagination maximum page size, -1 means that there is no size limit
           required: false
           schema:
-            type: number
+            type: integer
             default: -1
             example: -1
       responses:
@@ -88,13 +88,13 @@ paths:
           required: false
           schema:
             type: string
-            example: "weapon"
+            example: "Primaries"
         - name: page
           in: query
           description: Pagination page number
           required: false
           schema:
-            type: number
+            type: integer
             default: 0
             example: 0
         - name: size
@@ -102,7 +102,7 @@ paths:
           description: Pagination maximum page size, -1 means that there is no size limit
           required: false
           schema:
-            type: number
+            type: integer
             default: -1
             example: -1
       responses:
@@ -138,7 +138,7 @@ paths:
           description: Pagination page number
           required: false
           schema:
-            type: number
+            type: integer
             default: 0
             example: 0
         - name: size
@@ -146,7 +146,7 @@ paths:
           description: Pagination maximum page size, -1 means that there is no size limit
           required: false
           schema:
-            type: number
+            type: integer
             default: -1
             example: -1
       responses:
