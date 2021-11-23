@@ -18,7 +18,7 @@
 //   ["glasses", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgGlasses")]
 // ];
 private _CONFIGS = createHashMapFromArray [
-  ["glasses", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgGlasses")]
+  ["vehicles", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgVehicles")]
 ];
 forceunicode 0;
 private _jsonClasses = [];
@@ -156,36 +156,48 @@ getType = { params["_NAME", "_ROUGHTYPE"];
 };
 
 // Calculates the mod of the config item based off the author
-getModName = { params["_NAME", "_AUTHOR"];
+getModName = { params["_NAME", "_DLC", "_AUTHOR"];
   private _modName = "";
 
   // I would prefer to use an else if here but it doesn't exist in sqf seemingly
   private _found = false;
-  if (["Bohemia Interactive", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+  if ((["Bohemia Interactive", _AUTHOR] call BIS_fnc_inString || ["Bravo Zero One Studios", _AUTHOR] call BIS_fnc_inString || _NAME == "None") && _found == false) then {
     _modName = "vanilla";
     _found = true;
   };
-  if (["ACE", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+  if ((["ACE", _AUTHOR] call BIS_fnc_inString || ["ACE_", _NAME] call BIS_fnc_inString) && _found == false) then {
     _modName = "ace";
     _found = true;
   };
-  if ((["3 Commando Brigade", _AUTHOR] call BIS_fnc_inString || ["3commandobrigade", _AUTHOR] call BIS_fnc_inString) && _found == false) then {
+  if ((["3 Commando Brigade", _AUTHOR] call BIS_fnc_inString || ["3commandobrigade", _AUTHOR] call BIS_fnc_inString || ["3CB_", _NAME] call BIS_fnc_inString) && _found == false) then {
     _modName = "3cb";
     _found = true;
   };
-  if (["Red Hammer Studios", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+  if ((["Red Hammer Studios", _AUTHOR] call BIS_fnc_inString || ["BWMod", _AUTHOR] call BIS_fnc_inString || ["rhs_", _NAME] call BIS_fnc_inString || ["rhsgref_", _NAME] call BIS_fnc_inString || ["RHS_", _DLC] call BIS_fnc_inString) && _found == false) then {
     _modName = "rhs";
     _found = true;
   };
-  if (["Toadie", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+  if ((["Toadie", _AUTHOR] call BIS_fnc_inString || ["Sorry", _AUTHOR] call BIS_fnc_inString || ["Nix", _AUTHOR] call BIS_fnc_inString || ["HLC_Bipod_G36", _NAME] call BIS_fnc_inString) && _found == false) then {
     _modName = "niarms";
     _found = true;
   };
-  if ((["zabb", _AUTHOR] call BIS_fnc_inString || ["Xmosmos", _AUTHOR] call BIS_fnc_inString) && _found == false) then {
+  if (["Ampersand", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "breachingcharge";
+    _found = true;
+  };
+  if (["Slatts", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "facexscars";
+    _found = true;
+  };
+    if (["G4rrus", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "customflashlights";
+    _found = true;
+  };
+  if ((["zabb", _AUTHOR] call BIS_fnc_inString || ["Xmosmos", _AUTHOR] call BIS_fnc_inString || ["TAC_", _NAME] call BIS_fnc_inString) && _found == false) then {
     _modName = "tacvests";
     _found = true;
   };
-  if ((["VanSchmoozin", _AUTHOR] call BIS_fnc_inString || ["Bacon", _AUTHOR] call BIS_fnc_inString) && _found == false) then {
+  if ((["VanSchmoozin", _AUTHOR] call BIS_fnc_inString || ["Bacon", _AUTHOR] call BIS_fnc_inString || ["Alpine_", _NAME] call BIS_fnc_inString || ["DTS_", _NAME] call BIS_fnc_inString || ["_Massif", _NAME] call BIS_fnc_inString || ["_opscore", _NAME] call BIS_fnc_inString || ["VSM_", _NAME] call BIS_fnc_inString) && _found == false) then {
     _modName = "vsm";
     _found = true;
   };
@@ -193,8 +205,16 @@ getModName = { params["_NAME", "_AUTHOR"];
     _modName = "rksl";
     _found = true;
   };
-  if (["ACRE2Team", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+  if ((["ACRE2Team", _AUTHOR] call BIS_fnc_inString || ["ACRE_", _NAME] call BIS_fnc_inString) && _found == false) then {
     _modName = "acre";
+    _found = true;
+  };
+    if (["Jaffa", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "nutresource";
+    _found = true;
+  };
+  if ((["Frisia", _AUTHOR] call BIS_fnc_inString || ["Free World Armoury", _AUTHOR] call BIS_fnc_inString) && _found == false) then {
+    _modName = "nutresource3party";
     _found = true;
   };
   if (["Project OPFOR", _AUTHOR] call BIS_fnc_inString && _found == false) then {
@@ -205,18 +225,14 @@ getModName = { params["_NAME", "_AUTHOR"];
     _modName = "immersioncigs";
     _found = true;
   };
-  if (["teriyaki", _AUTHOR] call BIS_fnc_inString && _found == false) then {
-    _modName = "tryk";
-    _found = true;
-  };
-  if (["Dragonkeeper", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+  if ((["teriyaki", _AUTHOR] call BIS_fnc_inString || ["Dragonkeeper", _AUTHOR] call BIS_fnc_inString || ["TRYK_", _NAME] call BIS_fnc_inString) && _found == false) then {
     _modName = "tryk";
     _found = true;
   };
 
-  // Not found, either author is unknown or is not supported yet
+  // Not found, either object is a placeholder null class, author is not provided or is not supported yet
   if (_found == false) then {
-    _modName = "";
+    throw format ["[ERROR] Unknown mod author for class = %1", _NAME];
   };
 
   _modName
@@ -227,6 +243,7 @@ getModName = { params["_NAME", "_AUTHOR"];
   private _CONFIGTYPE = _x;
   private _CONFIGARRAY = _y apply {
     private _CONFIGNAME = configName _x;
+    private _DLCNAME = getText (_x >> "dlc");
     private _TYPE = [_CONFIGNAME, _CONFIGNAME call BIS_fnc_itemType] call getType;
     // Hacky way around checking if a variable is false
     if (typeName (_TYPE select 0) == "BOOL") then {
@@ -253,7 +270,7 @@ getModName = { params["_NAME", "_AUTHOR"];
           endl,
           _TYPE select 1,
           endl,
-          [_CONFIGNAME, getText (_x >> "author")] call getModName,
+          [_CONFIGNAME, _DLCNAME, getText (_x >> "author")] call getModName,
           endl,
           getNumber (_x >> "mass"),
           endl,
@@ -279,7 +296,7 @@ getModName = { params["_NAME", "_AUTHOR"];
           endl,
           getNumber (_x >> "count"),
           endl,
-          [_CONFIGNAME, getText (_x >> "author")] call getModName,
+          [_CONFIGNAME, _DLCNAME, getText (_x >> "author")] call getModName,
           endl,
           getNumber (_x >> "mass"),
           endl,
@@ -303,7 +320,7 @@ getModName = { params["_NAME", "_AUTHOR"];
           endl,
           [getText (_x >> "picture"), "\", "\\"] call CBA_fnc_replace,
           endl,
-          [_CONFIGNAME, getText (_x >> "author")] call getModName,
+          [_CONFIGNAME, _DLCNAME, getText (_x >> "author")] call getModName,
           endl,
           getNumber (_x >> "mass"),
           endl,
@@ -327,7 +344,7 @@ getModName = { params["_NAME", "_AUTHOR"];
           endl,
           [getText (_x >> "picture"), "\", "\\"] call CBA_fnc_replace,
           endl,
-          [_CONFIGNAME, getText (_x >> "author")] call getModName,
+          [_CONFIGNAME, _DLCNAME, getText (_x >> "author")] call getModName,
           endl,
           getNumber (_x >> "mass"),
           endl,
