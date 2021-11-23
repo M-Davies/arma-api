@@ -367,8 +367,14 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
 
 } forEach _CONFIGS;
 
-// Remove random null classes, convert to json array and finish
+// Remove random null classes, we have to do it more than once as CBA_fnc_replace has a limit of around 10000 lines
 private _joinedClasses = [_jsonClasses joinString endl, "<null>", ""] call CBA_fnc_replace;
+while {["<null>", _joinedClasses] call BIS_fnc_inString} do {
+  _filteredClasses = [_joinedClasses, "<null>", ""] call CBA_fnc_replace;
+  _joinedClasses = _filteredClasses;
+};
+
+// Convert to json array and finish
 _JSON = "[" + endl + "  " + _joinedClasses + endl + "]" + endl;
 copyToClipboard _JSON;
 _JSON
