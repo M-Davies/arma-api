@@ -18,7 +18,7 @@ However, as per the [license](./LICENSE), the code and assets for this api belon
 
 ## Usage and Examples
 
-View usage on my [Swagger Instance](https://app.swaggerhub.com/apis-docs/M_Davies/arma-api/1.0.0).
+View usage on my [Swagger Instance](https://app.swaggerhub.com/apis-docs/M_Davies/arma-api/1.0.0). See example queries below, the heroku instance can take a few seconds to spin up out of sleep so please be patient:
 
 - Fetch all classes: https://unofficial-arma-api.herokuapp.com//classes
 - Filter classes by mod: https://unofficial-arma-api.herokuapp.com//classes/rhs
