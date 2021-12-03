@@ -189,6 +189,10 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
     _modName = "customflashlights";
     _found = true;
   };
+  if ((["teriyaki", _AUTHOR] call BIS_fnc_inString || ["Dragonkeeper", _AUTHOR] call BIS_fnc_inString || ["TRYK_", _NAME] call BIS_fnc_inString) && _found == false) then {
+    _modName = "tryk";
+    _found = true;
+  };
   if ((["zabb", _AUTHOR] call BIS_fnc_inString || ["Xmosmos", _AUTHOR] call BIS_fnc_inString || ["TAC_", _NAME] call BIS_fnc_inString) && _found == false) then {
     _modName = "tacvests";
     _found = true;
@@ -221,11 +225,43 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
     _modName = "immersioncigs";
     _found = true;
   };
-  if ((["teriyaki", _AUTHOR] call BIS_fnc_inString || ["Dragonkeeper", _AUTHOR] call BIS_fnc_inString || ["TRYK_", _NAME] call BIS_fnc_inString) && _found == false) then {
-    _modName = "tryk";
+  if ((["Enoch", _DLC] call BIS_fnc_inString || ["Contact", _DLC] call BIS_fnc_inString) && _found == false) {
+    _modName = "contact";
     _found = true;
   };
-  if ((["Bohemia Interactive", _AUTHOR] call BIS_fnc_inString || ["Bravo Zero One Studios", _AUTHOR] call BIS_fnc_inString || _NAME == "None") && _found == false) then {
+  if (["Kart", _DLC] call BIS_fnc_inString && _found == false) {
+    _modName = "karts";
+    _found = true;
+  };
+  if (["Mark", _DLC] call BIS_fnc_inString && _found == false) {
+    _modName = "marksman";
+    _found = true;
+  };
+  if (["Tank", _DLC] call BIS_fnc_inString && _found == false) {
+    _modName = "tanks";
+    _found = true;
+  };
+  if (["Expansion", _DLC] call BIS_fnc_inString && _found == false) {
+    _modName = "apex";
+    _found = true;
+  };
+  if (["AoW", _DLC] call BIS_fnc_inString && _found == false) {
+    _modName = "artofwar";
+    _found = true;
+  };
+  if (["Heli", _DLC] call BIS_fnc_inString && _found == false) {
+    _modName = "helicopters";
+    _found = true;
+  };
+  if (["Orange", _DLC] call BIS_fnc_inString && _found == false) {
+    _modName = "lawsofwar";
+    _found = true;
+  };
+  if ((["Bravo Zero One Studios", _AUTHOR] call BIS_fnc_inString || ["Jets", _DLC] call BIS_fnc_inString) && _found == false) {
+    _modname = "jets";
+    _found = true;
+  }
+  if ((["Bohemia Interactive", _AUTHOR] call BIS_fnc_inString || _NAME == "None") && _found == false) then {
     _modName = "vanilla";
     _found = true;
   };
