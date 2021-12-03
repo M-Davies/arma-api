@@ -161,10 +161,6 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
 
   // I would prefer to use an else if here but it doesn't exist in sqf seemingly
   private _found = false;
-  if ((["Bohemia Interactive", _AUTHOR] call BIS_fnc_inString || ["Bravo Zero One Studios", _AUTHOR] call BIS_fnc_inString || _NAME == "None") && _found == false) then {
-    _modName = "vanilla";
-    _found = true;
-  };
   if ((["ACE", _AUTHOR] call BIS_fnc_inString || ["ACE_", _NAME] call BIS_fnc_inString) && _found == false) then {
     _modName = "ace";
     _found = true;
@@ -227,6 +223,10 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
   };
   if ((["teriyaki", _AUTHOR] call BIS_fnc_inString || ["Dragonkeeper", _AUTHOR] call BIS_fnc_inString || ["TRYK_", _NAME] call BIS_fnc_inString) && _found == false) then {
     _modName = "tryk";
+    _found = true;
+  };
+  if ((["Bohemia Interactive", _AUTHOR] call BIS_fnc_inString || ["Bravo Zero One Studios", _AUTHOR] call BIS_fnc_inString || _NAME == "None") && _found == false) then {
+    _modName = "vanilla";
     _found = true;
   };
 
