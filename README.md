@@ -1,6 +1,10 @@
+<p align="center">
+    <img src="src/main/resources/static/logo.png" width=350>
+</p>
+
 # arma-api
 
-An unofficial API for Arma 3 classnames and data from vanilla, DLC and common mod sources.
+An unofficial API for developers of applications that utilise Arma 3 classnames and data from vanilla, DLC and common mod sources.
 
 ## Disclaimer
 
