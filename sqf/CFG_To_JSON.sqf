@@ -290,7 +290,7 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
     switch (_CONFIGTYPE) do {
       case "weapons": {
         format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "magazines":%10,%11    "type":"%12",%13    "subtype":"%14",%15    "mod":"%16",%17    "weight":%18,%19    "magwell":%20%21  },%22',
+          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "imagePath":"%8",%9    "magazines":%10,%11    "type":"%12",%13    "subtype":"%14",%15    "mod":"%16",%17    "weight":%18,%19    "magwell":%20%21  },%22',
           endl,
           _CONFIGNAME,
           endl,
@@ -318,7 +318,7 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
 
       case "magazines": {
         format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "ammo":"%10",%11    "count":%12,%13    "mod":"%14",%15    "weight":%16,%17    "type":"%18",%19    "subtype":"%20"%21  },%22',
+          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "imagePath":"%8",%9    "ammo":"%10",%11    "count":%12,%13    "mod":"%14",%15    "weight":%16,%17    "type":"%18",%19    "subtype":"%20"%21  },%22',
           endl,
           _CONFIGNAME,
           endl,
@@ -346,7 +346,7 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
 
       case "vehicles": {
         format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "mod":"%10",%11    "weight":%12,%13    "type":"%14",%15    "subtype":"%16"%17  },%18',
+          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "imagePath":"%8",%9    "mod":"%10",%11    "weight":%12,%13    "type":"%14",%15    "subtype":"%16"%17  },%18',
           endl,
           _CONFIGNAME,
           endl,
@@ -370,7 +370,7 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
 
       case "glasses": {
         format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "mod":"%10",%11    "weight":%12,%13    "type":"%14",%15    "subtype":"%16"%17  },%18',
+          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "imagePath":"%8",%9    "mod":"%10",%11    "weight":%12,%13    "type":"%14",%15    "subtype":"%16"%17  },%18',
           endl,
           _CONFIGNAME,
           endl,

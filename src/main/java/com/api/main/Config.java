@@ -14,6 +14,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Config {
 
+    @Value("${config.HOST:http://localhost:8080}")
+    private String host;
+
     @Value("${config.MONGO_URI:mongodb://localhost:27017}")
     private String mongoUri;
 
@@ -26,6 +29,9 @@ public class Config {
     @Value("${config.SUPPORTED_MODS:vanilla,ace,3cb,rhs,niarms,tacvests,tryk,vsm,rksl,acre,projectopfor,immersioncigs}")
     private String supportedMods;
 
+    @Value("${config.ARMA_PATH}")
+    private String armaPath;
+
     private static final ArrayList<String> TYPES = new ArrayList<String>(Arrays.asList(
         "Primaries", "Secondaries", "Launchers", "Throwables", "Explosives", "Muzzles",
         "Pointers", "Optics", "Bipods", "Tools", "Terminals", "Maps", "GPSs", "Radios",
@@ -34,6 +40,10 @@ public class Config {
     ));
 
     private final static ArrayList<Character> SPECIAL_MONGO_CHARS = new ArrayList<Character>(Arrays.asList('\'', '\"', '\\', ';', '{', '}', '$'));
+
+    public String getHost() {
+        return host;
+    }
 
     public MongoClientURI getMongoUri() {
         return new MongoClientURI(mongoUri);
@@ -51,11 +61,15 @@ public class Config {
         return new ArrayList<String>(Arrays.asList(supportedMods.split(",")));
     }
 
-    public static ArrayList<String> getTypes() {
+    public String getArmaPath() {
+        return armaPath;
+    }
+
+    public ArrayList<String> getTypes() {
         return TYPES;
     }
 
-    public static ArrayList<Character> getSpecialChars() {
+    public ArrayList<Character> getSpecialChars() {
         return SPECIAL_MONGO_CHARS;
     }
 }

@@ -1,6 +1,12 @@
 {
   "properties": [
     {
+      "name": "config.HOST",
+      "type": "java.lang.String",
+      "defaultValue": "http://localhost:8080",
+      "description": "Root URL that the API is being hosted on. This is used mainly to update each image entry in the database to point to the physical location of the image."
+    },
+    {
       "name": "config.MONGO_URI",
       "type": "java.lang.String",
       "defaultValue": "mongodb://localhost:27017",
@@ -23,6 +29,12 @@
       "type": "java.lang.String",
       "defaultValue": "vanilla,ace,3cb,rhs,niarms,tacvests,tryk,vsm,rksl,acre,projectopfor,immersioncigs",
       "description": "ArrayList of mod authors that you wish to appear as modnames in the database. Environment variable access not supported right now. Check src/main/java/com/api/main/Config.java:MODS for the defaults."
+    },
+    {
+      "name": "config.ARMA_PATH",
+      "type": "java.lang.String",
+      "defaultValue": "",
+      "description": "Full path to the Arma 3 install directory or an empty string if it is not installed."
     }
   ]
 }
