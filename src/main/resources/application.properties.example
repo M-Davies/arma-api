@@ -16,7 +16,7 @@ config.LOGFILE_PATH = /tmp/arma-api.log
 
 # ArrayList of mod authors that you wish to appear as modnames in the database (without the [])
 # E.g. "vanilla,ace,rhs"
-config.SUPPORTED_MODS= vanilla,ace,3cb,rhs,niarms,tacvests,tryk,vsm,rksl,acre,projectopfor,immersioncigs
+config.SUPPORTED_MODS= vanilla,ace,3cb,rhs,niarms,tacvests,tryk,vsm,rksl,acre,projectopfor,immersioncigs,breachingcharge,facexscars,customflashlights,nutresource,nutresource3party,contact,karts,marksman,tanks,apex,artofwar,helicopters,lawsofwar,jets,militarygearpack,rmswatuniform,solidcoloruniforms,drongosartillery,projectbjc,katadvancedmedical,sbsvsmretexture
 
 # Ignore these values, these are in case you wish to use environment variables as opposed to entering the values directly into this file (useful for CI/CD scenarios). The server.port property is so CI/CD services can bind spring boot to their web runner.
 # If you wish to use environment variables instead of putting your details directly into this file, append "--spring.profiles.active=env" to your java execution string. Ensure all the environment variables are populated or the execution will fail.
