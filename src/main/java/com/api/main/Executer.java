@@ -60,7 +60,7 @@ public class Executer {
         // Run the updater if requested
         if (Arrays.asList(args).contains("--updater")) {
             try {
-                if (new Updater().update(MONGO_CLIENT, DATABASE) == true) {
+                if (new Updater().update(MONGO_CLIENT, DATABASE, config) == true) {
                     LOGGER.log(Level.INFO, "[SUCCESS] Updater has successfully backed up and updated all collections in the database!");
                 } else {
                     throw new Exception("[ERROR] Updater failed to backup and/or update all collections in the database. See log for more details...");
@@ -105,25 +105,20 @@ public class Executer {
         final String filteredType = type == "" || type == null ? "" : escapeUserInput(type);
 
         // Verify params
-        if (!config.getMods().contains(filteredMod) && filteredMod != "") {
-            throw new Exception(String.format("Unidentified mod (%s). Available values are %s", filteredMod, config.getMods().toString()));
-        }
-        if (!Config.getTypes().contains(filteredType) && filteredType != "") {
-            throw new Exception(String.format("Unidentified object type (%s). Available values are %s", filteredType, Config.getTypes().toString()));
-        }
+        verifyParams(filteredMod, filteredType);
 
         // Filter db by keywords or return all
         ArrayList<Document> dbContents = new ArrayList<Document>();
         for (String collectionName : DATABASE.listCollectionNames()) {
             MongoCollection<Document> modContents = retrieveCollection(collectionName);
 
-            if (collectionName.equals("data." + filteredMod)) {
-                dbContents.addAll(filterByType(modContents, filteredType));
+            if (!filteredMod.isEmpty() && collectionName.equals("data." + filteredMod)) {
+                dbContents.addAll(filterResults(modContents, filteredType, ""));
 
                 // Break so we only return a singular mod spec
                 break;
             } else if (filteredMod.isEmpty()) {
-                dbContents.addAll(filterByType(modContents, filteredType));
+                dbContents.addAll(filterResults(modContents, filteredType, ""));
             } else {
                 // We haven't reached the requested mod yet
                 continue;
@@ -159,6 +154,8 @@ public class Executer {
     /**
      * A search route for the class list, this will return all the classes in the database that match a user provided search term (after escaping mongo chars).
      * @param term The search term. It can be a classname, a config key or a config value
+     * @param mod A mod to filter for (e.g. ace, vanilla, 3cb)
+     * @param type A type to filter the results by (e.g. weapon, vest, headgear)
      * @param page Pagination page number
      * @param size Pagination page size (max number of items in the json array on each page)
      * @return A string representation of JSON list containing the filtered configs
@@ -167,31 +164,35 @@ public class Executer {
     @GetMapping(value = {"/classes/search/{term}"})
     public String search (
         @PathVariable(required = true, value = "term") String term,
+        @RequestParam(required = false, value = "mod") String mod,
+        @RequestParam(required = false, value = "type") String type,
         @RequestParam(required = false, value = "page", defaultValue = "0") Integer page,
         @RequestParam(required = false, value = "size", defaultValue = "-1") Integer size
     ) throws Exception {
-        LOGGER.log(Level.INFO, String.format("Executing /classes/search endpoint with parameters %s (term) and %s (page) and %s (size)", term, page, size));
+        LOGGER.log(Level.INFO, String.format("Executing /classes/search endpoint with parameters %s (term) %s (mod) %s (type) and %s (page) and %s (size)", term, mod, type, page, size));
 
-        // Escape user input
+        // Check user input
+        final String filteredMod = mod == "" || mod == null ? "" : escapeUserInput(mod);
+        final String filteredType = type == "" || type == null ? "" : escapeUserInput(type);
         final String filteredTerm = escapeUserInput(term);
+
+        // Verify params
+        verifyParams(filteredMod, filteredType);
 
         // Match using Bson filter
         ArrayList<Document> matchedClasses = new ArrayList<Document>();
         for (String modName : DATABASE.listCollectionNames()) {
-            ArrayList<Document> filteredContents = new ArrayList<Document>();
-            try {
-                // TODO: This will need updating as we add more numeric fields
-                retrieveCollection(modName).find(Filters.or(
-                    Filters.eq("count", Long.parseLong(filteredTerm)),
-                    Filters.eq("weight", Long.parseLong(filteredTerm))
-                )).into(filteredContents);
-            } catch (NumberFormatException e) {
-                retrieveCollection(modName).find(Filters.text(filteredTerm)).into(filteredContents);
-            }
+            // Filter by a user provided mod if one is given
+            if (!filteredMod.isEmpty() && modName.equals("data." + filteredMod)) {
+                matchedClasses.addAll(filterResults(retrieveCollection(modName), filteredType, filteredTerm));
 
-            // Add to final doc if match is found
-            if (filteredContents != null) {
-                matchedClasses.addAll(filteredContents);
+                // Break so we only return a singular mod spec
+                break;
+            } else if (filteredMod.isEmpty()) {
+                matchedClasses.addAll(filterResults(retrieveCollection(modName), filteredType, filteredTerm));
+            } else {
+                // We haven't reached the requested mod yet
+                continue;
             }
         }
 
@@ -247,7 +248,7 @@ public class Executer {
         String filteredInput = "";
         for (int i = 0; i < unfilteredInput.length(); i++) {
             char currentCharecter = unfilteredInput.charAt(i);
-            if (!Config.getSpecialChars().contains(currentCharecter)) {
+            if (!config.getSpecialChars().contains(currentCharecter)) {
                 filteredInput += currentCharecter;
             }
         }
@@ -255,19 +256,66 @@ public class Executer {
     }
 
     /**
-     * Filters a given collection by a user requested type or retrieves all the types if user input is not given.
-     * @param collection The collection to search in
-     * @param type The config type to filter the collection by
-     * @return A list of all the documents in the collection that matches the type (or all if no type was given)
+     * Checks the safe user input parameters against stored static config values
+     * @param filteredMod A mod to filter for (e.g. ace, vanilla, 3cb)
+     * @param filteredType The search term. It can be a classname, a config key or a config value
+     * @return True if all tests passed or an exception otherwise
+     * @throws Exception If a param failed to verify
      */
-    private ArrayList<Document> filterByType(MongoCollection<Document> collection, String type) {
+    private Boolean verifyParams(String filteredMod, String filteredType) throws Exception {
+        if (!config.getMods().contains(filteredMod) && filteredMod != "") {
+            throw new Exception(String.format("Unidentified mod (%s). Available values are %s", filteredMod, config.getMods().toString()));
+        }
+        if (!config.getTypes().contains(filteredType) && filteredType != "") {
+            throw new Exception(String.format("Unidentified object type (%s). Available values are %s", filteredType, config.getTypes().toString()));
+        }
+        return true;
+    }
+
+    /**
+     * Filters a given collection by terminology or retrieves all the types if user input is not given.
+     * @param collection The collection to search in
+     * @param type The type to filter the collection by
+     * @param filteredTerm Search term to filter the results by
+     * @return A list of all the documents in the collection that fits the requested spec
+     */
+    private ArrayList<Document> filterResults(MongoCollection<Document> collection, String type, String filteredTerm) {
         ArrayList<Document> filteredContents = new ArrayList<Document>();
-        if (type.isEmpty()) {
-            // Get all types
-            collection.find().into(filteredContents);
+        // Are we searching by a user provided term?
+        if (!filteredTerm.isEmpty()) {
+            try {
+                // Filter all types by term
+                if (type.isEmpty()) {
+                    collection.find(Filters.or(
+                        Filters.eq("count", Long.parseLong(filteredTerm)),
+                        Filters.eq("weight", Long.parseLong(filteredTerm))
+                    )).into(filteredContents);
+                } else {
+                    // Filter by type and term
+                    collection.find(Filters.and(
+                        Filters.eq("type", type),
+                        Filters.or(
+                            Filters.eq("count", Long.parseLong(filteredTerm)),
+                            Filters.eq("weight", Long.parseLong(filteredTerm))
+                        )
+                    )).into(filteredContents);
+                }
+            } catch (NumberFormatException e) {
+                // Couldn't parse a suspected long as a long, search as text instead
+                if (type.isEmpty()) {
+                    collection.find(Filters.text(filteredTerm)).into(filteredContents);
+                } else {
+                    collection.find(Filters.and(Filters.eq("type", type), Filters.text(filteredTerm))).into(filteredContents);
+                }
+            }
         } else {
-            // Filter by type
-            collection.find(Filters.eq("type", type)).into(filteredContents);
+            if (type.isEmpty()) {
+                // Get all types
+                collection.find().into(filteredContents);
+            } else {
+                // Filter by type
+                collection.find(Filters.eq("type", type)).into(filteredContents);
+            }
         }
         return filteredContents;
     }

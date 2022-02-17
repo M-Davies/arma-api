@@ -5,6 +5,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.InvalidPathException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.logging.Level;
@@ -25,6 +29,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 public class Updater {
+    private static final Path IMAGES_FOLDER = Paths.get(System.getProperty("user.dir") + "/src/main/resources/static/images");
     private static Logger LOGGER = Logger.getLogger(Updater.class.getName());
     Boolean fileParsed;
     Boolean success;
@@ -36,7 +41,8 @@ public class Updater {
      * @return True if the update and backup completed successfully, false otherwise
      * @throws IOException If a JSON data file or it's parent directory cannot be accessed
      */
-    public Boolean update(MongoClient client, MongoDatabase database) throws IOException {
+    @SuppressWarnings({"unchecked"})
+    public Boolean update(MongoClient client, MongoDatabase database, Config config) throws IOException {
 
         // Setup Json parser and Mongodb
         success = true;
@@ -74,6 +80,9 @@ public class Updater {
             backupCollection.createIndex(Indexes.text());
         }
 
+        // Check if arma is loaded on this system so we can get the arsenal images from it
+        final Boolean armaExists = config.getArmaPath().isEmpty() ? false : true;
+
         Files.list(new File(System.getProperty("user.dir") + "/src/main/resources/data").toPath()).forEach(path -> {
             // Skip non json files
             if (!path.toString().contains(".json")) {
@@ -92,10 +101,34 @@ public class Updater {
                         final JSONObject configObj = (JSONObject) configStr;
 
                         // Create mongo document if there is a verified type, need a long conditional as empty types are misleading
-                        if (String.valueOf(configObj.get("type")) != "" && String.valueOf(configObj.get("type")) != "\"\"" && String.valueOf(configObj.get("type")).isEmpty() == false) {
+                        if (
+                            String.valueOf(configObj.get("type")) != "" &&
+                            String.valueOf(configObj.get("type")) != "\"\"" &&
+                            String.valueOf(configObj.get("type")).isEmpty() == false
+                        ) {
                             final Document configDoc = new Document(
                                 new ObjectMapper().readValue(configObj.toJSONString(), HashMap.class)
                             );
+
+                            // If we have an image, add that to the resources folder
+                            if (armaExists && (configObj.get("imagePath") != null && configObj.get("imagePath").toString() != "")) {
+                                try {
+                                    // Get full path
+                                    Path imagePath = Paths.get(config.getArmaPath() + configObj.get("imagePath"));
+                                    // Copy to resources
+                                    LOGGER.log(Level.INFO, "[INFO] Copying image at " + imagePath + " to public images folder...");
+                                    Files.copy(imagePath, IMAGES_FOLDER, StandardCopyOption.REPLACE_EXISTING);
+                                    // TODO: Find out how to convert it to a JPG or PNG
+                                    // Alter json data in db with new path
+                                    configDoc.put("image", config.getHost() + "/images" + imagePath.getFileName());
+                                } catch (InvalidPathException e) {
+                                    LOGGER.log(Level.SEVERE, "[ERROR] Could not find or read image at " + config.getArmaPath() + configObj.get("imagePath"));
+                                    fileParsed = false;
+                                } catch (IOException e) {
+                                    LOGGER.log(Level.SEVERE, "[ERROR] Could not copy " + config.getArmaPath() + configObj.get("imagePath") + " to " + IMAGES_FOLDER);
+                                    fileParsed = false;
+                                }
+                            }
 
                             // Calculate target collection based off mod and append
                             LOGGER.log(Level.INFO, "[INFO] Adding new object to database from " + path + "\n" + configObj);

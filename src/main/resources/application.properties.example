@@ -1,25 +1,35 @@
+# Host and port that the API is being hosted on. This is used mainly to update each image entry in the database to point to the physical location of the image.
+# Defaults to http://localhost:8080.
+config.HOST = http://localhost:8080
+
 # Mongo Uri Connection String, following the format of "mongodb://username:password@hostname:port" or a cloud provider URI format such as Mongo Atlas. Username/password can be ommited.
 # Defaults to environment variable MONGO_URL or to "mongodb://localhost:27017" if that is unset.
-config.MONGO_URI="mongodb://localhost:27017"
+config.MONGO_URI = mongodb://localhost:27017
 
 # Name of the mongo database to be created.
 # Defaults to environment variable MONGO_DATABASE or to "arma-api" if that is unset.
-config.MONGO_DATABASE="arma-api"
+config.MONGO_DATABASE = arma-api
 
 # Full path to log file containing query reports and other fun stuff
 # Defaults to environment variable LOGFILE_PATH or to "/tmp/arma-api.log" if that is unset.
-config.LOGFILE_PATH="/tmp/arma-api.log"
+config.LOGFILE_PATH = /tmp/arma-api.log
 
 # ArrayList of mod authors that you wish to appear as modnames in the database (without the [])
 # E.g. "vanilla,ace,rhs"
-config.SUPPORTED_MODS="vanilla,ace,3cb,rhs,niarms,tacvests,tryk,vsm,rksl,acre,projectopfor,immersioncigs"
+config.SUPPORTED_MODS= vanilla,ace,3cb,rhs,niarms,tacvests,tryk,vsm,rksl,acre,projectopfor,immersioncigs,breachingcharge,facexscars,customflashlights,nutresource,nutresource3party,contact,karts,marksman,tanks,apex,artofwar,helicopters,lawsofwar,jets,militarygearpack,rmswatuniform,solidcoloruniforms,drongosartillery,projectbjc,katadvancedmedical,sbsvsmretexture
 
 # Ignore these values, these are in case you wish to use environment variables as opposed to entering the values directly into this file (useful for CI/CD scenarios). The server.port property is so CI/CD services can bind spring boot to their web runner.
 # If you wish to use environment variables instead of putting your details directly into this file, append "--spring.profiles.active=env" to your java execution string. Ensure all the environment variables are populated or the execution will fail.
+
+# Full Windows path to the base Arma 3 directory. Leave this blank if Arma is not installed on your system
+config.ARMA_PATH = ""
+
 #---
 spring.config.activate.on-profile=env
 server.port = ${PORT}
+config.HOST = ${HOST}
 config.MONGO_URI = ${MONGO_URI}
 config.MONGO_DATABASE = ${MONGO_DATABASE}
 config.LOGFILE_PATH = ${LOGFILE_PATH}
 config.SUPPORTED_MODS = ${SUPPORTED_MODS}
+config.ARMA_PATH = ${ARMA_PATH}

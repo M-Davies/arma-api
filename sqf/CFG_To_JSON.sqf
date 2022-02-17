@@ -4,7 +4,7 @@
 // DESCRIPTION: This script converts the contents of a key cfg config to a JSON array, which can then be copied from the clipboard and used to populate JSON files, databases or anything else that is required.
 // AUTHOR: Morgan Davies
 // USAGE:
-//   1) Alter the _CONFIGS hashmap variable to include the config classes you want to add to the json array. Beware of the 10,000,000 limit on array sizes however. You might need to run the config extraction one at a time. See _exampleCONFIGS below for the currently supported configs.
+//   1) Alter the _CONFIGS hashmap variable to include the config classes you want to add to the json array. Beware of the 10,000,000 limit on array sizes however. You might need to run the config extraction one at a time. If you do run it one at a time, ensure you don't include a comma at the the end of the config entry. See _exampleCONFIGS below for the currently supported configs.
 //   2) Run the script in a debug console on arma 3. It may take a few seconds to complete depending on your system specs.
 //   3) You should now have a json array on your clipboard. Don't copy it from the debug console output as it will include extra double quotes to escape the existing ones.
 //   4) It is worth mentioning that the last JSON element in the array will include a trailing comma, which may make the array invalid (depending on the parser type). Due to the difficulty in extracting said comma out, I haven't bothered fixing it.
@@ -18,7 +18,7 @@
 //   ["glasses", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgGlasses")]
 // ];
 private _CONFIGS = createHashMapFromArray [
-  ["vehicles", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgVehicles")]
+  ["glasses", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgGlasses")]
 ];
 forceunicode 0;
 private _jsonClasses = [];
@@ -225,42 +225,74 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
     _modName = "immersioncigs";
     _found = true;
   };
-  if ((["Enoch", _DLC] call BIS_fnc_inString || ["Contact", _DLC] call BIS_fnc_inString) && _found == false) {
+  if (["Adacas", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "militarygearpack";
+    _found = true;
+  };
+  if (["Rainman", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "rmswatuniform";
+    _found = true;
+  };
+  if (["Exocet", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "solidcoloruniforms";
+    _found = true;
+  };
+  if (["Exocet", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "solidcoloruniforms";
+    _found = true;
+  };
+  if (["Drongo", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "drongosartillery";
+    _found = true;
+  };
+  if (["camel", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "projectbjc";
+    _found = true;
+  };
+  if (["kat_", _NAME] call BIS_fnc_inString && _found == false) then {
+    _modName = "katadvancedmedical";
+    _found = true;
+  };
+  if (["SKEENBREEN", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "sbsvsmretexture";
+    _found = true;
+  };
+  if ((["Enoch", _DLC] call BIS_fnc_inString || ["Contact", _DLC] call BIS_fnc_inString) && _found == false) then {
     _modName = "contact";
     _found = true;
   };
-  if (["Kart", _DLC] call BIS_fnc_inString && _found == false) {
+  if (["Kart", _DLC] call BIS_fnc_inString && _found == false) then {
     _modName = "karts";
     _found = true;
   };
-  if (["Mark", _DLC] call BIS_fnc_inString && _found == false) {
+  if (["Mark", _DLC] call BIS_fnc_inString && _found == false) then {
     _modName = "marksman";
     _found = true;
   };
-  if (["Tank", _DLC] call BIS_fnc_inString && _found == false) {
+  if (["Tank", _DLC] call BIS_fnc_inString && _found == false) then {
     _modName = "tanks";
     _found = true;
   };
-  if (["Expansion", _DLC] call BIS_fnc_inString && _found == false) {
+  if (["Expansion", _DLC] call BIS_fnc_inString && _found == false) then {
     _modName = "apex";
     _found = true;
   };
-  if (["AoW", _DLC] call BIS_fnc_inString && _found == false) {
+  if (["AoW", _DLC] call BIS_fnc_inString && _found == false) then {
     _modName = "artofwar";
     _found = true;
   };
-  if (["Heli", _DLC] call BIS_fnc_inString && _found == false) {
+  if (["Heli", _DLC] call BIS_fnc_inString && _found == false) then {
     _modName = "helicopters";
     _found = true;
   };
-  if (["Orange", _DLC] call BIS_fnc_inString && _found == false) {
+  if (["Orange", _DLC] call BIS_fnc_inString && _found == false) then {
     _modName = "lawsofwar";
     _found = true;
   };
-  if ((["Bravo Zero One Studios", _AUTHOR] call BIS_fnc_inString || ["Jets", _DLC] call BIS_fnc_inString) && _found == false) {
+  if ((["Bravo Zero One Studios", _AUTHOR] call BIS_fnc_inString || ["Jets", _DLC] call BIS_fnc_inString) && _found == false) then {
     _modname = "jets";
     _found = true;
-  }
+  };
   if ((["Bohemia Interactive", _AUTHOR] call BIS_fnc_inString || _NAME == "None") && _found == false) then {
     _modName = "vanilla";
     _found = true;
@@ -268,7 +300,7 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
 
   // Not found, either object is a placeholder null class, author is not provided or is not supported yet
   if (_found == false) then {
-    throw format ["[ERROR] Unknown mod author for class = %1", _NAME];
+    _modName = "[UNKNOWN]";
   };
 
   _modName
@@ -290,7 +322,7 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
     switch (_CONFIGTYPE) do {
       case "weapons": {
         format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "magazines":%10,%11    "type":"%12",%13    "subtype":"%14",%15    "mod":"%16",%17    "weight":%18,%19    "magwell":%20%21  },%22',
+          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "imagePath":"%8",%9    "magazines":%10,%11    "type":"%12",%13    "subtype":"%14",%15    "mod":"%16",%17    "weight":%18,%19    "magwell":%20%21  },%22',
           endl,
           _CONFIGNAME,
           endl,
@@ -318,7 +350,7 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
 
       case "magazines": {
         format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "ammo":"%10",%11    "count":%12,%13    "mod":"%14",%15    "weight":%16,%17    "type":"%18",%19    "subtype":"%20"%21  },%22',
+          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "imagePath":"%8",%9    "ammo":"%10",%11    "count":%12,%13    "mod":"%14",%15    "weight":%16,%17    "type":"%18",%19    "subtype":"%20"%21  },%22',
           endl,
           _CONFIGNAME,
           endl,
@@ -346,7 +378,7 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
 
       case "vehicles": {
         format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "mod":"%10",%11    "weight":%12,%13    "type":"%14",%15    "subtype":"%16"%17  },%18',
+          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "imagePath":"%8",%9    "mod":"%10",%11    "weight":%12,%13    "type":"%14",%15    "subtype":"%16"%17  },%18',
           endl,
           _CONFIGNAME,
           endl,
@@ -370,7 +402,7 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
 
       case "glasses": {
         format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "mod":"%10",%11    "weight":%12,%13    "type":"%14",%15    "subtype":"%16"%17  },%18',
+          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "imagePath":"%8",%9    "mod":"%10",%11    "weight":%12,%13    "type":"%14",%15    "subtype":"%16"%17  },%18',
           endl,
           _CONFIGNAME,
           endl,
