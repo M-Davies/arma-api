@@ -1,3072 +1,3379 @@
 [
   {
-    "class": "None",
-    "name": "None",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "vanilla",
-    "weight": 1,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Bandanna_shades",
-    "name": "Bandana (Shades)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_shades_ca.paa",
-    "mod": "vanilla",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Balaclava_blk",
-    "name": "Balaclava (Black)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Balaclava_clean_ca.paa",
-    "mod": "vanilla",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Combat",
-    "name": "Combat Goggles",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_combat_CA.paa",
-    "mod": "vanilla",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_B_Diving",
-    "name": "Diving Goggles [NATO]",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_EPB\\Heads\\Glasses\\data\\UI\\icon_g_diving_nato_ca.paa",
-    "mod": "vanilla",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "A3_Sport_Sunglasses_blk",
-    "name": "Sport_Sunglasses_blk",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_sport_blackred_CA",
-    "mod": "projectbjc",
-    "weight": 3,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "A3_Tactical_glasses_blk",
-    "name": "Tactical_glasses_blk",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_sport_blackred_CA",
-    "mod": "projectbjc",
-    "weight": 3,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_glasses_class",
-    "name": "None",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "militarygearpack",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_tactical_khk",
-    "name": "Tactical Glasses",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "militarygearpack",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_goggles_khk",
-    "name": "Goggles",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "militarygearpack",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_khk",
-    "name": "Face Shield (KHK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_tactical_khk",
-    "name": "Face Shield + Tactical(KHK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_goggles_khk",
-    "name": "Face Shield + Goggles (KHK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shades_khk",
-    "name": "Face Shield + Shades (KHK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shemagh_khk",
-    "name": "Face Shield + Shemagh (KHK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_tactical_shemagh_khk",
-    "name": "Face Shield + Tactical/Shemagh(KHK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_goggles_shemagh_khk",
-    "name": "Face Shield + Goggles/Shemagh (KHK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shades_shemagh_khk",
-    "name": "Face Shield + Shades/Shemagh (KHK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_RGR",
-    "name": "Face Shield (RGR)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_tactical_RGR",
-    "name": "Face Shield + Tactical(RGR)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_goggles_RGR",
-    "name": "Face Shield + Goggles (RGR)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shades_RGR",
-    "name": "Face Shield + Shades (RGR)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shemagh_RGR",
-    "name": "Face Shield + Shemagh (RGR)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_tactical_shemagh_RGR",
-    "name": "Face Shield + Tactical/Shemagh(RGR)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_goggles_shemagh_RGR",
-    "name": "Face Shield + Goggles/Shemagh (RGR)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shades_shemagh_RGR",
-    "name": "Face Shield + Shades/Shemagh (RGR)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_CB",
-    "name": "Face Shield (CB)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_tactical_CB",
-    "name": "Face Shield + Tactical(CB)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_goggles_CB",
-    "name": "Face Shield + Goggles (CB)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shades_CB",
-    "name": "Face Shield + Shades (CB)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shemagh_CB",
-    "name": "Face Shield + Shemagh (CB)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_tactical_shemagh_CB",
-    "name": "Face Shield + Tactical/Shemagh(CB)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_goggles_shemagh_CB",
-    "name": "Face Shield + Goggles/Shemagh (CB)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shades_shemagh_CB",
-    "name": "Face Shield + Shades/Shemagh (CB)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_MC",
-    "name": "Face Shield (MC)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_tactical_MC",
-    "name": "Face Shield + Tactical(MC)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_goggles_MC",
-    "name": "Face Shield + Goggles (MC)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shades_MC",
-    "name": "Face Shield + Shades (MC)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shemagh_MC",
-    "name": "Face Shield + Shemagh (MC)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_tactical_shemagh_MC",
-    "name": "Face Shield + Tactical/Shemagh(MC)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_goggles_shemagh_MC",
-    "name": "Face Shield + Goggles/Shemagh (MC)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shades_shemagh_MC",
-    "name": "Face Shield + Shades/Shemagh (MC)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_BLK",
-    "name": "Face Shield (BLK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_tactical_BLK",
-    "name": "Face Shield + Tactical(BLK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_goggles_BLK",
-    "name": "Face Shield + Goggles (BLK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shades_BLK",
-    "name": "Face Shield + Shades (BLK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shemagh_BLK",
-    "name": "Face Shield + Shemagh (BLK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_tactical_shemagh_BLK",
-    "name": "Face Shield + Tactical/Shemagh(BLK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_goggles_shemagh_BLK",
-    "name": "Face Shield + Goggles/Shemagh (BLK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "milgp_f_face_shield_shades_shemagh_BLK",
-    "name": "Face Shield + Shades/Shemagh (BLK)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "ace",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_beard_2",
-    "name": "[VSM] Beard Long",
-    "description": "",
-    "imagePath": "",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_beard_2_hair",
-    "name": "[VSM] Beard Long + Hair",
-    "description": "",
-    "imagePath": "",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_beard_3",
-    "name": "[VSM] Beard Longest",
-    "description": "",
-    "imagePath": "",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_beard_3_hair",
-    "name": "[VSM] Beard Longest + Hair",
-    "description": "",
-    "imagePath": "",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_beard_hair",
-    "name": "[VSM] Beard + Hair",
-    "description": "",
-    "imagePath": "",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Goggles",
-    "name": "[VSM] Goggles",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Balaclava_oli",
-    "name": "Balaclava (Olive)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Balaclava_olive_ca.paa",
-    "mod": "vanilla",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_FaceMask_class",
-    "name": "None",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_FaceMask_tan",
-    "name": "[VSM] Face Mask (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_FaceMask\\Textures\\Icons\\VSM_FaceMask.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_FaceMask_black",
-    "name": "[VSM] Face Mask (Black)",
-    "description": "",
-    "imagePath": "\\VSM_FaceMask\\Textures\\Icons\\VSM_FaceMask.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_FaceMask_olive",
-    "name": "[VSM] Face Mask (Olive)",
-    "description": "",
-    "imagePath": "\\VSM_FaceMask\\Textures\\Icons\\VSM_FaceMask.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_FaceMask_Ghost",
-    "name": "[VSM] Face Mask (Ghost - Black)",
-    "description": "",
-    "imagePath": "\\VSM_FaceMask\\Textures\\Icons\\VSM_FaceMask.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_FaceMask_Ghost_tan",
-    "name": "[VSM] Face Mask (Ghost - Tan)",
-    "description": "",
-    "imagePath": "\\VSM_FaceMask\\Textures\\Icons\\VSM_FaceMask.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_FaceMask_Ghost_olive",
-    "name": "[VSM] Face Mask (Ghost - Olive)",
-    "description": "",
-    "imagePath": "\\VSM_FaceMask\\Textures\\Icons\\VSM_FaceMask.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_balaclava_Black",
-    "name": "[VSM] Balaclava (Black)",
-    "description": "",
-    "imagePath": "\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_balaclava_olive",
-    "name": "[VSM] Balaclava (Olive)",
-    "description": "",
-    "imagePath": "\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_balaclava_tan",
-    "name": "[VSM] Balaclava (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_balaclava_Black_Skull",
-    "name": "[VSM] Balaclava (Black - Skull)",
-    "description": "",
-    "imagePath": "\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_balaclava_TAN_Skull",
-    "name": "[VSM] Balaclava (Tan - Skull)",
-    "description": "",
-    "imagePath": "\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_balaclava_olive_Skull",
-    "name": "[VSM] Balaclava (Olive - Skull)",
-    "description": "",
-    "imagePath": "\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_balaclava2_Black",
-    "name": "[VSM] Balaclava 2 (Black)",
-    "description": "",
-    "imagePath": "\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
-    "mod": "vsm",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_SkiMask_Black",
-    "name": "[VSM] SkiMask (Black - COD)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Balaclava_olive_ca.paa",
-    "mod": "vsm",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Peltor_coyote_glasses",
-    "name": "[VSM] Peltor (Coyote)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Peltor_OD_glasses",
-    "name": "[VSM] Peltor (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Peltor_m81_glasses",
-    "name": "[VSM] Peltor (M81)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_m81.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Peltor_OCP_glasses",
-    "name": "[VSM] Peltor (OCP)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OCP.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Peltor_AOR1_glasses",
-    "name": "[VSM] Peltor (AOR1)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_AOR1.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_black_glasses",
-    "name": "[VSM] FaceMask + Glasses (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_tan_glasses",
-    "name": "[VSM] FaceMask + Glasses (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_OD_glasses",
-    "name": "[VSM] FaceMask + Glasses (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_black_Goggles",
-    "name": "[VSM] FaceMask + Goggles (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_tan_Goggles",
-    "name": "[VSM] FaceMask + Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_OD_Goggles",
-    "name": "[VSM] FaceMask + Goggles (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_black_Peltor",
-    "name": "[VSM] FaceMask + Peltor (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_tan_Peltor",
-    "name": "[VSM] FaceMask + Peltor (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_OD_Peltor",
-    "name": "[VSM] FaceMask + Peltor (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_black_Peltor_glasses",
-    "name": "[VSM] FaceMask + Peltor + Glasses (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_tan_Peltor_glasses",
-    "name": "[VSM] FaceMask + Peltor + Glasses (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_OD_Peltor_glasses",
-    "name": "[VSM] FaceMask + Peltor + Glasses (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_black_Peltor_Goggles",
-    "name": "[VSM] FaceMask + Peltor + Goggles (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_tan_Peltor_Goggles",
-    "name": "[VSM] FaceMask + Peltor + Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Facemask_OD_Peltor_Goggles",
-    "name": "[VSM] FaceMask + Peltor + Goggles (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Facemask_tan_Peltor_Goggles",
-    "name": "[VSM] Shemagh + FaceMask + Peltor + Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Facemask_OD_Peltor_Goggles",
-    "name": "[VSM] Shemagh + FaceMask + Peltor + Goggles (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Facemask_tan_Peltor_Glasses",
-    "name": "[VSM] Shemagh + FaceMask + Peltor + Glasses (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Facemask_OD_Peltor_Glasses",
-    "name": "[VSM] Shemagh + FaceMask + Peltor + Glasses (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Facemask_tan_Peltor",
-    "name": "[VSM] Shemagh + FaceMask + Peltor (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Facemask_OD_Peltor",
-    "name": "[VSM] Shemagh + FaceMask + Peltor (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Facemask_tan_Goggles",
-    "name": "[VSM] Shemagh + FaceMask + Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Facemask_OD_Goggles",
-    "name": "[VSM] Shemagh + FaceMask + Goggles (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Facemask_tan_Glasses",
-    "name": "[VSM] Shemagh + FaceMask + Glasses (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Facemask_OD_Glasses",
-    "name": "[VSM] Shemagh + FaceMask + Glasses (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Facemask_tan",
-    "name": "[VSM] Shemagh + FaceMask (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Facemask_OD",
-    "name": "[VSM] Shemagh + FaceMask (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_black_glasses",
-    "name": "[VSM] Balaclava + Glasses (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_tan_glasses",
-    "name": "[VSM] Balaclava + Glasses (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_OD_glasses",
-    "name": "[VSM] Balaclava + Glasses (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_black_Goggles",
-    "name": "[VSM] Balaclava + Goggles (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_tan_Goggles",
-    "name": "[VSM] Balaclava + Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_OD_Goggles",
-    "name": "[VSM] Balaclava + Goggles (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_black_Peltor",
-    "name": "[VSM] Balaclava + Peltor (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_tan_Peltor",
-    "name": "[VSM] Balaclava + Peltor (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_OD_Peltor",
-    "name": "[VSM] Balaclava + Peltor (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_black_Peltor_glasses",
-    "name": "[VSM] Balaclava + Peltor + Glasses (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_tan_Peltor_glasses",
-    "name": "[VSM] Balaclava + Peltor + Glasses (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_OD_Peltor_glasses",
-    "name": "[VSM] Balaclava + Peltor + Glasses (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_black_Peltor_Goggles",
-    "name": "[VSM] Balaclava + Peltor + Goggles (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_tan_Peltor_Goggles",
-    "name": "[VSM] Balaclava + Peltor + Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava_OD_Peltor_Goggles",
-    "name": "[VSM] Balaclava + Peltor + Goggles (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava_tan_Peltor_Goggles",
-    "name": "[VSM] Shemagh + Balaclava + Peltor + Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava_OD_Peltor_Goggles",
-    "name": "[VSM] Shemagh + Balaclava + Peltor + Goggles (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava_tan_Peltor_Glasses",
-    "name": "[VSM] Shemagh + Balaclava + Peltor + Glasses (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava_OD_Peltor_Glasses",
-    "name": "[VSM] Shemagh + Balaclava + Peltor + Glasses (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava_tan_Peltor",
-    "name": "[VSM] Shemagh + Balaclava + Peltor (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava_OD_Peltor",
-    "name": "[VSM] Shemagh + Balaclava + Peltor (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava_tan_Goggles",
-    "name": "[VSM] Shemagh + Balaclava + Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava_OD_Goggles",
-    "name": "[VSM] Shemagh + Balaclava + Goggles (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava_tan_Glasses",
-    "name": "[VSM] Shemagh + Balaclava + Glasses (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava_OD_Glasses",
-    "name": "[VSM] Shemagh + Balaclava + Glasses (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava_tan",
-    "name": "[VSM] Shemagh + Balaclava (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava_OD",
-    "name": "[VSM] Shemagh + Balaclava (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_black_glasses",
-    "name": "[VSM] Balaclava2 + Glasses (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_tan_glasses",
-    "name": "[VSM] Balaclava2 + Glasses (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_OD_glasses",
-    "name": "[VSM] Balaclava2 + Glasses (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_black_Goggles",
-    "name": "[VSM] Balaclava2 + Goggles (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_tan_Goggles",
-    "name": "[VSM] Balaclava2 + Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_OD_Goggles",
-    "name": "[VSM] Balaclava2 + Goggles (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_black_Peltor",
-    "name": "[VSM] Balaclava2 + Peltor (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_tan_Peltor",
-    "name": "[VSM] Balaclava2 + Peltor (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_OD_Peltor",
-    "name": "[VSM] Balaclava2 + Peltor (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_black_Peltor_glasses",
-    "name": "[VSM] Balaclava2 + Peltor + Glasses (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_tan_Peltor_glasses",
-    "name": "[VSM] Balaclava2 + Peltor + Glasses (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_OD_Peltor_glasses",
-    "name": "[VSM] Balaclava2 + Peltor + Glasses (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_black_Peltor_Goggles",
-    "name": "[VSM] Balaclava2 + Peltor + Goggles (Black)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_tan_Peltor_Goggles",
-    "name": "[VSM] Balaclava2 + Peltor + Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Balaclava2_OD_Peltor_Goggles",
-    "name": "[VSM] Balaclava2 + Peltor + Goggles (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava2_tan_Peltor_Goggles",
-    "name": "[VSM] Shemagh + Balaclava2 + Peltor + Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava2_OD_Peltor_Goggles",
-    "name": "[VSM] Shemagh + Balaclava2 + Peltor + Goggles (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava2_tan_Peltor_Glasses",
-    "name": "[VSM] Shemagh + Balaclava2 + Peltor + Glasses (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava2_OD_Peltor_Glasses",
-    "name": "[VSM] Shemagh + Balaclava2 + Peltor + Glasses (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava2_tan_Peltor",
-    "name": "[VSM] Shemagh + Balaclava2 + Peltor (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava2_OD_Peltor",
-    "name": "[VSM] Shemagh + Balaclava2 + Peltor (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava2_tan_Goggles",
-    "name": "[VSM] Shemagh + Balaclava2 + Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava2_OD_Goggles",
-    "name": "[VSM] Shemagh + Balaclava2 + Goggles (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava2_tan_Glasses",
-    "name": "[VSM] Shemagh + Balaclava2 + Glasses (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava2_OD_Glasses",
-    "name": "[VSM] Shemagh + Balaclava2 + Glasses (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava2_tan",
-    "name": "[VSM] Shemagh + Balaclava2 (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Balaclava2_OD",
-    "name": "[VSM] Shemagh + Balaclava2 (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_tan",
-    "name": "[VSM] Shemagh (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_OD",
-    "name": "[VSM] Shemagh (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_glasses_tan",
-    "name": "[VSM] Shemagh + Glasses (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Glasses_OD",
-    "name": "[VSM] Shemagh + Glasses (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_goggles_tan",
-    "name": "[VSM] Shemagh + Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Shemagh_Goggles_OD",
-    "name": "[VSM] Shemagh + Goggles (OD)",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "VSM_Thermal",
-    "name": "[VSM] UnderArmor",
-    "description": "",
-    "imagePath": "\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
-    "mod": "vsm",
-    "weight": 0,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Face_Wrap_01",
-    "name": "Face Wrap",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
-    "mod": "ace",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Face_Wrap_02",
-    "name": "Face Wrap",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
-    "mod": "ace",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Face_Wrap_03",
-    "name": "Face Wrap",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
-    "mod": "ace",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Face_Wrap_04",
-    "name": "Face Wrap",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
-    "mod": "ace",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Face_Wrap_05",
-    "name": "Face Wrap",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
-    "mod": "ace",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Face_Wrap_06",
-    "name": "Face Wrap",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
-    "mod": "ace",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Face_Wrap_07",
-    "name": "Face Wrap",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
-    "mod": "ace",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Face_Wrap_08",
-    "name": "Face Wrap",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
-    "mod": "ace",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Face_Wrap_09",
-    "name": "Face Wrap",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
-    "mod": "ace",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Neck_Shemag",
-    "name": "Neck Shemag (White)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\neck_shemag.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Neck_Shemag_Tan",
-    "name": "Neck Shemag (Tan)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\neck_shemag.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Neck_Shemag_Oli",
-    "name": "Neck Shemag (Olive)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\neck_shemag.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Balaclava",
-    "name": "Balaclava (Black)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Balaclava_Neck_Shemag",
-    "name": "Balaclava and Neck Shemag (Black)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_shemag_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Neck_Shemag_KLR_blk",
-    "name": "Neck Shemag and Kneepads (Black)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_shemag_klr_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Neck_Shemag_KL_blk",
-    "name": "Neck Shemag and Left Kneepad (Black)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_shemag_kl_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Neck_Shemag_KR_blk",
-    "name": "Neck Shemag and Right Kneepad (Black)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_shemag_kr_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Neck_Shemag_KLR_tan",
-    "name": "Neck Shemag and Kneepads (Tan)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_shemag_klr_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Neck_Shemag_KL_tan",
-    "name": "Neck Shemag and Left Kneepad (Tan)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_shemag_kl_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Neck_Shemag_KR_tan",
-    "name": "Neck Shemag and Right Kneepad (Tan)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_shemag_kr_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_KLR_Oli",
-    "name": "Kneepads (Olive)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_klr_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_KL_Oli",
-    "name": "Left Kneepad (Olive)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_kl_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_KR_Oli",
-    "name": "Right Kneepad (Olive)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_kr_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Balaclava_Win",
-    "name": "Balaclava (White)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_winter_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Balaclava_Win_02",
-    "name": "Balaclava (Digital Winter)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_winter_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Balaclava_Win_03",
-    "name": "Balaclava (KLMK Winter Green)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_winter_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Balaclava_Win_04",
-    "name": "Balaclava (KLMK Winter Grey)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_winter_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Balaclava_CHD",
-    "name": "Balaclava (Flora Alt)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_chd_camo_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Bandanna_blk",
-    "name": "Bandana (Black)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
-    "mod": "vanilla",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Bandanna_flora_alt",
-    "name": "Bandana (Flora Alt)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_clean_flora_alt_ca.paa",
-    "mod": "3cb",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Bandanna_shades_flora_alt",
-    "name": "Bandana (Shades Flora Alt)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_shades_flora_alt_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Bandanna_sport_flora_alt",
-    "name": "Bandana (Sport Flora Alt)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_sport_flora_alt_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Bandanna_aviator_flora_alt",
-    "name": "Bandana (Aviator Flora Alt)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_aviator_flora_alt_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Bandanna_winter",
-    "name": "Bandana (Winter)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_clean_winter_ca.paa",
-    "mod": "3cb",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Bandanna_shades_winter",
-    "name": "Bandana (Shades Winter)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_shades_winter_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Bandanna_sport_winter",
-    "name": "Bandana (Sport Winter)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_sport_winter_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Bandanna_aviator_winter",
-    "name": "Bandana (Aviator Winter)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_aviator_winter_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Bandanna_winter_flora_alt",
-    "name": "Bandana (Winter Flora Alt)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_clean_winter_flora_alt_ca.paa",
-    "mod": "3cb",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Bandanna_shades_winter_flora_alt",
-    "name": "Bandana (Shades Winter Flora Alt)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_shades_winter_flora_alt_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Bandanna_sport_winter_flora_alt",
-    "name": "Bandana (Sport Winter Flora Alt)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_sport_winter_flora_alt_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Bandanna_aviator_winter_flora_alt",
-    "name": "Bandana (Aviator Winter Flora Alt)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_aviator_winter_flora_alt_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhs_balaclava1_olive",
-    "name": "Balaclava (Olive)",
-    "description": "",
-    "imagePath": "\\rhsafrf\\addons\\rhs_infantry\\Data\\inventory\\gear_icon_balaclava_ca.paa",
-    "mod": "rhs",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Balaclava_DES",
-    "name": "Balaclava (Desert)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bala1_des_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Balaclava_WIN_ALT",
-    "name": "Balaclava (Winter)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bala_win_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhs_balaclava",
-    "name": "Balaclava",
-    "description": "",
-    "imagePath": "\\rhsafrf\\addons\\rhs_infantry\\Data\\inventory\\gear_icon_balaclava_ca.paa",
-    "mod": "rhs",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Balaclava2_BLK",
-    "name": "Balaclava 2 (Black)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava2_blk_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Balaclava2_DES",
-    "name": "Balaclava 2 (Desert)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava2_des_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_G_Balaclava2_WIN",
-    "name": "Balaclava 2 (Winter)",
-    "description": "",
-    "imagePath": "\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bala_win_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Spectacles",
-    "name": "Spectacle Glasses",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_spectacles_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Spectacles_Tinted",
-    "name": "Tinted Spectacles",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_spectacles_tinted_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Lowprofile",
-    "name": "Low Profile Goggles",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_lowprofile_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Shades_Black",
-    "name": "Shades (Black)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_shades_black_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Shades_Green",
-    "name": "Shades (Green)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_shades_green_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Shades_Red",
-    "name": "Shades (Red)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_shades_red_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Squares",
-    "name": "Square Spectacles",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_squares_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Squares_Tinted",
-    "name": "Square Shades",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_squares_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Sport_BlackWhite",
-    "name": "Sport Shades (Shadow)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_sport_blackwhite_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Sport_Blackyellow",
-    "name": "Sport Shades (Poison)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_sport_blackyellow_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Sport_Greenblack",
-    "name": "Sport Shades (Yetti)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_sport_greenblack_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Sport_Checkered",
-    "name": "Sport Shades (Style)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_sport_checkered_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Sport_Red",
-    "name": "Sport Shades (Fire)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_sport_red_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Tactical_Black",
-    "name": "Tactical Shades",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Aviator",
-    "name": "Aviator Glasses",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Lady_Blue",
-    "name": "Ladies Shades",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_lady_CA.paa",
-    "mod": "vanilla",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Diving",
-    "name": "Diving Goggles",
-    "description": "",
-    "imagePath": "\\A3\\characters_F\\data\\ui\\icon_G_Diving_CA.paa",
-    "mod": "vanilla",
-    "weight": 3,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_O_Diving",
-    "name": "Diving Goggles [CSAT]",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_EPB\\Heads\\Glasses\\data\\UI\\icon_g_diving_iran_ca.paa",
-    "mod": "vanilla",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_I_Diving",
-    "name": "Diving Goggles [AAF]",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_EPB\\Heads\\Glasses\\data\\UI\\icon_g_diving_rus_ca.paa",
-    "mod": "vanilla",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Goggles_VR",
-    "name": "VR Goggles",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Goggles_VR_ca.paa",
-    "mod": "vanilla",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Balaclava_combat",
-    "name": "Balaclava (Combat Goggles)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Balaclava_combat_ca.paa",
-    "mod": "vanilla",
-    "weight": 10,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Balaclava_lowprofile",
-    "name": "Balaclava (Low Profile Goggles)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Balaclava_lowprofile_ca.paa",
-    "mod": "vanilla",
-    "weight": 8,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Bandanna_oli",
-    "name": "Bandana (Olive)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_BandMask_olive_ca.paa",
-    "mod": "vanilla",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Bandanna_khk",
-    "name": "Bandana (Khaki)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_BandMask_khaki_ca.paa",
-    "mod": "vanilla",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Bandanna_tan",
-    "name": "Bandana (Tan)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_BandMask_tan_ca.paa",
-    "mod": "vanilla",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Bandanna_beast",
-    "name": "Bandana (Beast)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_BandMask_beast_ca.paa",
-    "mod": "vanilla",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Bandanna_sport",
-    "name": "Bandana (Sport)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_sport_ca.paa",
-    "mod": "vanilla",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Bandanna_aviator",
-    "name": "Bandana (Aviator)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_aviator_ca.paa",
-    "mod": "vanilla",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Shades_Blue",
-    "name": "Shades (Blue)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_shades_blue_CA.paa",
-    "mod": "vanilla",
-    "weight": 1,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Sport_Blackred",
-    "name": "Sport Shades (Vulcan)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_sport_blackred_CA.paa",
-    "mod": "vanilla",
-    "weight": 1,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Tactical_Clear",
-    "name": "Tactical Glasses",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
-    "mod": "vanilla",
-    "weight": 1,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_RM_SWAT_Balaclava",
-    "name": "SWAT Balaclava",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Balaclava_clean_ca.paa",
-    "mod": "rmswatuniform",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_RM_SWAT_Glasses",
-    "name": "SWAT Clear Glasses",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
-    "mod": "rmswatuniform",
-    "weight": 1,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_RM_SWAT_Bandana",
-    "name": "SWAT Clear Bandana",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
-    "mod": "rmswatuniform",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Balaclava_TI_blk_F",
-    "name": "Stealth Balaclava (Black)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Exp\\BLUFOR\\Data\\UI\\icon_G_Balaclava_TI_blk_F_ca.paa",
-    "mod": "apex",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Balaclava_TI_tna_F",
-    "name": "Stealth Balaclava (Green)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Exp\\BLUFOR\\Data\\UI\\icon_G_Balaclava_TI_tna_F_ca.paa",
-    "mod": "apex",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Balaclava_TI_G_blk_F",
-    "name": "Stealth Balaclava (Black, Goggles)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Exp\\BLUFOR\\Data\\UI\\icon_G_Balaclava_TI_G_blk_F_ca.paa",
-    "mod": "apex",
-    "weight": 10,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Balaclava_TI_G_tna_F",
-    "name": "Stealth Balaclava (Green, Goggles)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Exp\\BLUFOR\\Data\\UI\\icon_G_Balaclava_TI_G_tna_F_ca.paa",
-    "mod": "apex",
-    "weight": 10,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Combat_Goggles_tna_F",
-    "name": "Combat Goggles (Green)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Exp\\BLUFOR\\Data\\UI\\icon_G_Combat_Goggles_tna_F_ca.paa",
-    "mod": "apex",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "immersion_pops_pop0",
-    "name": "Lollipop",
-    "description": "",
-    "imagePath": "\\immersion_pops\\UI\\gear_cig0_x_ca",
-    "mod": "ace",
-    "weight": 0.2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "murshun_cigs_cig0",
-    "name": "Cigarette",
-    "description": "",
-    "imagePath": "\\murshun_cigs\\UI\\gear_cig0_x_ca",
-    "mod": "ace",
-    "weight": 0.02,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "immersion_cigs_cigar0",
-    "name": "Cigar",
-    "description": "",
-    "imagePath": "\\murshun_cigs\\UI\\gear_cigar0_x_ca",
-    "mod": "ace",
-    "weight": 0.1,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Respirator_white_F",
-    "name": "Respirator (White)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Orange\\Facewear\\Data\\UI\\icon_G_Respirator_white_ca.paa",
-    "mod": "lawsofwar",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Respirator_yellow_F",
-    "name": "Respirator (Yellow)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Orange\\Facewear\\Data\\UI\\icon_G_Respirator_yellow_ca.paa",
-    "mod": "lawsofwar",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Respirator_blue_F",
-    "name": "Respirator (Blue)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Orange\\Facewear\\Data\\UI\\icon_G_Respirator_blue_ca.paa",
-    "mod": "lawsofwar",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_EyeProtectors_F",
-    "name": "Safety Goggles",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Orange\\Facewear\\Data\\UI\\icon_G_EyeProtectors_ca.paa",
-    "mod": "lawsofwar",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_EyeProtectors_Earpiece_F",
-    "name": "Safety Goggles (Earpiece)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Orange\\Facewear\\Data\\UI\\icon_G_EyeProtectors_Earpiece_ca.paa",
-    "mod": "lawsofwar",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_WirelessEarpiece_F",
-    "name": "Wireless Earpiece",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Orange\\Headgear\\Data\\UI\\icon_H_WirelessEarpiece_CA.paa",
-    "mod": "lawsofwar",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_AirPurifyingRespirator_01_F",
-    "name": "APR [NATO]",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_AirPurifyingRespirator_01_F_ca.paa",
-    "mod": "contact",
-    "weight": 8,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_AirPurifyingRespirator_02_black_F",
-    "name": "APR (Black) [CSAT]",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_AirPurifyingRespirator_02_black_F_ca.paa",
-    "mod": "contact",
-    "weight": 8,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_AirPurifyingRespirator_02_olive_F",
-    "name": "APR (Olive) [CSAT]",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_AirPurifyingRespirator_02_olive_F_ca.paa",
-    "mod": "contact",
-    "weight": 8,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_AirPurifyingRespirator_02_sand_F",
-    "name": "APR (Sand) [CSAT]",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_AirPurifyingRespirator_02_sand_F_ca.paa",
-    "mod": "contact",
-    "weight": 8,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_RegulatorMask_F",
-    "name": "Regulator Facepiece",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_RegulatorMask_F_ca.paa",
-    "mod": "contact",
-    "weight": 8,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Blindfold_01_white_F",
-    "name": "Blindfold (White)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_Blindfold_01_white_F_ca.paa",
-    "mod": "contact",
-    "weight": 3,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "G_Blindfold_01_black_F",
-    "name": "Blindfold (Black)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_Blindfold_01_black_F_ca.paa",
-    "mod": "contact",
-    "weight": 3,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "SCU_TacG_Yellow",
-    "name": "[SCU] Tactical Shades (Yellow)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
-    "mod": "solidcoloruniforms",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "SCU_TacG_MC",
-    "name": "[SCU] Tactical Shades (MC Camo)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
-    "mod": "solidcoloruniforms",
-    "weight": 2,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "SCU_TacG_Amber",
-    "name": "[SCU] Tactical Shades (Amber)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
-    "mod": "solidcoloruniforms",
-    "weight": 1,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "SCU_TacG_Yellow_Clear",
-    "name": "[SCU] Tactical Shades (Yellow, Clear)",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
-    "mod": "solidcoloruniforms",
-    "weight": 1,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "SCU_ComGog_Hitam",
-    "name": "[SCU] Combat Goggles BLACK",
-    "description": "",
-    "imagePath": "\\A3\\Characters_F\\data\\ui\\icon_g_combat_CA.paa",
-    "mod": "solidcoloruniforms",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhs_scarf",
-    "name": "Scarf",
-    "description": "",
-    "imagePath": "\\rhsafrf\\addons\\rhs_infantry\\Data\\inventory\\gear_icon_scarf_ca.paa",
-    "mod": "rhs",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhs_facewear_6m2",
-    "name": "6M2",
-    "description": "",
-    "imagePath": "\\rhsafrf\\addons\\rhs_inventoryicons\\data\\headgear\\rhs_6m2_ca.paa",
-    "mod": "rhs",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhs_facewear_6m2_1",
-    "name": "6M2-1",
-    "description": "",
-    "imagePath": "\\rhsafrf\\addons\\rhs_inventoryicons\\data\\headgear\\rhs_6m2_1_ca.paa",
-    "mod": "rhs",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhs_googles_black",
-    "name": "Ballistic Glasses (Black)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry\\ui\\ballisticglasses_black_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhs_googles_clear",
-    "name": "Ballistic Glasses (Clear)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry\\ui\\ballisticglasses_clear_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhs_googles_yellow",
-    "name": "Ballistic Glasses (Yellow)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry\\ui\\ballisticglasses_yellow_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhs_googles_orange",
-    "name": "Ballistic Glasses (Orange)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry\\ui\\ballisticglasses_orange_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhs_ess_black",
-    "name": "Ballistic Goggles (Black)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\rhsusf_ess_black_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_oakley_goggles_blk",
-    "name": "SI Ballistic 2.0 (Black)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\gogglesb_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_oakley_goggles_clr",
-    "name": "SI Ballistic 2.0 (Clear)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\gogglesc_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_oakley_goggles_ylw",
-    "name": "SI Ballistic 2.0 (Yellow)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\gogglesy_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh_white",
-    "name": "Shemagh (White)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemaghwhite_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh_tan",
-    "name": "Shemagh (Tan)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemaghtan_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh_od",
-    "name": "Shemagh (OD)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagholive_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh_grn",
-    "name": "Shemagh (Green)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagholive_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh_gogg_white",
-    "name": "Shemagh w/Goggles (White)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggwhite_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh_gogg_tan",
-    "name": "Shemagh w/Goggles (Tan)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggtan_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh_gogg_od",
-    "name": "Shemagh w/Goggles (OD)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggod_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh_gogg_grn",
-    "name": "Shemagh w/Goggles (Green)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggod_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh2_white",
-    "name": "Shemagh (White/alt)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemaghwhite_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh2_tan",
-    "name": "Shemagh (Tan/alt)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemaghtan_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh2_od",
-    "name": "Shemagh (OD/alt)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagholive_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh2_grn",
-    "name": "Shemagh (Green/alt)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagholive_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh2_gogg_white",
-    "name": "Shemagh w/Goggles (White/alt)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggwhite_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh2_gogg_tan",
-    "name": "Shemagh w/Goggles (Tan/alt)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggtan_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh2_gogg_od",
-    "name": "Shemagh w/Goggles (OD/alt)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggod_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhsusf_shemagh2_gogg_grn",
-    "name": "Shemagh w/Goggles (Green/alt)",
-    "description": "",
-    "imagePath": "\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggod_ca.paa",
-    "mod": "rhs",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_BAF_G_Tactical_Grey",
-    "name": "Tactical Glasses (Grey) [BAF]",
-    "description": "",
-    "imagePath": "\\UK3CB_BAF_Equipment\\glasses\\data\\ui\\gear_tactical_glasses_ca.paa",
-    "mod": "3cb",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_BAF_G_Tactical_Orange",
-    "name": "Tactical Glasses (Orange) [BAF]",
-    "description": "",
-    "imagePath": "\\UK3CB_BAF_Equipment\\glasses\\data\\ui\\gear_tactical_glasses_ca.paa",
-    "mod": "3cb",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_BAF_G_Tactical_Yellow",
-    "name": "Tactical Glasses (Yellow) [BAF]",
-    "description": "",
-    "imagePath": "\\UK3CB_BAF_Equipment\\glasses\\data\\ui\\gear_tactical_glasses_ca.paa",
-    "mod": "3cb",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_BAF_G_Tactical_Clear",
-    "name": "Tactical Glasses (Clear) [BAF]",
-    "description": "",
-    "imagePath": "\\UK3CB_BAF_Equipment\\glasses\\data\\ui\\gear_tactical_glasses_ca.paa",
-    "mod": "3cb",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_BAF_G_Tactical_Black",
-    "name": "Tactical Glasses (Black) [BAF]",
-    "description": "",
-    "imagePath": "\\UK3CB_BAF_Equipment\\glasses\\data\\ui\\gear_tactical_glasses_ca.paa",
-    "mod": "3cb",
-    "weight": 4,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "UK3CB_BAF_G_Balaclava_Win",
-    "name": "Balaclava Arctic",
-    "description": "",
-    "imagePath": "\\UK3CB_BAF_Equipment\\glasses\\data\\ui\\icon_G_Balaclava_clean_ca.paa",
-    "mod": "3cb",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  },
-  {
-    "class": "rhssaf_veil_Green",
-    "name": "Veil Mask",
-    "description": "",
-    "imagePath": "\\rhssaf\\addons\\rhssaf_inventoryicons\\data\\facewear\\rhssaf_veil_Green_ca.paa",
-    "mod": "rhs",
-    "weight": 6,
-    "type": "Facewear",
-    "subtype": "Glasses"
-  }
+  "class":"None",
+  "name":"None",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"vanilla",
+  "weight":1,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Bandanna_shades",
+  "name":"Bandana (Shades)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_shades_ca.paa",
+  "mod":"vanilla",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Balaclava_blk",
+  "name":"Balaclava (Black)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Balaclava_clean_ca.paa",
+  "mod":"vanilla",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Combat",
+  "name":"Combat Goggles",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_combat_CA.paa",
+  "mod":"vanilla",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_B_Diving",
+  "name":"Diving Goggles [NATO]",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_EPB\\Heads\\Glasses\\data\\UI\\icon_g_diving_nato_ca.paa",
+  "mod":"vanilla",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"A3_Sport_Sunglasses_blk",
+  "name":"Sport_Sunglasses_blk",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_sport_blackred_CA",
+  "mod":"projectbjc",
+  "weight":3,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"A3_Tactical_glasses_blk",
+  "name":"Tactical_glasses_blk",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_sport_blackred_CA",
+  "mod":"projectbjc",
+  "weight":3,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_glasses_class",
+  "name":"None",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"militarygearpack",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_tactical_khk",
+  "name":"Tactical Glasses",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"militarygearpack",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_goggles_khk",
+  "name":"Goggles",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"militarygearpack",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_khk",
+  "name":"Face Shield (KHK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_tactical_khk",
+  "name":"Face Shield + Tactical(KHK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_goggles_khk",
+  "name":"Face Shield + Goggles (KHK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shades_khk",
+  "name":"Face Shield + Shades (KHK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shemagh_khk",
+  "name":"Face Shield + Shemagh (KHK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_tactical_shemagh_khk",
+  "name":"Face Shield + Tactical/Shemagh(KHK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_goggles_shemagh_khk",
+  "name":"Face Shield + Goggles/Shemagh (KHK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shades_shemagh_khk",
+  "name":"Face Shield + Shades/Shemagh (KHK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_RGR",
+  "name":"Face Shield (RGR)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_tactical_RGR",
+  "name":"Face Shield + Tactical(RGR)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_goggles_RGR",
+  "name":"Face Shield + Goggles (RGR)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shades_RGR",
+  "name":"Face Shield + Shades (RGR)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shemagh_RGR",
+  "name":"Face Shield + Shemagh (RGR)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_tactical_shemagh_RGR",
+  "name":"Face Shield + Tactical/Shemagh(RGR)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_goggles_shemagh_RGR",
+  "name":"Face Shield + Goggles/Shemagh (RGR)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shades_shemagh_RGR",
+  "name":"Face Shield + Shades/Shemagh (RGR)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_CB",
+  "name":"Face Shield (CB)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_tactical_CB",
+  "name":"Face Shield + Tactical(CB)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_goggles_CB",
+  "name":"Face Shield + Goggles (CB)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shades_CB",
+  "name":"Face Shield + Shades (CB)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shemagh_CB",
+  "name":"Face Shield + Shemagh (CB)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_tactical_shemagh_CB",
+  "name":"Face Shield + Tactical/Shemagh(CB)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_goggles_shemagh_CB",
+  "name":"Face Shield + Goggles/Shemagh (CB)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shades_shemagh_CB",
+  "name":"Face Shield + Shades/Shemagh (CB)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_MC",
+  "name":"Face Shield (MC)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_tactical_MC",
+  "name":"Face Shield + Tactical(MC)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_goggles_MC",
+  "name":"Face Shield + Goggles (MC)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shades_MC",
+  "name":"Face Shield + Shades (MC)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shemagh_MC",
+  "name":"Face Shield + Shemagh (MC)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_tactical_shemagh_MC",
+  "name":"Face Shield + Tactical/Shemagh(MC)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_goggles_shemagh_MC",
+  "name":"Face Shield + Goggles/Shemagh (MC)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shades_shemagh_MC",
+  "name":"Face Shield + Shades/Shemagh (MC)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_BLK",
+  "name":"Face Shield (BLK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_tactical_BLK",
+  "name":"Face Shield + Tactical(BLK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_goggles_BLK",
+  "name":"Face Shield + Goggles (BLK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shades_BLK",
+  "name":"Face Shield + Shades (BLK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shemagh_BLK",
+  "name":"Face Shield + Shemagh (BLK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_tactical_shemagh_BLK",
+  "name":"Face Shield + Tactical/Shemagh(BLK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_goggles_shemagh_BLK",
+  "name":"Face Shield + Goggles/Shemagh (BLK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"milgp_f_face_shield_shades_shemagh_BLK",
+  "name":"Face Shield + Shades/Shemagh (BLK)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"ace",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_beard_2",
+  "name":"[VSM] Beard Long",
+  "description":"",
+  "imagePath":"",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_beard_2_hair",
+  "name":"[VSM] Beard Long + Hair",
+  "description":"",
+  "imagePath":"",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_beard_3",
+  "name":"[VSM] Beard Longest",
+  "description":"",
+  "imagePath":"",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_beard_3_hair",
+  "name":"[VSM] Beard Longest + Hair",
+  "description":"",
+  "imagePath":"",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_beard_hair",
+  "name":"[VSM] Beard + Hair",
+  "description":"",
+  "imagePath":"",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Goggles",
+  "name":"[VSM] Goggles",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Balaclava_oli",
+  "name":"Balaclava (Olive)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Balaclava_olive_ca.paa",
+  "mod":"vanilla",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_FaceMask_class",
+  "name":"None",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_FaceMask_tan",
+  "name":"[VSM] Face Mask (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_FaceMask\\Textures\\Icons\\VSM_FaceMask.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_FaceMask_black",
+  "name":"[VSM] Face Mask (Black)",
+  "description":"",
+  "imagePath":"\\VSM_FaceMask\\Textures\\Icons\\VSM_FaceMask.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_FaceMask_olive",
+  "name":"[VSM] Face Mask (Olive)",
+  "description":"",
+  "imagePath":"\\VSM_FaceMask\\Textures\\Icons\\VSM_FaceMask.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_FaceMask_Ghost",
+  "name":"[VSM] Face Mask (Ghost - Black)",
+  "description":"",
+  "imagePath":"\\VSM_FaceMask\\Textures\\Icons\\VSM_FaceMask.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_FaceMask_Ghost_tan",
+  "name":"[VSM] Face Mask (Ghost - Tan)",
+  "description":"",
+  "imagePath":"\\VSM_FaceMask\\Textures\\Icons\\VSM_FaceMask.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_FaceMask_Ghost_olive",
+  "name":"[VSM] Face Mask (Ghost - Olive)",
+  "description":"",
+  "imagePath":"\\VSM_FaceMask\\Textures\\Icons\\VSM_FaceMask.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_balaclava_Black",
+  "name":"[VSM] Balaclava (Black)",
+  "description":"",
+  "imagePath":"\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_balaclava_olive",
+  "name":"[VSM] Balaclava (Olive)",
+  "description":"",
+  "imagePath":"\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_balaclava_tan",
+  "name":"[VSM] Balaclava (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_balaclava_Black_Skull",
+  "name":"[VSM] Balaclava (Black - Skull)",
+  "description":"",
+  "imagePath":"\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_balaclava_TAN_Skull",
+  "name":"[VSM] Balaclava (Tan - Skull)",
+  "description":"",
+  "imagePath":"\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_balaclava_olive_Skull",
+  "name":"[VSM] Balaclava (Olive - Skull)",
+  "description":"",
+  "imagePath":"\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_balaclava2_Black",
+  "name":"[VSM] Balaclava 2 (Black)",
+  "description":"",
+  "imagePath":"\\VSM_FaceMask\\Textures\\Icons\\VSM_Balaclava.paa",
+  "mod":"vsm",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_SkiMask_Black",
+  "name":"[VSM] SkiMask (Black - COD)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Balaclava_olive_ca.paa",
+  "mod":"vsm",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Peltor_coyote_glasses",
+  "name":"[VSM] Peltor (Coyote)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Peltor_OD_glasses",
+  "name":"[VSM] Peltor (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Peltor_m81_glasses",
+  "name":"[VSM] Peltor (M81)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_m81.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Peltor_OCP_glasses",
+  "name":"[VSM] Peltor (OCP)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OCP.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Peltor_AOR1_glasses",
+  "name":"[VSM] Peltor (AOR1)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_AOR1.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_black_glasses",
+  "name":"[VSM] FaceMask + Glasses (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_tan_glasses",
+  "name":"[VSM] FaceMask + Glasses (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_OD_glasses",
+  "name":"[VSM] FaceMask + Glasses (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_black_Goggles",
+  "name":"[VSM] FaceMask + Goggles (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_tan_Goggles",
+  "name":"[VSM] FaceMask + Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_OD_Goggles",
+  "name":"[VSM] FaceMask + Goggles (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_black_Peltor",
+  "name":"[VSM] FaceMask + Peltor (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_tan_Peltor",
+  "name":"[VSM] FaceMask + Peltor (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_OD_Peltor",
+  "name":"[VSM] FaceMask + Peltor (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_black_Peltor_glasses",
+  "name":"[VSM] FaceMask + Peltor + Glasses (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_tan_Peltor_glasses",
+  "name":"[VSM] FaceMask + Peltor + Glasses (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_OD_Peltor_glasses",
+  "name":"[VSM] FaceMask + Peltor + Glasses (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_black_Peltor_Goggles",
+  "name":"[VSM] FaceMask + Peltor + Goggles (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_tan_Peltor_Goggles",
+  "name":"[VSM] FaceMask + Peltor + Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Facemask_OD_Peltor_Goggles",
+  "name":"[VSM] FaceMask + Peltor + Goggles (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Facemask_tan_Peltor_Goggles",
+  "name":"[VSM] Shemagh + FaceMask + Peltor + Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Facemask_OD_Peltor_Goggles",
+  "name":"[VSM] Shemagh + FaceMask + Peltor + Goggles (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Facemask_tan_Peltor_Glasses",
+  "name":"[VSM] Shemagh + FaceMask + Peltor + Glasses (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Facemask_OD_Peltor_Glasses",
+  "name":"[VSM] Shemagh + FaceMask + Peltor + Glasses (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Facemask_tan_Peltor",
+  "name":"[VSM] Shemagh + FaceMask + Peltor (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Facemask_OD_Peltor",
+  "name":"[VSM] Shemagh + FaceMask + Peltor (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Facemask_tan_Goggles",
+  "name":"[VSM] Shemagh + FaceMask + Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Facemask_OD_Goggles",
+  "name":"[VSM] Shemagh + FaceMask + Goggles (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Facemask_tan_Glasses",
+  "name":"[VSM] Shemagh + FaceMask + Glasses (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Facemask_OD_Glasses",
+  "name":"[VSM] Shemagh + FaceMask + Glasses (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Facemask_tan",
+  "name":"[VSM] Shemagh + FaceMask (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Facemask_OD",
+  "name":"[VSM] Shemagh + FaceMask (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_black_glasses",
+  "name":"[VSM] Balaclava + Glasses (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_tan_glasses",
+  "name":"[VSM] Balaclava + Glasses (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_OD_glasses",
+  "name":"[VSM] Balaclava + Glasses (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_black_Goggles",
+  "name":"[VSM] Balaclava + Goggles (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_tan_Goggles",
+  "name":"[VSM] Balaclava + Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_OD_Goggles",
+  "name":"[VSM] Balaclava + Goggles (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_black_Peltor",
+  "name":"[VSM] Balaclava + Peltor (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_tan_Peltor",
+  "name":"[VSM] Balaclava + Peltor (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_OD_Peltor",
+  "name":"[VSM] Balaclava + Peltor (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_black_Peltor_glasses",
+  "name":"[VSM] Balaclava + Peltor + Glasses (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_tan_Peltor_glasses",
+  "name":"[VSM] Balaclava + Peltor + Glasses (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_OD_Peltor_glasses",
+  "name":"[VSM] Balaclava + Peltor + Glasses (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_black_Peltor_Goggles",
+  "name":"[VSM] Balaclava + Peltor + Goggles (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_tan_Peltor_Goggles",
+  "name":"[VSM] Balaclava + Peltor + Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava_OD_Peltor_Goggles",
+  "name":"[VSM] Balaclava + Peltor + Goggles (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava_tan_Peltor_Goggles",
+  "name":"[VSM] Shemagh + Balaclava + Peltor + Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava_OD_Peltor_Goggles",
+  "name":"[VSM] Shemagh + Balaclava + Peltor + Goggles (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava_tan_Peltor_Glasses",
+  "name":"[VSM] Shemagh + Balaclava + Peltor + Glasses (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava_OD_Peltor_Glasses",
+  "name":"[VSM] Shemagh + Balaclava + Peltor + Glasses (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava_tan_Peltor",
+  "name":"[VSM] Shemagh + Balaclava + Peltor (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava_OD_Peltor",
+  "name":"[VSM] Shemagh + Balaclava + Peltor (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava_tan_Goggles",
+  "name":"[VSM] Shemagh + Balaclava + Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava_OD_Goggles",
+  "name":"[VSM] Shemagh + Balaclava + Goggles (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava_tan_Glasses",
+  "name":"[VSM] Shemagh + Balaclava + Glasses (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava_OD_Glasses",
+  "name":"[VSM] Shemagh + Balaclava + Glasses (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava_tan",
+  "name":"[VSM] Shemagh + Balaclava (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava_OD",
+  "name":"[VSM] Shemagh + Balaclava (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_black_glasses",
+  "name":"[VSM] Balaclava2 + Glasses (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_tan_glasses",
+  "name":"[VSM] Balaclava2 + Glasses (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_OD_glasses",
+  "name":"[VSM] Balaclava2 + Glasses (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_black_Goggles",
+  "name":"[VSM] Balaclava2 + Goggles (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_tan_Goggles",
+  "name":"[VSM] Balaclava2 + Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_OD_Goggles",
+  "name":"[VSM] Balaclava2 + Goggles (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_black_Peltor",
+  "name":"[VSM] Balaclava2 + Peltor (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_tan_Peltor",
+  "name":"[VSM] Balaclava2 + Peltor (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_OD_Peltor",
+  "name":"[VSM] Balaclava2 + Peltor (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_black_Peltor_glasses",
+  "name":"[VSM] Balaclava2 + Peltor + Glasses (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_tan_Peltor_glasses",
+  "name":"[VSM] Balaclava2 + Peltor + Glasses (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_OD_Peltor_glasses",
+  "name":"[VSM] Balaclava2 + Peltor + Glasses (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_black_Peltor_Goggles",
+  "name":"[VSM] Balaclava2 + Peltor + Goggles (Black)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_grey.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_tan_Peltor_Goggles",
+  "name":"[VSM] Balaclava2 + Peltor + Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Balaclava2_OD_Peltor_Goggles",
+  "name":"[VSM] Balaclava2 + Peltor + Goggles (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava2_tan_Peltor_Goggles",
+  "name":"[VSM] Shemagh + Balaclava2 + Peltor + Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava2_OD_Peltor_Goggles",
+  "name":"[VSM] Shemagh + Balaclava2 + Peltor + Goggles (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava2_tan_Peltor_Glasses",
+  "name":"[VSM] Shemagh + Balaclava2 + Peltor + Glasses (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava2_OD_Peltor_Glasses",
+  "name":"[VSM] Shemagh + Balaclava2 + Peltor + Glasses (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava2_tan_Peltor",
+  "name":"[VSM] Shemagh + Balaclava2 + Peltor (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava2_OD_Peltor",
+  "name":"[VSM] Shemagh + Balaclava2 + Peltor (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava2_tan_Goggles",
+  "name":"[VSM] Shemagh + Balaclava2 + Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava2_OD_Goggles",
+  "name":"[VSM] Shemagh + Balaclava2 + Goggles (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava2_tan_Glasses",
+  "name":"[VSM] Shemagh + Balaclava2 + Glasses (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava2_OD_Glasses",
+  "name":"[VSM] Shemagh + Balaclava2 + Glasses (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava2_tan",
+  "name":"[VSM] Shemagh + Balaclava2 (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Balaclava2_OD",
+  "name":"[VSM] Shemagh + Balaclava2 (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_tan",
+  "name":"[VSM] Shemagh (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_OD",
+  "name":"[VSM] Shemagh (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_glasses_tan",
+  "name":"[VSM] Shemagh + Glasses (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Glasses_OD",
+  "name":"[VSM] Shemagh + Glasses (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_goggles_tan",
+  "name":"[VSM] Shemagh + Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Shemagh_Goggles_OD",
+  "name":"[VSM] Shemagh + Goggles (OD)",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"VSM_Thermal",
+  "name":"[VSM] UnderArmor",
+  "description":"",
+  "imagePath":"\\VSM_Shemagh\\Textures\\Icons\\VSM_OGA_OD.paa",
+  "mod":"vsm",
+  "weight":0,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Face_Wrap_01",
+  "name":"Face Wrap",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
+  "mod":"ace",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Face_Wrap_02",
+  "name":"Face Wrap",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
+  "mod":"ace",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Face_Wrap_03",
+  "name":"Face Wrap",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
+  "mod":"ace",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Face_Wrap_04",
+  "name":"Face Wrap",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
+  "mod":"ace",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Face_Wrap_05",
+  "name":"Face Wrap",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
+  "mod":"ace",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Face_Wrap_06",
+  "name":"Face Wrap",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
+  "mod":"ace",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Face_Wrap_07",
+  "name":"Face Wrap",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
+  "mod":"ace",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Face_Wrap_08",
+  "name":"Face Wrap",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
+  "mod":"ace",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Face_Wrap_09",
+  "name":"Face Wrap",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
+  "mod":"ace",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Neck_Shemag",
+  "name":"Neck Shemag (White)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\neck_shemag.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Neck_Shemag_Tan",
+  "name":"Neck Shemag (Tan)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\neck_shemag.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Neck_Shemag_Oli",
+  "name":"Neck Shemag (Olive)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\neck_shemag.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Balaclava",
+  "name":"Balaclava (Black)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Balaclava_Neck_Shemag",
+  "name":"Balaclava and Neck Shemag (Black)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_shemag_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Neck_Shemag_KLR_blk",
+  "name":"Neck Shemag and Kneepads (Black)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_shemag_klr_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Neck_Shemag_KL_blk",
+  "name":"Neck Shemag and Left Kneepad (Black)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_shemag_kl_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Neck_Shemag_KR_blk",
+  "name":"Neck Shemag and Right Kneepad (Black)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_shemag_kr_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Neck_Shemag_KLR_tan",
+  "name":"Neck Shemag and Kneepads (Tan)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_shemag_klr_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Neck_Shemag_KL_tan",
+  "name":"Neck Shemag and Left Kneepad (Tan)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_shemag_kl_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Neck_Shemag_KR_tan",
+  "name":"Neck Shemag and Right Kneepad (Tan)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_shemag_kr_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_KLR_Oli",
+  "name":"Kneepads (Olive)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_klr_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_KL_Oli",
+  "name":"Left Kneepad (Olive)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_kl_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_KR_Oli",
+  "name":"Right Kneepad (Olive)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_kr_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Balaclava_Win",
+  "name":"Balaclava (White)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_winter_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Balaclava_Win_02",
+  "name":"Balaclava (Digital Winter)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_winter_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Balaclava_Win_03",
+  "name":"Balaclava (KLMK Winter Green)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_winter_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Balaclava_Win_04",
+  "name":"Balaclava (KLMK Winter Grey)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_winter_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Balaclava_CHD",
+  "name":"Balaclava (Flora Alt)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava_chd_camo_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Bandanna_blk",
+  "name":"Bandana (Black)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
+  "mod":"vanilla",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Bandanna_flora_alt",
+  "name":"Bandana (Flora Alt)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_clean_flora_alt_ca.paa",
+  "mod":"3cb",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Bandanna_shades_flora_alt",
+  "name":"Bandana (Shades Flora Alt)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_shades_flora_alt_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Bandanna_sport_flora_alt",
+  "name":"Bandana (Sport Flora Alt)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_sport_flora_alt_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Bandanna_aviator_flora_alt",
+  "name":"Bandana (Aviator Flora Alt)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_aviator_flora_alt_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Bandanna_winter",
+  "name":"Bandana (Winter)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_clean_winter_ca.paa",
+  "mod":"3cb",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Bandanna_shades_winter",
+  "name":"Bandana (Shades Winter)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_shades_winter_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Bandanna_sport_winter",
+  "name":"Bandana (Sport Winter)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_sport_winter_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Bandanna_aviator_winter",
+  "name":"Bandana (Aviator Winter)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_aviator_winter_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Bandanna_winter_flora_alt",
+  "name":"Bandana (Winter Flora Alt)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_clean_winter_flora_alt_ca.paa",
+  "mod":"3cb",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Bandanna_shades_winter_flora_alt",
+  "name":"Bandana (Shades Winter Flora Alt)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_shades_winter_flora_alt_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Bandanna_sport_winter_flora_alt",
+  "name":"Bandana (Sport Winter Flora Alt)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_sport_winter_flora_alt_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Bandanna_aviator_winter_flora_alt",
+  "name":"Bandana (Aviator Winter Flora Alt)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bandana_aviator_winter_flora_alt_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhs_balaclava1_olive",
+  "name":"Balaclava (Olive)",
+  "description":"",
+  "imagePath":"\\rhsafrf\\addons\\rhs_infantry\\Data\\inventory\\gear_icon_balaclava_ca.paa",
+  "mod":"rhs",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Balaclava_DES",
+  "name":"Balaclava (Desert)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bala1_des_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Balaclava_WIN_ALT",
+  "name":"Balaclava (Winter)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bala_win_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhs_balaclava",
+  "name":"Balaclava",
+  "description":"",
+  "imagePath":"\\rhsafrf\\addons\\rhs_infantry\\Data\\inventory\\gear_icon_balaclava_ca.paa",
+  "mod":"rhs",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Balaclava2_BLK",
+  "name":"Balaclava 2 (Black)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava2_blk_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Balaclava2_DES",
+  "name":"Balaclava 2 (Desert)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_balaclava2_des_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_G_Balaclava2_WIN",
+  "name":"Balaclava 2 (Winter)",
+  "description":"",
+  "imagePath":"\\UK3CB_Factions\\addons\\UK3CB_Factions_Equipment\\facegear\\data\\ui\\icon_bala_win_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Spectacles",
+  "name":"Spectacle Glasses",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_spectacles_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Spectacles_Tinted",
+  "name":"Tinted Spectacles",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_spectacles_tinted_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Lowprofile",
+  "name":"Low Profile Goggles",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_lowprofile_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Shades_Black",
+  "name":"Shades (Black)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_shades_black_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Shades_Green",
+  "name":"Shades (Green)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_shades_green_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Shades_Red",
+  "name":"Shades (Red)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_shades_red_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Squares",
+  "name":"Square Spectacles",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_squares_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Squares_Tinted",
+  "name":"Square Shades",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_squares_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Sport_BlackWhite",
+  "name":"Sport Shades (Shadow)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_sport_blackwhite_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Sport_Blackyellow",
+  "name":"Sport Shades (Poison)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_sport_blackyellow_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Sport_Greenblack",
+  "name":"Sport Shades (Yetti)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_sport_greenblack_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Sport_Checkered",
+  "name":"Sport Shades (Style)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_sport_checkered_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Sport_Red",
+  "name":"Sport Shades (Fire)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_sport_red_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Tactical_Black",
+  "name":"Tactical Shades",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Aviator",
+  "name":"Aviator Glasses",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_aviators_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Lady_Blue",
+  "name":"Ladies Shades",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_lady_CA.paa",
+  "mod":"vanilla",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Diving",
+  "name":"Diving Goggles",
+  "description":"",
+  "imagePath":"\\A3\\characters_F\\data\\ui\\icon_G_Diving_CA.paa",
+  "mod":"vanilla",
+  "weight":3,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_O_Diving",
+  "name":"Diving Goggles [CSAT]",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_EPB\\Heads\\Glasses\\data\\UI\\icon_g_diving_iran_ca.paa",
+  "mod":"vanilla",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_I_Diving",
+  "name":"Diving Goggles [AAF]",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_EPB\\Heads\\Glasses\\data\\UI\\icon_g_diving_rus_ca.paa",
+  "mod":"vanilla",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Goggles_VR",
+  "name":"VR Goggles",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Goggles_VR_ca.paa",
+  "mod":"vanilla",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Balaclava_combat",
+  "name":"Balaclava (Combat Goggles)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Balaclava_combat_ca.paa",
+  "mod":"vanilla",
+  "weight":10,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Balaclava_lowprofile",
+  "name":"Balaclava (Low Profile Goggles)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Balaclava_lowprofile_ca.paa",
+  "mod":"vanilla",
+  "weight":8,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Bandanna_oli",
+  "name":"Bandana (Olive)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_BandMask_olive_ca.paa",
+  "mod":"vanilla",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Bandanna_khk",
+  "name":"Bandana (Khaki)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_BandMask_khaki_ca.paa",
+  "mod":"vanilla",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Bandanna_tan",
+  "name":"Bandana (Tan)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_BandMask_tan_ca.paa",
+  "mod":"vanilla",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Bandanna_beast",
+  "name":"Bandana (Beast)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_BandMask_beast_ca.paa",
+  "mod":"vanilla",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Bandanna_sport",
+  "name":"Bandana (Sport)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_sport_ca.paa",
+  "mod":"vanilla",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Bandanna_aviator",
+  "name":"Bandana (Aviator)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_aviator_ca.paa",
+  "mod":"vanilla",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Shades_Blue",
+  "name":"Shades (Blue)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_shades_blue_CA.paa",
+  "mod":"vanilla",
+  "weight":1,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Sport_Blackred",
+  "name":"Sport Shades (Vulcan)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_sport_blackred_CA.paa",
+  "mod":"vanilla",
+  "weight":1,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Tactical_Clear",
+  "name":"Tactical Glasses",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
+  "mod":"vanilla",
+  "weight":1,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_RM_SWAT_Balaclava",
+  "name":"SWAT Balaclava",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Balaclava_clean_ca.paa",
+  "mod":"rmswatuniform",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_RM_SWAT_Glasses",
+  "name":"SWAT Clear Glasses",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
+  "mod":"rmswatuniform",
+  "weight":1,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_RM_SWAT_Bandana",
+  "name":"SWAT Clear Bandana",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Bootcamp\\Data\\UI\\icon_G_Bandana_clean_ca.paa",
+  "mod":"rmswatuniform",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Balaclava_TI_blk_F",
+  "name":"Stealth Balaclava (Black)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Exp\\BLUFOR\\Data\\UI\\icon_G_Balaclava_TI_blk_F_ca.paa",
+  "mod":"apex",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Balaclava_TI_tna_F",
+  "name":"Stealth Balaclava (Green)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Exp\\BLUFOR\\Data\\UI\\icon_G_Balaclava_TI_tna_F_ca.paa",
+  "mod":"apex",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Balaclava_TI_G_blk_F",
+  "name":"Stealth Balaclava (Black, Goggles)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Exp\\BLUFOR\\Data\\UI\\icon_G_Balaclava_TI_G_blk_F_ca.paa",
+  "mod":"apex",
+  "weight":10,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Balaclava_TI_G_tna_F",
+  "name":"Stealth Balaclava (Green, Goggles)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Exp\\BLUFOR\\Data\\UI\\icon_G_Balaclava_TI_G_tna_F_ca.paa",
+  "mod":"apex",
+  "weight":10,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Combat_Goggles_tna_F",
+  "name":"Combat Goggles (Green)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Exp\\BLUFOR\\Data\\UI\\icon_G_Combat_Goggles_tna_F_ca.paa",
+  "mod":"apex",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"immersion_pops_pop0",
+  "name":"Lollipop",
+  "description":"",
+  "imagePath":"\\immersion_pops\\UI\\gear_cig0_x_ca",
+  "mod":"ace",
+  "weight":0.2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"murshun_cigs_cig0",
+  "name":"Cigarette",
+  "description":"",
+  "imagePath":"\\murshun_cigs\\UI\\gear_cig0_x_ca",
+  "mod":"ace",
+  "weight":0.02,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"immersion_cigs_cigar0",
+  "name":"Cigar",
+  "description":"",
+  "imagePath":"\\murshun_cigs\\UI\\gear_cigar0_x_ca",
+  "mod":"ace",
+  "weight":0.1,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Respirator_white_F",
+  "name":"Respirator (White)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Orange\\Facewear\\Data\\UI\\icon_G_Respirator_white_ca.paa",
+  "mod":"lawsofwar",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Respirator_yellow_F",
+  "name":"Respirator (Yellow)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Orange\\Facewear\\Data\\UI\\icon_G_Respirator_yellow_ca.paa",
+  "mod":"lawsofwar",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Respirator_blue_F",
+  "name":"Respirator (Blue)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Orange\\Facewear\\Data\\UI\\icon_G_Respirator_blue_ca.paa",
+  "mod":"lawsofwar",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_EyeProtectors_F",
+  "name":"Safety Goggles",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Orange\\Facewear\\Data\\UI\\icon_G_EyeProtectors_ca.paa",
+  "mod":"lawsofwar",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_EyeProtectors_Earpiece_F",
+  "name":"Safety Goggles (Earpiece)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Orange\\Facewear\\Data\\UI\\icon_G_EyeProtectors_Earpiece_ca.paa",
+  "mod":"lawsofwar",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_WirelessEarpiece_F",
+  "name":"Wireless Earpiece",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Orange\\Headgear\\Data\\UI\\icon_H_WirelessEarpiece_CA.paa",
+  "mod":"lawsofwar",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_AirPurifyingRespirator_01_F",
+  "name":"APR [NATO]",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_AirPurifyingRespirator_01_F_ca.paa",
+  "mod":"contact",
+  "weight":8,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_AirPurifyingRespirator_02_black_F",
+  "name":"APR (Black) [CSAT]",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_AirPurifyingRespirator_02_black_F_ca.paa",
+  "mod":"contact",
+  "weight":8,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_AirPurifyingRespirator_02_olive_F",
+  "name":"APR (Olive) [CSAT]",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_AirPurifyingRespirator_02_olive_F_ca.paa",
+  "mod":"contact",
+  "weight":8,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_AirPurifyingRespirator_02_sand_F",
+  "name":"APR (Sand) [CSAT]",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_AirPurifyingRespirator_02_sand_F_ca.paa",
+  "mod":"contact",
+  "weight":8,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_RegulatorMask_F",
+  "name":"Regulator Facepiece",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_RegulatorMask_F_ca.paa",
+  "mod":"contact",
+  "weight":8,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Blindfold_01_white_F",
+  "name":"Blindfold (White)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_Blindfold_01_white_F_ca.paa",
+  "mod":"contact",
+  "weight":3,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"G_Blindfold_01_black_F",
+  "name":"Blindfold (Black)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F_Enoch\\Facewear\\Data\\UI\\icon_G_Blindfold_01_black_F_ca.paa",
+  "mod":"contact",
+  "weight":3,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"SCU_TacG_Yellow",
+  "name":"[SCU] Tactical Shades (Yellow)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
+  "mod":"solidcoloruniforms",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"SCU_TacG_MC",
+  "name":"[SCU] Tactical Shades (MC Camo)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
+  "mod":"solidcoloruniforms",
+  "weight":2,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"SCU_TacG_Amber",
+  "name":"[SCU] Tactical Shades (Amber)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
+  "mod":"solidcoloruniforms",
+  "weight":1,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"SCU_TacG_Yellow_Clear",
+  "name":"[SCU] Tactical Shades (Yellow, Clear)",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_tactical_CA.paa",
+  "mod":"solidcoloruniforms",
+  "weight":1,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"SCU_ComGog_Hitam",
+  "name":"[SCU] Combat Goggles BLACK",
+  "description":"",
+  "imagePath":"\\A3\\Characters_F\\data\\ui\\icon_g_combat_CA.paa",
+  "mod":"solidcoloruniforms",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhs_scarf",
+  "name":"Scarf",
+  "description":"",
+  "imagePath":"\\rhsafrf\\addons\\rhs_infantry\\Data\\inventory\\gear_icon_scarf_ca.paa",
+  "mod":"rhs",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhs_facewear_6m2",
+  "name":"6M2",
+  "description":"",
+  "imagePath":"\\rhsafrf\\addons\\rhs_inventoryicons\\data\\headgear\\rhs_6m2_ca.paa",
+  "mod":"rhs",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhs_facewear_6m2_1",
+  "name":"6M2-1",
+  "description":"",
+  "imagePath":"\\rhsafrf\\addons\\rhs_inventoryicons\\data\\headgear\\rhs_6m2_1_ca.paa",
+  "mod":"rhs",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhs_googles_black",
+  "name":"Ballistic Glasses (Black)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry\\ui\\ballisticglasses_black_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhs_googles_clear",
+  "name":"Ballistic Glasses (Clear)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry\\ui\\ballisticglasses_clear_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhs_googles_yellow",
+  "name":"Ballistic Glasses (Yellow)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry\\ui\\ballisticglasses_yellow_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhs_googles_orange",
+  "name":"Ballistic Glasses (Orange)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry\\ui\\ballisticglasses_orange_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhs_ess_black",
+  "name":"Ballistic Goggles (Black)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\rhsusf_ess_black_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_oakley_goggles_blk",
+  "name":"SI Ballistic 2.0 (Black)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\gogglesb_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_oakley_goggles_clr",
+  "name":"SI Ballistic 2.0 (Clear)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\gogglesc_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_oakley_goggles_ylw",
+  "name":"SI Ballistic 2.0 (Yellow)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\gogglesy_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh_white",
+  "name":"Shemagh (White)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemaghwhite_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh_tan",
+  "name":"Shemagh (Tan)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemaghtan_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh_od",
+  "name":"Shemagh (OD)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagholive_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh_grn",
+  "name":"Shemagh (Green)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagholive_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh_gogg_white",
+  "name":"Shemagh w/Goggles (White)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggwhite_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh_gogg_tan",
+  "name":"Shemagh w/Goggles (Tan)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggtan_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh_gogg_od",
+  "name":"Shemagh w/Goggles (OD)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggod_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh_gogg_grn",
+  "name":"Shemagh w/Goggles (Green)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggod_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh2_white",
+  "name":"Shemagh (White/alt)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemaghwhite_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh2_tan",
+  "name":"Shemagh (Tan/alt)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemaghtan_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh2_od",
+  "name":"Shemagh (OD/alt)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagholive_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh2_grn",
+  "name":"Shemagh (Green/alt)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagholive_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh2_gogg_white",
+  "name":"Shemagh w/Goggles (White/alt)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggwhite_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh2_gogg_tan",
+  "name":"Shemagh w/Goggles (Tan/alt)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggtan_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh2_gogg_od",
+  "name":"Shemagh w/Goggles (OD/alt)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggod_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhsusf_shemagh2_gogg_grn",
+  "name":"Shemagh w/Goggles (Green/alt)",
+  "description":"",
+  "imagePath":"\\rhsusf\\addons\\rhsusf_infantry2\\ui\\shemagh2goggod_ca.paa",
+  "mod":"rhs",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_BAF_G_Tactical_Grey",
+  "name":"Tactical Glasses (Grey) [BAF]",
+  "description":"",
+  "imagePath":"\\UK3CB_BAF_Equipment\\glasses\\data\\ui\\gear_tactical_glasses_ca.paa",
+  "mod":"3cb",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_BAF_G_Tactical_Orange",
+  "name":"Tactical Glasses (Orange) [BAF]",
+  "description":"",
+  "imagePath":"\\UK3CB_BAF_Equipment\\glasses\\data\\ui\\gear_tactical_glasses_ca.paa",
+  "mod":"3cb",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_BAF_G_Tactical_Yellow",
+  "name":"Tactical Glasses (Yellow) [BAF]",
+  "description":"",
+  "imagePath":"\\UK3CB_BAF_Equipment\\glasses\\data\\ui\\gear_tactical_glasses_ca.paa",
+  "mod":"3cb",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_BAF_G_Tactical_Clear",
+  "name":"Tactical Glasses (Clear) [BAF]",
+  "description":"",
+  "imagePath":"\\UK3CB_BAF_Equipment\\glasses\\data\\ui\\gear_tactical_glasses_ca.paa",
+  "mod":"3cb",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_BAF_G_Tactical_Black",
+  "name":"Tactical Glasses (Black) [BAF]",
+  "description":"",
+  "imagePath":"\\UK3CB_BAF_Equipment\\glasses\\data\\ui\\gear_tactical_glasses_ca.paa",
+  "mod":"3cb",
+  "weight":4,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"UK3CB_BAF_G_Balaclava_Win",
+  "name":"Balaclava Arctic",
+  "description":"",
+  "imagePath":"\\UK3CB_BAF_Equipment\\glasses\\data\\ui\\icon_G_Balaclava_clean_ca.paa",
+  "mod":"3cb",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+},
+
+{
+  "class":"rhssaf_veil_Green",
+  "name":"Veil Mask",
+  "description":"",
+  "imagePath":"\\rhssaf\\addons\\rhssaf_inventoryicons\\data\\facewear\\rhssaf_veil_Green_ca.paa",
+  "mod":"rhs",
+  "weight":6,
+  "type":"Facewear",
+  "subtype":"Glasses"
+}
+
 ]

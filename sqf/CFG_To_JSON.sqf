@@ -18,7 +18,7 @@
 //   ["glasses", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgGlasses")]
 // ];
 private _CONFIGS = createHashMapFromArray [
-  ["vehicles", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgVehicles")]
+  ["glasses", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgGlasses")]
 ];
 forceunicode 0;
 private _jsonClasses = [];
