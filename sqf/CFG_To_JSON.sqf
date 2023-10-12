@@ -2,7 +2,7 @@
 // TITLE: CFG_TO_JSON.sqf
 // LICENSE : GNU General Public License v3.0
 // DESCRIPTION: This script converts the contents of a key cfg config to a JSON array, which can then be copied from the clipboard and used to populate JSON files, databases or anything else that is required.
-// AUTHOR: Morgan Davies
+// AUTHOR: M-Davies
 // USAGE:
 //   1) Alter the _CONFIGS hashmap variable to include the config classes you want to add to the json array. Beware of the 10,000,000 limit on array sizes however. You might need to run the config extraction one at a time. See _exampleCONFIGS below for the currently supported configs.
 //   2) Run the script in a debug console on arma 3. It may take a few seconds to complete depending on your system specs.
@@ -21,7 +21,6 @@ private _CONFIGS = createHashMapFromArray [
   ["vehicles", "getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgVehicles")]
 ];
 forceunicode 0;
-private _jsonClasses = [];
 
 // Calculates the type and subtype of the config item based off it's rough item return. This can be inaccurate.
 getType = { params["_NAME", "_ROUGHTYPE"];
@@ -161,7 +160,7 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
 
   // I would prefer to use an else if here but it doesn't exist in sqf seemingly
   private _found = false;
-  if ((["ACE", _AUTHOR] call BIS_fnc_inString || ["ACE_", _NAME] call BIS_fnc_inString) && _found == false) then {
+  if ((["ACE", _AUTHOR] call BIS_fnc_inString || ["ACE_", _NAME] call BIS_fnc_inString || ["ACE-", _NAME] call BIS_fnc_inString) && _found == false) then {
     _modName = "ace";
     _found = true;
   };
@@ -225,192 +224,178 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
     _modName = "immersioncigs";
     _found = true;
   };
-  if ((["Enoch", _DLC] call BIS_fnc_inString || ["Contact", _DLC] call BIS_fnc_inString) && _found == false) {
+  if (["Adacas", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "militarygearpack";
+    _found = true;
+  };
+  if (["Rainman", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "rmswatuniform";
+    _found = true;
+  };
+  if (["Exocet", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "solidcoloruniforms";
+    _found = true;
+  };
+  if (["Exocet", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "solidcoloruniforms";
+    _found = true;
+  };
+  if (["Drongo", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "drongosartillery";
+    _found = true;
+  };
+  if (["camel", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "projectbjc";
+    _found = true;
+  };
+  if (["kat_", _NAME] call BIS_fnc_inString && _found == false) then {
+    _modName = "katadvancedmedical";
+    _found = true;
+  };
+  if (["SKEENBREEN", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "sbsvsmretexture";
+    _found = true;
+  };
+  if (["BW-", _AUTHOR] call BIS_fnc_inString && _found == false) then {
+    _modName = "bwmod";
+    _found = true;
+  };
+  if ((["Rotators Collective", _DLC] call BIS_fnc_inString) && _found == false) then {
+    _modName = "westernsahara";
+    _found = true;
+  };
+  if ((["Enoch", _DLC] call BIS_fnc_inString || ["Contact", _DLC] call BIS_fnc_inString) && _found == false) then {
     _modName = "contact";
     _found = true;
   };
-  if (["Kart", _DLC] call BIS_fnc_inString && _found == false) {
+  if ((["Kart", _DLC] call BIS_fnc_inString) && _found == false) then {
     _modName = "karts";
     _found = true;
   };
-  if (["Mark", _DLC] call BIS_fnc_inString && _found == false) {
+  if ((["Mark", _DLC] call BIS_fnc_inString) && _found == false) then {
     _modName = "marksman";
     _found = true;
   };
-  if (["Tank", _DLC] call BIS_fnc_inString && _found == false) {
+  if ((["Tank", _DLC] call BIS_fnc_inString) && _found == false) then {
     _modName = "tanks";
     _found = true;
   };
-  if (["Expansion", _DLC] call BIS_fnc_inString && _found == false) {
+  if ((["Expansion", _DLC] call BIS_fnc_inString) && _found == false) then {
     _modName = "apex";
     _found = true;
   };
-  if (["AoW", _DLC] call BIS_fnc_inString && _found == false) {
+  if ((["AoW", _DLC] call BIS_fnc_inString) && _found == false) then {
     _modName = "artofwar";
     _found = true;
   };
-  if (["Heli", _DLC] call BIS_fnc_inString && _found == false) {
+  if ((["Heli", _DLC] call BIS_fnc_inString) && _found == false) then {
     _modName = "helicopters";
     _found = true;
   };
-  if (["Orange", _DLC] call BIS_fnc_inString && _found == false) {
+  if ((["Orange", _DLC] call BIS_fnc_inString) && _found == false) then {
     _modName = "lawsofwar";
     _found = true;
   };
-  if ((["Bravo Zero One Studios", _AUTHOR] call BIS_fnc_inString || ["Jets", _DLC] call BIS_fnc_inString) && _found == false) {
+  if ((["Bravo Zero One Studios", _AUTHOR] call BIS_fnc_inString || ["Jets", _DLC] call BIS_fnc_inString) && _found == false) then {
     _modname = "jets";
     _found = true;
-  }
+  };
   if ((["Bohemia Interactive", _AUTHOR] call BIS_fnc_inString || _NAME == "None") && _found == false) then {
     _modName = "vanilla";
     _found = true;
   };
 
   // Not found, either object is a placeholder null class, author is not provided or is not supported yet
+  if (_found == false && _AUTHOR != "") then {
+     _modName = _AUTHOR;
+     _found = true;
+  };
   if (_found == false) then {
-    throw format ["[ERROR] Unknown mod author for class = %1", _NAME];
+    throw format ["[ERROR] Author entry for class %1 is FALSE", _NAME];
   };
 
   _modName
 };
 
 // START: Iterate over config files
+private _allClassConfigs = [];
 {
+  // Type of config (e.g. weapons, magazines, etc)
   private _CONFIGTYPE = _x;
-  private _CONFIGARRAY = _y apply {
-    private _CONFIGNAME = configName _x;
-    private _DLCNAME = getText (_x >> "dlc");
-    private _TYPE = [_CONFIGNAME, _CONFIGNAME call BIS_fnc_itemType] call getType;
-    // Hacky way around checking if a variable is false
+  private _CONFIGLIST = _y;
+  
+  // Iterate over configs in type
+  private _currentClassConfigs = [];
+  {
+    // Save config details
+    private _CURRENTCONFIGPATH = _x;
+    private _CONFIGNAME = configName _CURRENTCONFIGPATH; // e.g. [classname of config]
+    diag_log format ["[INFO] Parsing config file %1", _CURRENTCONFIGPATH];
+
+    private _TYPE = [_CONFIGNAME, (_CONFIGNAME call BIS_fnc_itemType)] call getType;
+    // Hacky way around checking if it's a config we actually want to extract or not
     if (typeName (_TYPE select 0) == "BOOL") then {
+      diag_log format ["[DEBUG] Skipping config file %1, not an arsenal object", _CURRENTCONFIGPATH];
       continue;
     };
 
-    // Format each hit to a JSON object and strip out chars that interfere with JSON parsing
-    switch (_CONFIGTYPE) do {
-      case "weapons": {
-        format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "magazines":%10,%11    "type":"%12",%13    "subtype":"%14",%15    "mod":"%16",%17    "weight":%18,%19    "magwell":%20%21  },%22',
-          endl,
-          _CONFIGNAME,
-          endl,
-          [[getText (_x >> "displayName"), "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
-          endl,
-          [[getText (_x >> "descriptionShort"),  "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
-          endl,
-          [getText (_x >> "Picture"), "\", "\\"] call CBA_fnc_replace,
-          endl,
-          getArray (_x >> "magazines") apply {_x}, // Note: _x is block specific
-          endl,
-          _TYPE select 0,
-          endl,
-          _TYPE select 1,
-          endl,
-          [_CONFIGNAME, _DLCNAME, getText (_x >> "author")] call getModName,
-          endl,
-          getNumber (_x >> "mass"),
-          endl,
-          getArray (_x >> "magazineWell") apply {_x},
-          endl,
-          endl
-        ]
-      };
+    private _configHashmap = [] call CBA_fnc_hashCreate; // Can't declare an array here for some reason, some weird error in CBA
+    [_configHashmap, "class", _CONFIGNAME] call CBA_fnc_hashSet;
+    [_configHashmap, "type", _TYPE select 0] call CBA_fnc_hashSet;
+    [_configHashmap, "subtype", _TYPE select 1] call CBA_fnc_hashSet;
 
-      case "magazines": {
-        format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "ammo":"%10",%11    "count":%12,%13    "mod":"%14",%15    "weight":%16,%17    "type":"%18",%19    "subtype":"%20"%21  },%22',
-          endl,
-          _CONFIGNAME,
-          endl,
-          [[getText (_x >> "displayName"), "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
-          endl,
-          [[getText (_x >> "descriptionShort"),  "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
-          endl,
-          [getText (_x >> "picture"), "\", "\\"] call CBA_fnc_replace,
-          endl,
-          [[getText (_x >> "ammo"), "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
-          endl,
-          getNumber (_x >> "count"),
-          endl,
-          [_CONFIGNAME, _DLCNAME, getText (_x >> "author")] call getModName,
-          endl,
-          getNumber (_x >> "mass"),
-          endl,
-          _TYPE select 0,
-          endl,
-          _TYPE select 1,
-          endl,
-          endl
-        ]
-      };
+    // Add config keys and values to hashmap
+    private _CONFIGKEYS = configProperties [_CURRENTCONFIGPATH, "true", true];
 
-      case "vehicles": {
-        format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "mod":"%10",%11    "weight":%12,%13    "type":"%14",%15    "subtype":"%16"%17  },%18',
-          endl,
-          _CONFIGNAME,
-          endl,
-          [[getText (_x >> "displayName"), "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
-          endl,
-          [[getText (_x >> "descriptionShort"),  "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
-          endl,
-          [getText (_x >> "picture"), "\", "\\"] call CBA_fnc_replace,
-          endl,
-          [_CONFIGNAME, _DLCNAME, getText (_x >> "author")] call getModName,
-          endl,
-          getNumber (_x >> "mass"),
-          endl,
-          _TYPE select 0,
-          endl,
-          _TYPE select 1,
-          endl,
-          endl
-        ]
-      };
+    if (count _CONFIGKEYS > 0) then {
+      {
+        private _currentConfigKey = _x;
+        diag_log format ["[DEBUG] Reading config property %1", _currentConfigKey];
+        // Parse value
+        private _currentValue = "";
+        if (isText _currentConfigKey) then {
+          // Escape all backslashes and double quotes
+          _currentValue = [[getText (_currentConfigKey), "\", "\\"] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace;
+        };
+        if (isNumber _currentConfigKey) then {
+          _currentValue = getNumber (_currentConfigKey);
+        };
+        if (isArray _currentConfigKey) then {
+          _currentValue = getArray (_currentConfigKey) apply {_currentConfigKey};
+        };
 
-      case "glasses": {
-        format [
-          '  {%1    "class":"%2",%3    "name":"%4",%5    "description":"%6",%7    "image":"%8",%9    "mod":"%10",%11    "weight":%12,%13    "type":"%14",%15    "subtype":"%16"%17  },%18',
-          endl,
-          _CONFIGNAME,
-          endl,
-          [[getText (_x >> "displayName"), "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
-          endl,
-          [[getText (_x >> "descriptionShort"),  "\", ""] call CBA_fnc_replace, '"', '\"'] call CBA_fnc_replace,
-          endl,
-          [getText (_x >> "picture"), "\", "\\"] call CBA_fnc_replace,
-          endl,
-          [_CONFIGNAME, _DLCNAME, getText (_x >> "author")] call getModName,
-          endl,
-          getNumber (_x >> "mass"),
-          endl,
-          _TYPE select 0,
-          endl,
-          _TYPE select 1,
-          endl,
-          endl
-        ]
-      };
+        // Add to map
+        [_configHashmap, configName _x, _currentValue] call CBA_fnc_hashSet;
+      } forEach _CONFIGKEYS;
 
-      default {
-        throw format ["[ERROR] Unsupported config title: %1 please specify a supported title", _CONFIGTYPE];
-      };
+      // Calculate likely mod from DLC and Author values
+      private _modName = [
+        _CONFIGNAME,
+        [_configHashmap, "dlc", ""] call CBA_fnc_hashGet,
+        [_configHashmap, "author", ""] call CBA_fnc_hashGet
+      ] call getModName;
+      diag_log format ["[DEBUG] Modname for config file %1 is %2", _CONFIGNAME, _modName];
+      [_configHashmap, "mod", _modName] call CBA_fnc_hashSet;
+
+      // Create formatted JSON string for the entire config
+      diag_log format ["[INFO] Finished parsing config file %1, encoding to JSON...", _CONFIGNAME];
+      _currentClassConfigs append [_configHashmap] call CBA_fnc_encodeJSON;
+    } else {
+      // Failed to retrieve config properties
+      throw format ["[ERROR] FAILED to retrieve config properties for %1", _CONFIGNAME];
     };
-  };
+
+  } forEach _CONFIGLIST;
 
   // Concatenate all collected objects and add to json array
-  _jsonClasses append _CONFIGARRAY;
+  diag_log format ["[DEBUG] Appending all %1 configs in %2 type to return array", count _currentClassConfigs, _CONFIGTYPE];
+  _allClassConfigs append _currentClassConfigs;
 
 } forEach _CONFIGS;
 
-// Remove random null classes, we have to do it more than once as CBA_fnc_replace has a limit of around 10000 lines
-private _joinedClasses = [_jsonClasses joinString endl, "<null>", ""] call CBA_fnc_replace;
-while {["<null>", _joinedClasses] call BIS_fnc_inString} do {
-  _filteredClasses = [_joinedClasses, "<null>", ""] call CBA_fnc_replace;
-  _joinedClasses = _filteredClasses;
-};
-
-// Convert to json array and finish
-_JSON = "[" + endl + "  " + _joinedClasses + endl + "]" + endl;
-copyToClipboard _JSON;
-_JSON
+// Copy to clipboard and finish
+diag_log "[DEBUG] Final conversion to JSON array and out to clipboard";
+_jsonAllConfigs = [_allClassConfigs] call CBA_fnc_encodeJSON;
+_jsonArrayConfigs = [_jsonAllConfigs] call CBA_fnc_parseJSON;
+copyToClipboard (_jsonArrayConfigs);
+_jsonArrayConfigs
