@@ -5,9 +5,9 @@
 // AUTHOR: M-Davies
 // USAGE:
 //   1) Alter the _CONFIGS hashmap variable to include the config classes you want to add to the json array. Beware of the 10,000,000 limit on array sizes however. You might need to run the config extraction one at a time. See _exampleCONFIGS below for the currently supported configs.
-//   2) Run the script in a debug console on arma 3. It may take a few seconds to complete depending on your system specs.
-//   3) You should now have a json array on your clipboard. Don't copy it from the debug console output as it will include extra double quotes to escape the existing ones.
-//   4) It is worth mentioning that the last JSON element in the array will include a trailing comma, which may make the array invalid (depending on the parser type). Due to the difficulty in extracting said comma out, I haven't bothered fixing it.
+//   2) Run the script in a debug console on arma 3. It may take a few minutes to complete depending on your system specs. Your Arma may hang/not respond during the process, this is normal just be patient.
+//   3) You should now have a json array on your clipboard. If it failed to copy for some reason, it should also appear in the debug console's output field.
+//   4) It is worth mentioning that the script does not produce 100% valid JSON. This is due to the limitations with CBA and SQF when it comes to parsing and outputting strings. The JSON string that is produced contains leading and trailing quotes, as well as double quotes for nearly every key-value pair declaration (e.g. ["{""formationx"": 10, ""transportsoldier"": 0, ""soundbreathautomatic"": """", ""faction"": ""Default"",...""damagefull"": []}"]). You can clean this up fairly easily with search/replace functionality such as VSCode or by running the "java -jar target/Executer-1.0.0-SNAPSHOT.jar --parse <filename> --output <outfile>" script shipped with the arma-api project.
 // *********************************************
 
 // ** SUPPORTED CONFIGS HASHMAP, CHANGE _CONFIGS TO TARGET SPECIFIC CONFIGS FROM THIS LIST **
@@ -123,7 +123,7 @@ getType = { params["_NAME", "_ROUGHTYPE"];
       };
       if (_found == false) then {
         // The above SHOULD be the only valid types
-        throw format ["[ERROR] Unknown equipment subtype: %1 for config: %2", _SUBTYPE, _NAME];
+        throw format ["[ERROR] CFG_To_JSON.sqf - Unknown equipment subtype: %1 for config: %2", _SUBTYPE, _NAME];
       };
     };
 
@@ -139,14 +139,14 @@ getType = { params["_NAME", "_ROUGHTYPE"];
         _TYPEARRAY set [0, "Explosives"];
       } else {
         // The above SHOULD be the only valid types
-        throw format ["[ERROR] Unknown mine subtype: %1 for config: %2", _SUBTYPE, _NAME];
+        throw format ["[ERROR] CFG_To_JSON.sqf - Unknown mine subtype: %1 for config: %2", _SUBTYPE, _NAME];
       };
     };
 
     default {
       if (_ROUGHTYPE select 0 != "VehicleWeapon" || [_ROUGHTYPE select 0, "/^ +$/"] call regexMatch != true) then {
         // No matching type was found and it isn't an excluded one
-        throw format ["[ERROR] Unknown type: %1 for config: %2", _ROUGHTYPE select 0, _NAME];
+        throw format ["[ERROR] CFG_To_JSON.sqf - Unknown type: %1 for config: %2", _ROUGHTYPE select 0, _NAME];
       };
     };
   };
@@ -311,7 +311,7 @@ getModName = { params["_NAME", "_DLC", "_AUTHOR"];
      _found = true;
   };
   if (_found == false) then {
-    throw format ["[ERROR] Author entry for class %1 is FALSE", _NAME];
+    throw format ["[ERROR] CFG_To_JSON.sqf - Author entry for class %1 is FALSE", _NAME];
   };
 
   _modName
@@ -330,27 +330,26 @@ private _allClassConfigs = [];
     // Save config details
     private _CURRENTCONFIGPATH = _x;
     private _CONFIGNAME = configName _CURRENTCONFIGPATH; // e.g. [classname of config]
-    diag_log format ["[INFO] Parsing config file %1", _CURRENTCONFIGPATH];
-
+    diag_log format ["[INFO] CFG_To_JSON.sqf - Getting type for %1", _CURRENTCONFIGPATH];
     private _TYPE = [_CONFIGNAME, (_CONFIGNAME call BIS_fnc_itemType)] call getType;
     // Hacky way around checking if it's a config we actually want to extract or not
     if (typeName (_TYPE select 0) == "BOOL") then {
-      diag_log format ["[DEBUG] Skipping config file %1, not an arsenal object", _CURRENTCONFIGPATH];
+      diag_log format ["[INFO] CFG_To_JSON.sqf - Skipping config file %1, not an arsenal object", _CURRENTCONFIGPATH];
       continue;
     };
 
-    private _configHashmap = [] call CBA_fnc_hashCreate; // Can't declare an array here for some reason, some weird error in CBA
-    [_configHashmap, "class", _CONFIGNAME] call CBA_fnc_hashSet;
-    [_configHashmap, "type", _TYPE select 0] call CBA_fnc_hashSet;
-    [_configHashmap, "subtype", _TYPE select 1] call CBA_fnc_hashSet;
+    private _currentConfig = call CBA_fnc_createNamespace;
+    _currentConfig setVariable ["class", _CONFIGNAME];
+    _currentConfig setVariable ["type", _TYPE select 0];
+    _currentConfig setVariable ["subtype", _TYPE select 1];
 
-    // Add config keys and values to hashmap
+    // Add config keys and values
     private _CONFIGKEYS = configProperties [_CURRENTCONFIGPATH, "true", true];
 
     if (count _CONFIGKEYS > 0) then {
       {
         private _currentConfigKey = _x;
-        diag_log format ["[DEBUG] Reading config property %1", _currentConfigKey];
+        diag_log format ["[DEBUG] CFG_To_JSON.sqf - Reading config property %1", _currentConfigKey];
         // Parse value
         private _currentValue = "";
         if (isText _currentConfigKey) then {
@@ -365,37 +364,34 @@ private _allClassConfigs = [];
         };
 
         // Add to map
-        [_configHashmap, configName _x, _currentValue] call CBA_fnc_hashSet;
+        _currentConfig setVariable [configName _x, _currentValue];
       } forEach _CONFIGKEYS;
 
       // Calculate likely mod from DLC and Author values
       private _modName = [
         _CONFIGNAME,
-        [_configHashmap, "dlc", ""] call CBA_fnc_hashGet,
-        [_configHashmap, "author", ""] call CBA_fnc_hashGet
+        _currentConfig getVariable "dlc",
+        _currentConfig getVariable "author"
       ] call getModName;
-      diag_log format ["[DEBUG] Modname for config file %1 is %2", _CONFIGNAME, _modName];
-      [_configHashmap, "mod", _modName] call CBA_fnc_hashSet;
+      _currentConfig setVariable ["mod", _modName];
 
       // Create formatted JSON string for the entire config
-      diag_log format ["[INFO] Finished parsing config file %1, encoding to JSON...", _CONFIGNAME];
-      _currentClassConfigs append [_configHashmap] call CBA_fnc_encodeJSON;
+      diag_log format ["[INFO] CFG_To_JSON.sqf - Finished parsing config file %1, encoding to JSON...", _CONFIGNAME];
+      _currentClassConfigs pushBack ([_currentConfig] call CBA_fnc_encodeJSON);
     } else {
       // Failed to retrieve config properties
-      throw format ["[ERROR] FAILED to retrieve config properties for %1", _CONFIGNAME];
+      throw format ["[ERROR] CFG_To_JSON.sqf - FAILED to retrieve config properties for %1", _CONFIGNAME];
     };
 
   } forEach _CONFIGLIST;
 
   // Concatenate all collected objects and add to json array
-  diag_log format ["[DEBUG] Appending all %1 configs in %2 type to return array", count _currentClassConfigs, _CONFIGTYPE];
+  diag_log format ["[DEBUG] CFG_To_JSON.sqf - Appending all %1 configs in %2 type to return array", count _currentClassConfigs, _CONFIGTYPE];
   _allClassConfigs append _currentClassConfigs;
 
 } forEach _CONFIGS;
 
 // Copy to clipboard and finish
-diag_log "[DEBUG] Final conversion to JSON array and out to clipboard";
-_jsonAllConfigs = [_allClassConfigs] call CBA_fnc_encodeJSON;
-_jsonArrayConfigs = [_jsonAllConfigs] call CBA_fnc_parseJSON;
-copyToClipboard (_jsonArrayConfigs);
-_jsonArrayConfigs
+diag_log "[DEBUG] CFG_To_JSON.sqf - Done! Printing out to clipboard";
+copyToClipboard str _allClassConfigs;
+_allClassConfigs
